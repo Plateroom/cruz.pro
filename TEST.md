@@ -1,3 +1,0 @@
-# Cruz.pro
-
-Bla bla bla...

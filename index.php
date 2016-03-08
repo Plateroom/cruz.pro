@@ -16,15 +16,15 @@ else {
 }
 
 if ($selectedPage == 'home') {
-	include __DIR__ . '/layout/home.php';
+	include __DIR__ . '/pages/_home.php';
 }
 
 if ($selectedPage == 'user') {
-	include __DIR__ . '/layout/user.php';
+	include __DIR__ . '/pages/_user.php';
 }
 
 if ($selectedPage == 'sala') {
-	include __DIR__ . '/layout/sala.php';
+	include __DIR__ . '/pages/_sala.php';
 }
 
 

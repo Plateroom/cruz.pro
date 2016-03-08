@@ -13,3 +13,42 @@
 
 /*login page*/
 
+
+body{
+	background-image: url(Img/sfondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+ header {
+	text-align: center;
+	color: white;
+	position: relative;
+	padding-top: 20px;
+	font-family: Helvetica Neue;
+}
+
+
+.Allcontenuto{
+	padding-top: 100px;
+	margin: auto;
+	margin-top: 6%;
+	width: 450px;
+	height: 400px;
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.loginform li{
+		list-style-type: none;
+}
+
+.loginform{
+	padding-top: 50%;
+	margin: auto;
+	width: 50%;
+}
+
+

@@ -4,7 +4,7 @@
 
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-		<title>Room</title>
+		<title>sala</title>
 
 				<!-- Bootstrap Core CSS -->
         <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
@@ -14,6 +14,8 @@
 
 	</head>
 	<body>
+
+		
 	Contenuto room
 	</body>
 </html>

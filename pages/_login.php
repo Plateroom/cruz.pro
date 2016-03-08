@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 	<head>
+
 		<meta charset="utf-8">
-		<title>login</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+		<title>home</title>
+
+				<!-- Bootstrap Core CSS -->
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="../assets/css/stylecruz.css" rel="stylesheet">
+
 	</head>
 	<body>
-	Contenuto login
+		
+
+
+
+
+	
+
+
+
 	</body>
 </html>

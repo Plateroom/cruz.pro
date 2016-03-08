@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Prova</title>
+		<title>Applicazione</title>
 	</head>
 	<body>
-	Ciao
+	Contenuto
 	</body>
 </html>

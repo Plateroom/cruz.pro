@@ -1,40 +1,10 @@
-<?php
-header('Content-Tipe: text/html; charset=utf-8');
-
-require_once __DIR__ . '/function.php';
-
-//require_once __DIR__ . '/function.php';
-
-$title = "Cruz.pro";
-
-
-if (isset($_GET['page'])) {
-	$selectedPage = $_GET['page'];
-}
-else {
-	$selectedPage = '';
-}
-
-if ($selectedPage == 'home') {
-	include __DIR__ . '/layout/home.php';
-}
-
-if ($selectedPage == 'user') {
-	include __DIR__ . '/layout/user.php';
-}
-
-if ($selectedPage == 'sala') {
-	include __DIR__ . '/layout/sala.php';
-}
-
-
-
-//switch ($selectedPage) {
-//	case 'home':
-//		include __DIR__ . '/layout/home.php';
-	
-//	default:
-		# code...
-//		break;
-//}
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>500</title>
+	</head>
+	<body>
+	Ciao
+	</body>
+</html>

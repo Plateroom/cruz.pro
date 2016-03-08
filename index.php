@@ -15,8 +15,8 @@ else {
 	$selectedPage = '';
 }
 
-if ($selectedPage == 'home') {
-	include __DIR__ . '/pages/_home.php';
+if ($selectedPage == 'login') {
+	include __DIR__ . '/pages/_login.php';
 }
 
 if ($selectedPage == 'user') {

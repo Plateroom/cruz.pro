@@ -7,11 +7,9 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 		<title>navbar</title>
 
-				<!-- Bootstrap Core CSS -->
-        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link href="../assets/css/stylecruz.css" rel="stylesheet">
+        <link href="assets/css/stylecruz.css" rel="stylesheet">
 
 	</head>
 	<body id="page-top" class="user">
@@ -44,13 +42,13 @@
            <li class="hidden">
           
            <li>
-              <a class="page-scroll" href="#sale riunioni">Sale riunioni</a>
+              <a href="#sale riunioni">Sale riunioni</a>
            </li>
            <li>
-              <a class="page-scroll" href="#eventi">Eventi</a>
+              <a href="#eventi">Eventi</a>
            </li>
            <li>
-             	<a class="page-scroll" href="#aggiungi evento">Aggiungi evento</a>
+             	<a class="btn btn-primary" href="#" role="button">Aggiungi evento</a>
            </li>
            
 						<li class="dropdown">
@@ -110,7 +108,8 @@
 	
 	Contenuto user-->
 
-
- <script src="../assets/js/bootstrap.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="assets/js/bootstrap.min.js"></script>
 	</body>
 </html>

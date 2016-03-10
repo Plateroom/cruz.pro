@@ -14,3 +14,74 @@
 
 /*login page*/
 
+
+body{
+	background-image: url(Img/sfondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+ header {
+	text-align: center;
+	color: white;
+	position: relative;
+	padding-top: 20px;
+	font-family: Helvetica Neue;
+}
+
+/* base login */
+
+.Allcontenuto{
+	padding-top: 100px;
+	margin: auto;
+	margin-top: 6%;
+	width: 450px;
+	height: 400px;
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+#form{
+	padding-top: 50%;
+	margin-left: 30px;
+	width: 80%;
+	height: 40%;
+}
+
+.loginform li{
+		list-style-type: none;
+		padding-left: 30%;
+}
+
+/* box password e mail*/
+
+input{
+	border-radius: 5px;
+}
+
+::-webkit-input-placeholder{
+	color: #748F80;
+}
+
+/* tasto login */
+
+.button{
+	width: 50%;
+	color: white;
+	display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(245, 116, 116, 100);
+    margin-top: 20px;
+    width: 59%;
+    border-radius: 5px;
+}
+
+
+
+
+

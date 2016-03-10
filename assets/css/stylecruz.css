@@ -32,6 +32,10 @@ body{
 
 /* base login */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
 .Allcontenuto{
 	padding-top: 100px;
 	margin: auto;
@@ -40,11 +44,15 @@ body{
 	height: 400px;
 	border-radius: 25px;
 	background-color: rgba(0, 0, 0, 0.5);
+<<<<<<< HEAD
 
+=======
+>>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
 }
 
 
 
+<<<<<<< HEAD
 #form{
 	padding-top: 50%;
 	margin-left: 30px;
@@ -55,6 +63,39 @@ body{
 .loginform li{
 		list-style-type: none;
 		padding-left: 30%;
+=======
+
+#form{
+	padding-top: 15%;
+	margin-left: 30px;
+	width: 85%;
+	height: 40%;	
+}
+
+
+
+#loginform{
+	width: 37%;
+
+}
+
+
+.login li{
+	list-style-type: none;
+	padding-left: 30%;
+
+}
+
+
+#mailbox{
+	width: 250px;
+	height: 40px;
+}
+
+#password{
+	width: 250px;
+	height: 40px;
+>>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
 }
 
 /* box password e mail*/
@@ -65,11 +106,18 @@ input{
 
 ::-webkit-input-placeholder{
 	color: #748F80;
+<<<<<<< HEAD
+=======
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 10px;
+>>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
 }
 
 /* tasto login */
 
 .button{
+<<<<<<< HEAD
 	width: 50%;
 	color: white;
 	display: inline-block;
@@ -78,6 +126,17 @@ input{
     background-color: rgba(245, 116, 116, 100);
     margin-top: 20px;
     width: 59%;
+=======
+	display: inline-block;
+    width: 257px;
+    height: 49px;
+	color: white;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: rgba(245, 116, 116, 100);
+    margin-top: 20px;
+>>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
     border-radius: 5px;
 }
 

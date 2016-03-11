@@ -1,5 +1,17 @@
 /*navbar*/
 
+#demo-navbar-collapse {
+ 	padding-right: 25px;
+  padding-left: 25px;
+ 
+}
+
+
+.row.header {
+    height: 52px;
+
+
+}
 
 .footer {
   border-top: 1px solid #444;
@@ -18,6 +30,7 @@
 .btn {
  margin-top: 8px;
 }
+
 
 
 
@@ -83,7 +96,7 @@ nav {
   border-bottom: 0px solid #eee;
 }
 
-.row {
+.navbar-collapse {
 	position: fixed-top;
 	background-color: #F5F0E7;
 }
@@ -99,32 +112,61 @@ nav {
 	margin-left: 30px;
 }
 
+.navbar-nav > li > a {
+	color: #748F80 !important;
+}
+
+.navbar-nav:hover > li > a {
+	color: #748F80 !important;
+}
+
 .btn-link:hover,
 .btn-link:focus {
-  color: #F57474;
+  color: #F57474 !important;
   text-decoration: none;
   background-color: transparent;
 }
 
 .btn-default {
-    color: #fff;
-    background-color: #F57474;
-    border-color: #F57474;
+    color: #fff !important;
+    background-color: #F57474 !important;
+    border-color: #F57474 !important;
+
 }
 
 
 .btn-default:hover,
 .btn-default:focus {
-  color: #F57474;
-  text-decoration: none;
-  background-color: transparent;
-  border-color: #F57474;
-  border-color: #F57474;
+  color: #F57474 !important;
+  text-decoration: none !important;
+  background-color: transparent !important;
+  border-color: #F57474 !important;
 }
+
+
+.dropdown-menu > li > a {
+	color: #748F80 !important;
+
+}
+.dropdown-menu > li > a:hover {
+	color: #F57474 !important;
+
+}
+
+
+
 .sfondo {
 	margin: 5px;
 	padding: 5px;
 	background-color: white;
+}
+
+
+
+
+#calendar {
+	width: 100%;
+	margin: 0 auto;
 }
 
 
@@ -176,6 +218,15 @@ nav {
 	font-family: Helvetica Neue;
 	font-size: 10px;
 }
+
+
+
+.footer {
+	border-top: none;
+}
+
+
+
 
 /* base login */
 

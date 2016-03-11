@@ -32,7 +32,7 @@ else {
 	$selectedPage = '';
 }
 
-if ($selectedPage == 'login') {
+if ($selectedPage == 'login' || $selectedPage == '') {
 	include __DIR__ . '/pages/_login.php';
 }
 

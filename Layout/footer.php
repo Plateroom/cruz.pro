@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Footer</title>
-	</head>
-	<body>
-	Contenuto
-	</body>
-</html>
+
+  <div class="row footer">
+    <div class="col-xs-12 text-center">
+      <p>&copy; Cruz.pro</p>
+    </div>
+  </div>

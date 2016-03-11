@@ -14,12 +14,16 @@
 
 	</head>
 
+<<<<<<< HEAD
+	
+=======
 	 <body>
 	<header>
 		CRUZpro utilizza i cookie per offrirti la migliore esperienza possibile. Ulteriori info Ok!
 	</header>
 
 	  <div class="form Allcontenuto"> 
+>>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 
 
     <section class="loginform cf" id="loginform">
@@ -47,8 +51,24 @@
     	  <p id="riga2">privacy e l'utilizzo dei cookie di CRUZpro.</p>
     	</div>
     	 </form>
+<<<<<<< HEAD
+
+		</section>
+	</div>
+
+	</div>
+
+
+
+
+
+	
+</body>
+</html> 
+=======
 		</section>
 	  </div>
 	
 </body>
 </html> 
+>>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3

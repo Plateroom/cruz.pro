@@ -4,14 +4,13 @@
 	<head>
 
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 		<title>user</title>
 
-				<!-- Bootstrap Core CSS -->
-        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+			
 
         <!-- Custom CSS -->
-        <link href="../assets/css/stylecruz.css" rel="stylesheet">
+        <link href="assets/css/stylecruz.css" rel="stylesheet">
 
 	</head>
 	<body id="page-top" class="user">
@@ -30,7 +29,18 @@
 
 		</nav>
 	
-	Contenuto user
+	
+
+
+
+	<div class= "col-md-3 col-sm-3"></div>
+	<div class= "col-md-9 col-sm-9">
+		<div class= "col-md-4"></div>
+		<div class= "col-md-8"></div>
+
+	</div>
+
+
 
 
 

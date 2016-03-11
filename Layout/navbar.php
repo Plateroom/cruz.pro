@@ -14,7 +14,7 @@
           </div>
           <div class="collapse navbar-collapse" id="demo-navbar-collapse">
             <ul class="nav navbar-nav col-xs-3 text-center">
-              <li class="active"><a href="#">Cruz.pro</a></li>
+              <li class="active"><a href="#user"> <span class="glyphicon glyphicon-asterisk" style="color: #748F80; margin-right: 15px"></span>Cruz.pro</a></li>
               
             </ul>
             <ul class="nav navbar-nav nav navbar-nav col-xs-6">
@@ -24,7 +24,7 @@
             </ul>
    
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Img</a></li>
+                <li><a href="#">img</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profilo<b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -49,29 +49,30 @@
   </div>
   <div class="content">
    <div class="row content">
-    <div class="col-xs-4">
+    <div class="col-xs-4 col-md-offset-3">
        <ul class="nav navbar-nav">
               <li class="active"><a href="#">Filtra per</a></li>
-              <li><a href="#">n.posti</a></li>
-              <li><a href="#">sede</a></li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">N. posti<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">10 posti</a></li>
+                    <li><a href="#">15 posti</a></li>
+                    <li><a href="#">20 posti</a></li>
+                  </ul>
+
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Milano</a></li>
+                    <li><a href="#">Roma</a></li>
+                    <li><a href="#">Napoli</a></li>
+                  </ul>
               
             </ul>
     </div>
   </div>
   
-  <!--  Content Area-->
-  <div class="row content well">
-    <div class="col-md-4 col-sm-6 sfondo">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate libero mauris, vitae malesuada mauris porttitor at. Nam scelerisque enim ac libero mattis pharetra sit amet eget neque. Fusce et efficitur nunc. Quisque maximus dui ut tellus condimentum, sit amet sollicitudin ex porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse aliquet, arcu quis dignissim vehicula, velit nulla tincidunt neque, ac volutpat erat urna nec risus. Maecenas imperdiet, est sed pretium mollis, nulla ante rhoncus nisi, ac tincidunt est ipsum non quam. Nunc id leo quis ligula elementum efficitur.</p>
-    </div>
-    <div class="col-md-4 col-sm-6 sfondo">
-      <p>Donec ultricies id arcu eu semper. Sed et nisl non nisl ullamcorper sollicitudin eget ac neque. Curabitur ullamcorper elementum mi, vel tempus urna consectetur vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam faucibus et ligula id dictum. Nunc ante quam, gravida et ornare nec, fermentum eu lectus. Aenean sagittis libero non est pulvinar, quis rutrum lacus vehicula. Vivamus aliquet, ex ac placerat rutrum, tortor magna scelerisque est, tempor fermentum neque odio non metus. Cras laoreet dolor a massa dapibus semper.</p>
-    </div>
-    <div class="col-md-4 col-sm-6 sfondo">
-      <p>Sed sagittis, arcu luctus sollicitudin placerat, nisi arcu elementum nisl, vel tempus ligula libero eget odio. Integer posuere velit in justo vehicula bibendum. Praesent a venenatis ligula. Duis elementum venenatis urna ut semper. Nullam tempus libero at laoreet pellentesque. Duis rhoncus at arcu pharetra congue. Donec sed egestas quam. Nam et consectetur nisi.</p>
-    </div>
-  </div>
-  
+
   <!--  Footer Area-->
  
   </div>

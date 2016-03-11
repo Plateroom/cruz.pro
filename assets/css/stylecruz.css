@@ -146,14 +146,16 @@ nav {
 /*login page*/
 
 
-body{
-	background-image: url(img/sfondo.jpg);
+
+.page-login {
+	background-image: url(../../img/sfondo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100vh;
 }
 
 
- header {
+.page-login header {
  	position: relative;
 	padding-top: 20px;
 	text-align: center;
@@ -161,18 +163,8 @@ body{
 	font-family: Helvetica Neue;
 }
 
-
-.well {
-	padding:19px;
-
-}
-
 /* base login */
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 .Allcontenuto{
 	padding-top: 20px;
 	margin: auto;
@@ -181,21 +173,7 @@ body{
 	height: 450px;
 	border-radius: 10px;
 	background-color: rgba(0, 0, 0, 0.5);
-<<<<<<< HEAD
-
-#form{
-	padding-top: 50%;
-	margin-left: 30px;
-	width: 80%;
-	height: 40%;
-}
-
-.loginform li{
-		list-style-type: none;
-		padding-left: 30%;
-
-=======
-	background-image: url(http://127.0.0.1/progetto/img/Schermatafiltro.jpg);
+	background-image: url(../../img/Schermatafiltro.jpg);
 }
 /*background: url(img/Schermatafiltro.jpg) no-repeat;*/
 
@@ -207,7 +185,6 @@ body{
 	color: white;
 	font-family: Helvetica Neue;
 	padding-top: 20px;
->>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 
 }
 
@@ -227,67 +204,30 @@ body{
 input{
 	margin-top: 5%;
 	width: 250px;
-<<<<<<< HEAD
-	height: 40px;
-
-=======
     height: 45px;
 	padding: 0;
     border: 0;
     border-radius: 5px;
->>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 }
 
 
 /*colore placeholder*/
 ::-webkit-input-placeholder{
 	color: #748F80;
-<<<<<<< HEAD
-
-	font-size: 12px;
-	font-weight: bold;
-	padding-left: 10px;
-
-=======
 	font-size: 15px;
 	font-weight: bold;
 	padding-left: 10px;
 	padding-bottom: 20px;
->>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 }
 
 /* tasto login */
 .button{
-<<<<<<< HEAD
-
-	width: 50%;
-	color: white;
-	display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    background-color: rgba(245, 116, 116, 100);
-    margin-top: 20px;
-    width: 59%;
-
-	display: inline-block;
-    width: 257px;
-    height: 49px;
-=======
 	text-align: center;
 	text-decoration: none;
 	background-color: rgba(245, 116, 116, 100);
->>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 	color: white;
     font-size: 15px;
-<<<<<<< HEAD
-    text-decoration: none;
-    background-color: rgba(245, 116, 116, 100);
-    margin-top: 20px;
-
-    border-radius: 5px;
-=======
     font-weight: bold;
->>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 }
 
 
@@ -314,3 +254,30 @@ input{
 	margin: 10px 0 0 0;
 	padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

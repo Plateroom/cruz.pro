@@ -1,30 +1,9 @@
-<!DOCTYPE html>
-<html lang="it">
-	<head>
-
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-		<title>home</title>
-
-				<!-- Bootstrap Core CSS -->
-        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link href="../assets/css/stylecruz.css" rel="stylesheet">
-
-	</head>
-
-<<<<<<< HEAD
-	
-=======
-	 <body>
+<div class="page-login">
 	<header>
 		CRUZpro utilizza i cookie per offrirti la migliore esperienza possibile. Ulteriori info Ok!
 	</header>
 
 	  <div class="form Allcontenuto"> 
->>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
-
 
     <section class="loginform cf" id="loginform">
 		 <form class="login" name="login" action="index_submit" method="get" accept-charset="utf-8">
@@ -51,24 +30,6 @@
     	  <p id="riga2">privacy e l'utilizzo dei cookie di CRUZpro.</p>
     	</div>
     	 </form>
-<<<<<<< HEAD
 
-		</section>
-	</div>
-
-	</div>
-
-
-
-
-
-	
-</body>
-</html> 
-=======
-		</section>
-	  </div>
-	
-</body>
-</html> 
->>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
+	</section>	
+</div>

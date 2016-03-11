@@ -1,18 +1,18 @@
 <div class="page-login">
 	<header>
-		CRUZpro utilizza i cookie per offrirti la migliore esperienza possibile. Ulteriori info Ok!
+		<strong> CRUZpro  </strong> utilizza i cookie per offrirti la migliore esperienza possibile. <strong> Ulteriori info </strong>Ok!
 	</header>
 
 	  <div class="form Allcontenuto"> 
-
-    <section class="loginform cf" id="loginform">
+      <div id="circle">
+      </div>  
 		 <form class="login" name="login" action="index_submit" method="get" accept-charset="utf-8">
 		 
 		 <div class="cruz">
-		 	<p style="font-size: 30px"> CRUZ.pro</p>
-		 	<p style="font-size: 17px">Prenota la tua sala riunioni</p>
-		 	<p style="font-size: 10px">powered by SF</p> 
-		 </div> 
+      <p class="pro" style="font-size: 30px"> CRUZ.pro</p>
+      <p style="font-size: 17px">Prenota la tua sala riunioni</p>
+      <p style="font-size: 10px">powered by SF</p> 
+     </div> 
 
    		  <ul>	
 
@@ -22,7 +22,7 @@
         	<li> <input class="password" id="password" type="password" name="password" placeholder= "Password"required> </li>
         	<li> <input class="button" type="submit" value="Login"> </li>
   				
-        		<p id="dimenticata">Password dimenticata?</p>
+        		<a href=""id="dimenticata">Password dimenticata?</a>
 
     	  </ul>
     	<div class="termini">
@@ -30,6 +30,7 @@
     	  <p id="riga2">privacy e l'utilizzo dei cookie di CRUZpro.</p>
     	</div>
     	 </form>
-
-	</section>	
 </div>
+<div class="fondo-pagina">
+       <p>Privacy e Termini</p> <p>Info e Contatti</p> 
+</div>   

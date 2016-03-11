@@ -28,6 +28,9 @@ if ($selectedPage == 'sala') {
 }
 
 
+//navbar
+include __DIR__ . '/layout/navbar.php';
+
 
 //switch ($selectedPage) {
 //	case 'home':

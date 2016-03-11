@@ -32,13 +32,6 @@ body{
 
 /* base login */
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
->>>>>>> 539deed060bc4def1e7a47b09de2cbdb4533fb55
 .Allcontenuto{
 	padding-top: 20px;
 	margin: auto;
@@ -47,31 +40,12 @@ body{
 	height: 450px;
 	border-radius: 10px;
 	background-color: rgba(0, 0, 0, 0.5);
-<<<<<<< HEAD
-	/*background-image: url(http://127.0.0.1/progetto/img/Schermatafiltro.jpg);*/
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
->>>>>>> 539deed060bc4def1e7a47b09de2cbdb4533fb55
+	background-image: url(http://127.0.0.1/progetto/img/Schermatafiltro.jpg);
 }
 /*background: url(img/Schermatafiltro.jpg) no-repeat;*/
 
 
 
-<<<<<<< HEAD
-#form{
-	padding-top: 50%;
-	margin-left: 30px;
-	width: 80%;
-	height: 40%;
-}
-
-.loginform li{
-		list-style-type: none;
-		padding-left: 30%;
-=======
 
 .cruz{
 	text-align: center;
@@ -87,17 +61,10 @@ body{
 
 
 
-<<<<<<< HEAD
 .login ul{
 	margin: 15% 10% 0 0;
 	list-style-type: none;
 	text-align: center;
-=======
-#password{
-	width: 250px;
-	height: 40px;
->>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
->>>>>>> 539deed060bc4def1e7a47b09de2cbdb4533fb55
 }
 
 
@@ -114,45 +81,19 @@ input{
 /*colore placeholder*/
 ::-webkit-input-placeholder{
 	color: #748F80;
-<<<<<<< HEAD
 	font-size: 15px;
 	font-weight: bold;
 	padding-left: 10px;
 	padding-bottom: 20px;
-=======
-<<<<<<< HEAD
-=======
-	font-size: 12px;
-	font-weight: bold;
-	padding-left: 10px;
->>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
->>>>>>> 539deed060bc4def1e7a47b09de2cbdb4533fb55
 }
 
 /* tasto login */
 .button{
-<<<<<<< HEAD
 	text-align: center;
 	text-decoration: none;
 	background-color: rgba(245, 116, 116, 100);
-=======
-<<<<<<< HEAD
-	width: 50%;
-	color: white;
-	display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    background-color: rgba(245, 116, 116, 100);
-    margin-top: 20px;
-    width: 59%;
-=======
-	display: inline-block;
-    width: 257px;
-    height: 49px;
->>>>>>> 539deed060bc4def1e7a47b09de2cbdb4533fb55
 	color: white;
     font-size: 15px;
-<<<<<<< HEAD
     font-weight: bold;
 }
 
@@ -179,16 +120,4 @@ input{
 	font-family: Helvetica Neue;
 	margin: 10px 0 0 0;
 	padding: 0;
-=======
-    text-decoration: none;
-    background-color: rgba(245, 116, 116, 100);
-    margin-top: 20px;
->>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
-    border-radius: 5px;
->>>>>>> 539deed060bc4def1e7a47b09de2cbdb4533fb55
 }
-
-
-
-
-

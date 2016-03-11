@@ -154,10 +154,10 @@ body{
 
 
  header {
+ 	position: relative;
+	padding-top: 20px;
 	text-align: center;
 	color: white;
-	position: relative;
-	padding-top: 20px;
 	font-family: Helvetica Neue;
 }
 
@@ -169,15 +169,19 @@ body{
 
 /* base login */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 .Allcontenuto{
-	padding-top: 100px;
+	padding-top: 20px;
 	margin: auto;
-	margin-top: 6%;
-	width: 450px;
-	height: 400px;
-	border-radius: 25px;
+	margin-top: 10vh;
+	width: 410px;
+	height: 450px;
+	border-radius: 10px;
 	background-color: rgba(0, 0, 0, 0.5);
+<<<<<<< HEAD
 
 #form{
 	padding-top: 50%;
@@ -190,58 +194,71 @@ body{
 		list-style-type: none;
 		padding-left: 30%;
 
+=======
+	background-image: url(http://127.0.0.1/progetto/img/Schermatafiltro.jpg);
+}
+/*background: url(img/Schermatafiltro.jpg) no-repeat;*/
 
-#form{
-	padding-top: 15%;
-	margin-left: 30px;
-	width: 85%;
-	height: 40%;	
+
+
+
+.cruz{
+	text-align: center;
+	color: white;
+	font-family: Helvetica Neue;
+	padding-top: 20px;
+>>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
+
+}
+
+.cruz p{
+	margin: 0;
 }
 
 
 
-#loginform{
-	width: 37%;
-
-}
-
-
-.login li{
+.login ul{
+	margin: 15% 10% 0 0;
 	list-style-type: none;
-	padding-left: 30%;
-
+	text-align: center;
 }
 
-
-#mailbox{
-	width: 250px;
-	height: 40px;
-}
-
-#password{
-	width: 250px;
-	height: 40px;
-
-}
-
-/* box password e mail*/
 
 input{
-	border-radius: 5px;
+	margin-top: 5%;
+	width: 250px;
+<<<<<<< HEAD
+	height: 40px;
+
+=======
+    height: 45px;
+	padding: 0;
+    border: 0;
+    border-radius: 5px;
+>>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 }
 
+
+/*colore placeholder*/
 ::-webkit-input-placeholder{
 	color: #748F80;
+<<<<<<< HEAD
 
 	font-size: 12px;
 	font-weight: bold;
 	padding-left: 10px;
 
+=======
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-bottom: 20px;
+>>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 }
 
 /* tasto login */
-
 .button{
+<<<<<<< HEAD
 
 	width: 50%;
 	color: white;
@@ -255,17 +272,45 @@ input{
 	display: inline-block;
     width: 257px;
     height: 49px;
+=======
+	text-align: center;
+	text-decoration: none;
+	background-color: rgba(245, 116, 116, 100);
+>>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 	color: white;
-    text-align: center;
     font-size: 15px;
+<<<<<<< HEAD
     text-decoration: none;
     background-color: rgba(245, 116, 116, 100);
     margin-top: 20px;
 
     border-radius: 5px;
+=======
+    font-weight: bold;
+>>>>>>> ec704d18625b5bbcc02001663b7d512eed6a93c3
 }
 
 
+/* scritta sotto login */
+.termini{
+	color: white;
+	font-family: Helvetica Neue;
+	text-align: center;
+}
 
+#riga1{
+	margin: 10% 10% 0% 15%;
+	font-size: 60%;
+}
 
+#riga2{
+	margin: 0% 20% 0% 20%;
+	font-size: 60%;
+}
 
+#dimenticata{
+	color: white;
+	font-family: Helvetica Neue;
+	margin: 10px 0 0 0;
+	padding: 0;
+}

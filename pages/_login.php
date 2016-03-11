@@ -13,25 +13,7 @@
         <link href="../assets/css/stylecruz.css" rel="stylesheet">
 
 	</head>
-<<<<<<< HEAD
 
-	 <body>
-		<header>
-		CRUZpro utilizza i cookie per offrirti la migliore esperienza possibile. Ulteriori info Ok!
-		</header>
-
-	 <div class="Allcontenuto">
-	 	<form method="post" action="user.php">
-	 <div class="form" id="form">  
-	   <section class="loginform cf">
-		<form name="login" action="index_submit" method="get" accept-charset="utf-8">
-   		 <ul>
-        	<li><input classe="mailbox" type="email" name="usermail" placeholder="Email Aziendale" required></li><br/>
-        	<li><input classe="password" type="password" name="password" placeholder= "Password"required></li>
-        	<li><input class="button" type="submit" value="Login"></li>
-    	  </ul>
-		 </form>
-=======
 	
 
 	<body>
@@ -61,17 +43,16 @@
     		
 
     	 </form>
->>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84
+
 		</section>
 	</div>
 
 	</div>
-<<<<<<< HEAD
 
-	</body>
-</html>
-=======
+
+
+
+
 	
 </body>
 </html> 
->>>>>>> b37f4aa268b79d5551b26a170ead002fc56b3f84

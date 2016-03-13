@@ -1,39 +1,42 @@
 
 
 		<!-- Navigation -->
-<div class="row header">
-      <nav class="navbar navbar-default" role="navigation">
+
+      <nav class="navbar-default" role="navigation">
         <div class="container-fluid">
+
+          <!-- header -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="#user"> <span class="glyphicon glyphicon-asterisk" style="color: #748F80; margin-right: 15px"></span><strong>Cruz.pro</strong></a>
           </div>
-          <div class="collapse navbar-collapse" id="demo-navbar-collapse">
-            <ul class="nav navbar-nav col-xs-3 text-center">
-              <li class="active"><a href="#user"> <span class="glyphicon glyphicon-asterisk" style="color: #748F80; margin-right: 15px"></span>Cruz.pro</a></li>
-              
-            </ul>
-            <ul class="nav navbar-nav nav navbar-nav col-xs-6">
-            <li><a href="#">Sale riunioni</a></li>
-            <li><a href="#">Eventi</a></li>
-              <li><button type="button" class="btn btn-md btn-default">Crea evento</button></li>
-            </ul>
-   
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">img</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profilo<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Modifica</a></li>
-                    <li role="separator" class="divider"></li>
 
-                    <li><a href="#">Log out</a></li>
-                  </ul>
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse">
+          <div class="col-xs-offset-4 col-md-offset-4">    
+            <ul class="nav navbar-nav nav">
+              <li><button type="button" class=" btn btn-md btn-default">Crea evento</button></li>
+              <li><a href="#elenco-sale">Sale riunioni</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#elenco-eventi">Eventi</a></li>
+            </ul>
+          </div>
+   
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">img</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profilo<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#dashboard">Dashboard</a></li>
+              <li><a href="#modifica-profilo">Modifica</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#log-out">Log out</a></li>
+            </ul>
+          </ul>
 
               
             
@@ -47,38 +50,42 @@
         </div>
       </nav>
   </div>
-  <div class="content">
-   <div class="row content">
-    <div class="col-xs-4 col-md-offset-3">
-       <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Filtra per</a></li>
-              <li class="dropdown">
+
+
+
+<!--second navbar-->
+
+
+  <nav class="navbar twoRow" role="navigation">
+    <div class="content-fluid">
+      <div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-4">
+         <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Filtra per</a></li>
+                <li class="divider-vertical"></li>
+                <li class="dropdown">  
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">N. posti<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">10 posti</a></li>
-                    <li><a href="#">15 posti</a></li>
-                    <li><a href="#">20 posti</a></li>
-                  </ul>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">10 posti</a></li>
+                      <li><a href="#">15 posti</a></li>
+                      <li><a href="#">20 posti</a></li>
+                    </ul>
 
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Milano</a></li>
-                    <li><a href="#">Roma</a></li>
-                    <li><a href="#">Napoli</a></li>
-                  </ul>
-              
-            </ul>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Milano</a></li>
+                      <li><a href="#">Roma</a></li>
+                      <li><a href="#">Napoli</a></li>
+                    </ul>
+                
+          </ul>
+      </div>
     </div>
-  </div>
-  
+  </nav>
 
-  <!--  Footer Area-->
- 
-  </div>
+
+
   
-</div>
-</div>
 
 
 
@@ -174,8 +181,7 @@
                         </ul>               
                     
                 </div> -->
-    </div>
-</div>
+
 	
 
 		<!--<div class="row">

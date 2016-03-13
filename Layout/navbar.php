@@ -27,7 +27,7 @@
           </div>
    
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">img</a></li>
+            
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profilo<b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -36,6 +36,7 @@
               <li role="separator" class="divider"></li>
               <li><a href="#log-out">Log out</a></li>
             </ul>
+            <li><a href="#">img</a></li>
           </ul>
 
               
@@ -53,35 +54,8 @@
 
 
 
-<!--second navbar-->
 
 
-  <nav class="navbar twoRow" role="navigation">
-    <div class="content-fluid">
-      <div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-4">
-         <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Filtra per</a></li>
-                <li class="divider-vertical"></li>
-                <li class="dropdown">  
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">N. posti<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">10 posti</a></li>
-                      <li><a href="#">15 posti</a></li>
-                      <li><a href="#">20 posti</a></li>
-                    </ul>
-
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Milano</a></li>
-                      <li><a href="#">Roma</a></li>
-                      <li><a href="#">Napoli</a></li>
-                    </ul>
-                
-          </ul>
-      </div>
-    </div>
-  </nav>
 
 
 

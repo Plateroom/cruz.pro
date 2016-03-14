@@ -5,7 +5,7 @@
 
 	  <div class="form Allcontenuto"> 
       <div id="circle">
-        <span class="glyphicon glyphicon-asterisk" id="asterisco" style="color: #748F80;"></span>
+        <span class="glyphicon glyphicon-asterisk" id="asterisco" style="color: #748F80;"> </span>
       </div>  
 		 <form class="login" name="login" action="index_submit" method="get" accept-charset="utf-8">
 		 
@@ -14,7 +14,9 @@
       <p style="font-size: 17px">Prenota la tua sala riunioni</p>
       <p style="font-size: 10px">powered by SF</p> 
      </div> 
-
+        <div class="fb-login">
+          <img src="img/facebook.jpg" class="fb-logo">
+        </div>
    		  <ul>	
 
    		  	<hr/>

@@ -491,11 +491,11 @@ input{
 /*colore placeholder*/
 ::-webkit-input-placeholder{
 	color: #748F80;
-<<<<<<< HEAD
+
 	font-size: 100%;
-=======
+
 	font-size: 13px;
->>>>>>> f12cdfd46eaf05f6da05012f033a56cdad577aed
+
 	font-weight: bold;
 	padding-left: 10px;
 	padding-bottom: 20px;

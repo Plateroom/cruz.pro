@@ -5,9 +5,7 @@
 		<meta charset="utf-8">
 
 
-<!--stylesheet calendar -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.css">
-	<cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.print.css>
+
 
 
 		<!-- stylesheet bootstrap -->
@@ -69,6 +67,8 @@ if ($selectedPage == 'lista_sale') {
 
 
 		<!-- cdn calendar-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.css"></script>
+		<script src="https//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.print.css"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.js"></script>
 
     	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

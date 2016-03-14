@@ -7,8 +7,8 @@
          <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Filtra per</a></li>
                 <li class="divider-vertical"></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">N. posti<b class="caret"></b></a>
+                <li class="dropdown">  
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ruolo<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="#">10 posti</a></li>
                       <li><a href="#">15 posti</a></li>
@@ -154,7 +154,6 @@ Fotocopiatrice, Frigobar.</h6>
 
 
 </div>
-
 
 
 

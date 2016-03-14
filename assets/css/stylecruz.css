@@ -478,7 +478,19 @@
   margin: 20% 0 0 0;
   padding-left: 21%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 424328b8ebbc17c0585052551310595754e722c0
+
+.fb-login {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.fb-logo{
+   border-radius: 5px;
+}
 
 .fb-login {
   text-align: center;

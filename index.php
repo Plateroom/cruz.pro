@@ -66,10 +66,18 @@ if ($selectedPage == 'lista_utenti') {
 	include __DIR__ . '/layout/footer.php';
 }
 
+
+if ($selectedPage == 'admin_dashboard') {
+	include __DIR__ . '/layout/navbar.php';
+	include __DIR__ . '/pages/_dashboard.php';
+	include __DIR__ . '/layout/footer.php';
+}
+
 ?>
 
 
-
+   <!-- time picker -->	
+   <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
 
 		<!-- cdn calendar-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.css"></script>

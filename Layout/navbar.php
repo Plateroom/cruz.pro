@@ -34,6 +34,8 @@
               <li><a href="#dashboard">Dashboard</a></li>
               <li><a href="#modifica-profilo">Modifica</a></li>
               <li role="separator" class="divider"></li>
+              <li><a href="#lista_utenti">Colleghi</a></li>
+              <li role="separator" class="divider"></li>
               <li><a href="#log-out">Log out</a></li>
             </ul>
             <li><a href="#">img</a></li>
@@ -54,8 +56,15 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h5 class="modal-title" id="myModalLabel">Crea evento</h5>
+       
+        <form class="form-inline col-sm-offset-3">
+          <div class="form-group">
+            <label class="modal-title" id="myModalLabel">Crea evento</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Nome evento">
+          </div>
+        </form>
       </div>
+
       <div class="modal-body">
 
 
@@ -65,8 +74,8 @@
 <div class="row">
     <div class="col-sm-12" style="height:60px;">
         <div class="form-group">
-            <div class='input-group date' id='datetimepicker10'>
-                <input type='text' class="form-control" />
+            <div class='input-group date'id='datetimepicker10'>
+                <input type='date' class="form-control" />
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar">
                     </span>
@@ -74,14 +83,41 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
+  <!--  <script type="text/javascript">
         $(function () {
             $('#datetimepicker10').datetimepicker({
                 viewMode: 'years',
                 format: 'MM/YYYY'
             });
         });
+    </script> -->
+
+<!--<div class="row">
+  <div id="datepicker" class="input-append">
+    <input data-format="MM-dd-yyyy" type="data"></input>
+    <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+      </i>
+    </span>
+  </div>
+</div> -->
+<!-- <script type="text/javascript">
+  $(function() {
+    $('#datetimepicker3').datetimepicker({
+      pickDate: false
+    });
+  });
+</script> -->
+    <div class="input-group bootstrap-timepicker timepicker">
+      <input id="timepicker1" type="text" class="form-control input-small">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+    </div>
+ 
+    <script type="text/javascript">
+      $('#timepicker1').timepicker();
     </script>
+
+
 </div>
 
 <div class="row">
@@ -97,19 +133,35 @@
               <li><a href="#">20 posti</a></li>
             </ul>
           
-          <li class="dropdown">
+        <!--   <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Milano</a></li>
                   <li><a href="#">Roma</a></li>
                   <li><a href="#">Napoli</a></li>
-                </ul>
+                </ul> -->
         </ul>
   </div>
 
 
+  <div class="col-md-6">
+        <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sale Disponibili<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sala Marco Aurelio</a></li>
+              <li><a href="#">Sala Cesare</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Sala Cleopatra</a></li>
+            </ul>
+        </ul>
+  </div>
 </div>
           
+
+<textarea class="form-control" rows="3" placeholder="Aggiungi note" style="margin-top:30px; margin-bottom:30px;"></textarea>
+
+
 
 <div class="row">
 <div class="col-xs-5">
@@ -127,6 +179,12 @@
       </div>
     </div>
   </div>
+</div>
+
+
+<div class="col-xs-5 input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
 </div>
 

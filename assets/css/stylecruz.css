@@ -8,6 +8,7 @@
 
 .navbar-collapse {
 		border-bottom: 1px solid #E6E5E5;
+   
 
 }
 
@@ -495,7 +496,15 @@ input{
 /*colore placeholder*/
 ::-webkit-input-placeholder{
 	color: #748F80;
+<<<<<<< HEAD
+
+	font-size: 100%;
+
 	font-size: 13px;
+
+=======
+	font-size: 13px;
+>>>>>>> eaaddf85d6231eda27632ebd4fe8ff4e2edab1c3
 	font-weight: bold;
 	padding-left: 10px;
 	padding-bottom: 20px;

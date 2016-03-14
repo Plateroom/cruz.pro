@@ -60,6 +60,11 @@ if ($selectedPage == 'lista_sale') {
 	include __DIR__ . '/layout/footer.php';
 }
 
+if ($selectedPage == 'lista_utenti') {
+	include __DIR__ . '/layout/navbar.php';
+	include __DIR__ . '/pages/_lista_utenti.php';
+	include __DIR__ . '/layout/footer.php';
+}
 
 ?>
 

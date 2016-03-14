@@ -20,7 +20,7 @@
           <div class="col-xs-offset-4 col-md-offset-4">    
             <ul class="nav navbar-nav nav">
               <li><button type="button" class=" btn btn-md btn-default" data-toggle="modal" data-target="#myModal">Crea evento</button></li>
-              <li><a href="#elenco-sale">Sale riunioni</a></li>
+              <li><a href="#lista-sale">Sale riunioni</a></li>
               <li class="divider-vertical"></li>
               <li><a href="#elenco-eventi">Eventi</a></li>
             </ul>

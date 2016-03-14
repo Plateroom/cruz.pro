@@ -8,18 +8,16 @@
   		
         <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
           <div class="panel panel-default">
-            <div class="panel-heading col-xs-offset-2 col-md-offset-2"><h5 class="caratteristiche-titolo text-center" >Sala marco Aurelio</h5></div>
-            <div class="panel-body col-xs-offset-2 col-md-offset-2"><h6 class="caratteristiche-titolo text-center">sede La Masa.</h6> <h6 class="text-style text-center">Milano IT</h6>
+            <div class="panel-heading col-xs-offset-2 col-md-offset-2"><h5 class="caratteristiche-titolo text-center" >Harper Reed</h5></div>
+            <div class="panel-body col-xs-offset-2 col-md-offset-2"><h6 class="caratteristiche-titolo text-center">CTO</h6> <h6 class="text-style text-center">Cruz.pro</h6>
             </div>
           </div>
         </div>
-        <img src="img/sala.jpg" alt="sala marco aurelio" class="img-circle">
+        <img src="img/harper.jpg" alt="sala marco aurelio" class="img-circle">
       	<div class="col-md-7">
         	<div class="panel panel-default">
             <div class="panel-heading"><h5 class="caratteristiche-titolo text-center">Contatti</h5><h6 class="text-style text-center">sala_marcoaurelio@cruzpro.it<br>+393485409834</h5></h6></div>
-            <div class="panel-body"><h5 class="caratteristiche-titolo text-center">20 Posti</h5><h6 class="text-style text-center">
-Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
-Fotocopiatrice, Frigobar.</h6>
+            <div class="panel-body"><h5 class="caratteristiche-titolo text-center">Social</h5><h5 class="text-style text-center">Social</h6>
             </div>
           </div>
         </div>
@@ -101,9 +99,8 @@ Fotocopiatrice, Frigobar.</h6>
 	              </div>
 
 
-           <div class="panel-body"><h5 class="caratteristiche-titolo">Calendario</h5><h6 class="text-style">
-Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
-Fotocopiatrice, Frigobar.</h6>
+           <div class="panel-body"><h5 class="caratteristiche-titolo text-center">Calendario</h5><h6 class="text-style text-center">23 Marzo 2016
+</h6>
             </div>
           
           </div>

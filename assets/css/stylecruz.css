@@ -8,6 +8,7 @@
 
 .navbar-collapse {
 		border-bottom: 1px solid #E6E5E5;
+   
 
 }
 
@@ -420,9 +421,6 @@
 
 
 
-
-
-
 /* base login */
 
 .Allcontenuto{
@@ -436,8 +434,6 @@
 	background-size: cover;
 	background-position: top;
 }
-
-
 
 
 
@@ -491,11 +487,15 @@ input{
 /*colore placeholder*/
 ::-webkit-input-placeholder{
 	color: #748F80;
+<<<<<<< HEAD
 
 	font-size: 100%;
 
 	font-size: 13px;
 
+=======
+	font-size: 13px;
+>>>>>>> eaaddf85d6231eda27632ebd4fe8ff4e2edab1c3
 	font-weight: bold;
 	padding-left: 10px;
 	padding-bottom: 20px;
@@ -536,22 +536,23 @@ input{
 }
 
 
-
 .fondo-pagina{
 	width: 100%;
 	color: white;
 	font-size: 10px;
 	text-align: center;
-	padding: 15% 0 0 40%;
+	padding: 5% 0 0 44%;
 
 }
 .privacy {
 	float: left;
+  margin: 0;
 }
 
 #asterisco{
 	font-size: 250%;
 	margin: 20% 0 0 0;
+  padding-left: 21%;
 
 }
 

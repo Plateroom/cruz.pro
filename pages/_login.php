@@ -5,6 +5,7 @@
 
 	  <div class="form Allcontenuto"> 
       <div id="circle">
+        <span class="glyphicon glyphicon-asterisk" id="asterisco" style="color: #748F80; margin-right: 15px"></span>
       </div>  
 		 <form class="login" name="login" action="index_submit" method="get" accept-charset="utf-8">
 		 
@@ -20,7 +21,7 @@
 
         	<li> <input class="mailbox" id="mailbox" type="email" name="usermail" placeholder="Email Aziendale" required> </li>
         	<li> <input class="password" id="password" type="password" name="password" placeholder= "Password"required> </li>
-        	<li> <input class="button" type="submit" value="Login"> </li>
+        	<li> <input class="bottonelog" type="submit" value="Login"> </li>
   				
         		<a href=""id="dimenticata">Password dimenticata?</a>
 
@@ -32,5 +33,6 @@
     	 </form>
 </div>
 <div class="fondo-pagina">
-       <p>Privacy e Termini</p> <p>Info e Contatti</p> 
+       <p class="privacy">Privacy e Termini</p> <p class="privacy"> &nbsp Info e Contatti</p> 
 </div>   
+

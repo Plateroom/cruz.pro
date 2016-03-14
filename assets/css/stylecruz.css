@@ -303,7 +303,8 @@ input{
 }
 
 /* tasto login */
-.button{
+.bottonelog{
+	margin-bottom: 10px;
 	text-decoration: none;
 	background-color: rgba(245, 116, 116, 100);
 	color: white;
@@ -330,26 +331,30 @@ input{
 }
 
 #dimenticata{
+	font-weight: lighter;
 	color: white;
 	font-family: Helvetica Neue;
 }
 
 
 
-
 .fondo-pagina{
-	display: inline;
 	width: 100%;
 	color: white;
 	font-size: 10px;
 	text-align: center;
+	padding: 15% 0 0 40%;
+
+}
+.privacy {
+	float: left;
 }
 
+#asterisco{
+	font-size: 250%;
+	margin: 20% 0 0 0;
 
-
-
-
-
+}
 
 
 

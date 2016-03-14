@@ -6,9 +6,6 @@
 
 
 
-		<!--stylesheet calendar -->
-		<link href="//arshaw.com/js/fullcalendar-1.5.3/fullcalendar/fullcalendar.css" rel="stylesheet" />
-		<link href="http://arshaw.com/js/fullcalendar-1.5.3/fullcalendar/fullcalendar.print.css" rel="stylesheet" />
 
 
 		<!-- stylesheet bootstrap -->
@@ -56,20 +53,30 @@ if ($selectedPage == 'sala') {
 	include __DIR__ . '/pages/_sala.php';
 	include __DIR__ . '/layout/footer.php';
 }
+
+if ($selectedPage == 'lista_sale') {
+	include __DIR__ . '/layout/navbar.php';
+	include __DIR__ . '/pages/_lista_sale.php';
+	include __DIR__ . '/layout/footer.php';
+}
+
+
 ?>
 
-		
+
+
+
+		<!-- cdn calendar-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.css"></script>
+		<script src="https//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.print.css"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.js"></script>
 
     	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		 <script src="assets/js/bootstrap.min.js"></script>
 
 
-		 <!-- jQuery calendar-->
-		<script class="cssdesk" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-		<script class="cssdesk" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js" type="text/javascript"></script>
-		<script class="cssdesk" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/js/bootstrap.min.js" type="text/javascript"></script>
-		<script class="cssdesk" src="//arshaw.com/js/fullcalendar-1.5.3/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+
 
 	</body>
 </html>

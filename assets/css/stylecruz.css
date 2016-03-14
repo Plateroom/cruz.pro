@@ -476,6 +476,10 @@
   margin-top: 1em;
 }
 
+.fb-logo{
+   border-radius: 5px;
+}
+
 .login ul{
 	margin: 0 10% 0 0;
 	list-style-type: none;

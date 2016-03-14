@@ -15,7 +15,7 @@
       <p style="font-size: 10px">powered by SF</p> 
      </div> 
         <div class="fb-login">
-          <img src="img/facebook.jpg">
+          <img src="img/facebook.jpg" class="fb-logo">
         </div>
    		  <ul>	
 

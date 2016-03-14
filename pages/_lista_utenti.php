@@ -1,7 +1,8 @@
 
 
 <!--second navbar-->
-  <nav class="navbar twoRow" role="navigation">
+
+  <nav class="navbar twoRow fixed-top" role="navigation">
     <div class="content-fluid">
       <div class="col-xs-6 col-xs-offset-4 col-md-4 col-md-offset-4">
          <ul class="nav navbar-nav">
@@ -28,6 +29,7 @@
       </div>
     </div>
   </nav>
+
 
 
 <!-- contenuto -->

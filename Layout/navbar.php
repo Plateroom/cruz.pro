@@ -2,8 +2,8 @@
 
 		<!-- Navigation -->
 
-      <nav class="navbar-default" role="navigation">
-        <div class="container-fluid">
+      <nav class="navbar navbar-fixed-top" role="navigation">
+        
 
           <!-- header -->
           <div class="navbar-header">
@@ -44,7 +44,7 @@
               
     
           </div>
-        </div>
+        
       </nav>
   </div>
 
@@ -74,7 +74,7 @@
 <div class="row">
     <div class="col-sm-12" style="height:60px;">
         <div class="form-group">
-            <div class='input-group date'id='datetimepicker10'>
+            <div class='input-group date' id='datetimepicker10'>
                 <input type='date' class="form-control" />
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar">

@@ -486,28 +486,18 @@
 input{
 	margin-top: 4%;
 	width: 230px;
-    height: 45px;
-	padding: 0;
-    border: 0;
-    border-radius: 5px;
+  height: 45px;
+	padding: 0 0 0 1em;
+  border: 0;
+  border-radius: 5px;
 }
 
 
 /*colore placeholder*/
 ::-webkit-input-placeholder{
 	color: #748F80;
-<<<<<<< HEAD
-
-	font-size: 100%;
-
 	font-size: 13px;
-
-=======
-	font-size: 13px;
->>>>>>> eaaddf85d6231eda27632ebd4fe8ff4e2edab1c3
 	font-weight: bold;
-	padding-left: 10px;
-	padding-bottom: 20px;
 }
 
 /* tasto login */
@@ -551,6 +541,7 @@ input{
 	font-size: 10px;
 	text-align: center;
 	padding: 7% 0 0 44.5%;
+  bottom: 20px;
 }
 .privacy {
 	float: left;

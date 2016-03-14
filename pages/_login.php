@@ -5,7 +5,7 @@
 
 	  <div class="form Allcontenuto"> 
       <div id="circle">
-        <span class="glyphicon glyphicon-asterisk" id="asterisco" style="color: #748F80; margin-right: 15px"></span>
+        <span class="glyphicon glyphicon-asterisk" id="asterisco" style="color: #748F80;"></span>
       </div>  
 		 <form class="login" name="login" action="index_submit" method="get" accept-charset="utf-8">
 		 
@@ -33,6 +33,7 @@
     	 </form>
 </div>
 <div class="fondo-pagina">
-       <p class="privacy">Privacy e Termini</p> <p class="privacy"> &nbsp Info e Contatti</p> 
+       <p class="privacy">Privacy e Termini</p> <p class="privacy"> &nbsp &nbsp &nbsp Info e Contatti</p> 
 </div>   
 
+ 

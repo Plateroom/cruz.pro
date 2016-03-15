@@ -8,7 +8,7 @@
          <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Filtra per</a></li>
                 <li class="divider-vertical"></li>
-                
+           
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
                     <ul class="dropdown-menu">

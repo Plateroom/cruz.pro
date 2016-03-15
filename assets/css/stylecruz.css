@@ -458,7 +458,19 @@ html .fc,
 
   .fc-left {
     color:#748F80;
+
   }
+
+  .popup-text-custom {
+    display: none; 
+    position: fixed; 
+    top: 300px; 
+    right: 300px; 
+    background-color: 
+    red; z-index: 1400
+  }
+
+
 
 
 

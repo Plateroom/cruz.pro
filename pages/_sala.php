@@ -113,7 +113,26 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
  <!--fine calendar -->
   <h5 class="caratteristiche-titolo text-center"><hr>Calendario</h5>
     <div id="calendar"></div>
-    <div class="popup-text-custom" style="display: none; position: fixed; top: 300px; right: 300px; background-color: red; z-index: 1400">Bla bla bla</div>
+    <div class="popup-text-custom">
+      <!-- modal evento-->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
             	
 
             </div>

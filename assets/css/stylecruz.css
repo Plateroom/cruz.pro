@@ -277,7 +277,7 @@
 
 
 .panel-success > .panel-body {
-  height: 500px;
+  height: 550px;
 }
 
 
@@ -454,6 +454,10 @@ html .fc,
 .fc th {
   padding: 0;
   vertical-align: top;
+  }
+
+  .fc-left {
+    color:#748F80;
   }
 
 

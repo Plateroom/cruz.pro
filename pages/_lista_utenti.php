@@ -8,15 +8,7 @@
          <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Filtra per</a></li>
                 <li class="divider-vertical"></li>
-                <li class="dropdown">  
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ruolo<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Direttivo</a></li>
-                      <li><a href="#">Manageriale</a></li>
-                      <li><a href="#">Ricerca</a></li>
-                      <li><a href="#">Marketing</a></li>
-                    </ul>
-
+                
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -24,6 +16,15 @@
                       <li><a href="#">Roma</a></li>
                       <li><a href="#">Napoli</a></li>
                     </ul>
+                  </li>
+
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">più attivi</a></li>
+                      <li><a href="#">meno attivi</a></li>
+                    </ul> 
+                  </li>
                 
           </ul>
       </div>

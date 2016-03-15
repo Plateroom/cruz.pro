@@ -32,7 +32,9 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profilo<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#dashboard">Dashboard</a></li>
-              <li><a href="#modifica-profilo">Modifica</a></li>
+              <li><a class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-lg" style="
+    padding-left: 0px">Modifica profilo</a>
+              </li>
               <li role="separator" class="divider"></li>
               <li><a href="#lista_utenti">Colleghi</a></li>
               <li role="separator" class="divider"></li>
@@ -47,6 +49,86 @@
         
       </nav>
   </div>
+
+<!-- modal modif -->
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    
+<div class="container-modal ">
+    <div class="row content-img">
+        <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading"> 
+              <blockquote class="blockquote-reverse">
+                <h5 class="caratteristiche-titolo">Harper Reed</h5> 
+                <h6 class="caratteristiche-titolo">CTO</h6> 
+                <h6 class="text-style">Cruz.pro</h6>
+              </blockquote>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </div>
+        <img src="img/harper.jpg" alt="harper reed" class="img-circle">
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
+                <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6> 
+                <h6 class="text-style">+393485409834</h6>
+              </blockquote>    
+            </div>
+            <div class="panel-body col-xs-offset-5">
+                <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-facebook-official"></i>
+                    <h5 class="caratteristiche-titolo-info">Facebook</h5>
+                </a>
+                 <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-linkedin-square"></i>
+                    <h5 class="caratteristiche-titolo-info">Linkedin</h5>
+                </a>
+            </div>
+          </div>
+         </div>
+        </div>
+
+
+<hr>
+
+
+<input type="text" class="form-control" id="exampleInputName2" placeholder="Harper">
+<br>
+<input type="text" class="form-control" id="exampleInputName2" placeholder="Reed">
+<br>
+<input type="text" class="form-control" id="exampleInputName2" placeholder="12/04/1975">
+<br>
+<input type="text" class="form-control" id="exampleInputName2" placeholder="Harper_reed@cruzpro.com">
+<br>
+<input type="text" class="form-control" id="exampleInputName2" placeholder="+393485409834">
+<br>
+<input type="text" class="form-control" id="exampleInputName2" placeholder="+ social">
+<br>
+<input type="text" class="form-control" id="exampleInputName2" placeholder="CTO Cruz.">
+<br>
+<input type="text" class="form-control" id="exampleInputName2" placeholder="Milano la Masa">
+<hr>
+<input type="text" class="form-control" id="exampleInputName2" placeholder="Password">
+<br>
+<input type="text" class="form-control" id="exampleInputName2" placeholder="Conferma Password">
+<br>
+<div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
+        <button type="button" class="btn btn-secondary">Salva modifiche</button>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+</div>
 
 
 
@@ -74,8 +156,8 @@
 <div class="row">
     <div class="col-sm-12" style="height:60px;">
         <div class="form-group">
-            <div class='input-group date' id='datetimepicker10'>
-                <input type='date' class="form-control" />
+            <div class='input-group date' id='datetimepicker'>
+                <input type="text" class="form-control" />
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar">
                     </span>
@@ -108,15 +190,6 @@
     });
   });
 </script> -->
-    <div class="input-group bootstrap-timepicker timepicker">
-      <input id="timepicker1" type="text" class="form-control input-small">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-    </div>
- 
-    <script type="text/javascript">
-      $('#timepicker1').timepicker();
-    </script>
-
 
 </div>
 

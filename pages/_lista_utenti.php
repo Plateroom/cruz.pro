@@ -38,99 +38,226 @@
   
   	<hr>
   
-  	<div class="row content-img">
-  		
+    <div class="row content-img">
         <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
           <div class="panel panel-default">
-            <div class="panel-heading col-xs-offset-2 col-md-offset-2"><h5 class="caratteristiche-titolo text-center">Harper Reed</h5></div>
-            <div class="panel-body col-xs-offset-2 col-md-offset-2"><h6 class="caratteristiche-titolo text-center">sede La Masa.</h6> <h6 class="text-style text-center">Milano IT</h6>
+            <div class="panel-heading">
+              <blockquote class="blockquote-reverse"> 
+                <h5 class="caratteristiche-titolo">Harper Reed</h5>
+                  <h6 class="caratteristiche-titolo">CTO</h6>
+                  <h6 class="text-style">Cruz.pro</h6> 
+              </blockquote>
             </div>
+            <div class="panel-body"></div>
           </div>
         </div>
-        <img src="img/harper.jpg" alt="sala marco aurelio" class="img-circle">
-      	<div class="col-md-7">
-        	<div class="panel panel-default">
-            <div class="panel-heading"><h5 class="caratteristiche-titolo text-center">Contatti</h5><h6 class="text-style text-center">sala_marcoaurelio@cruzpro.it<br>+393485409834</h5></h6></div>
-            <div class="panel-body"><h5 class="caratteristiche-titolo text-center">Social</h5><h5 class="text-style text-center">Social</h5>
+        <img src="img/harper.jpg" alt="profile harper" class="img-circle">
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-heading ">
+              <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
+                <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
+                <h6 class="text-style">+393485409834</h6>
+              </blockquote>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-facebook-official"></i>
+                  <h5 class="caratteristiche-titolo-info">Facebook</h5>
+              </a>
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-linkedin-square"></i>
+                  <h5 class="caratteristiche-titolo-info">Linkedin</h5>
+              </a>
             </div>
           </div>
         </div>
        </div>
     
 
-  	<div class="row content-img">
+
+  <div class="row content-img">
         <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
           <div class="panel panel-default">
-            <div class="panel-heading col-xs-offset-2 col-md-offset-2"><h5 class="caratteristiche-titolo text-center">Harper Reed</h5></div>
-            <div class="panel-body col-xs-offset-2 col-md-offset-2"><h6 class="caratteristiche-titolo text-center">sede La Masa.</h6> <h6 class="text-style text-center">Milano IT</h6>
+            <div class="panel-heading">
+              <blockquote class="blockquote-reverse"> 
+                <h5 class="caratteristiche-titolo">Harper Reed</h5>
+                  <h6 class="caratteristiche-titolo">CTO</h6>
+                  <h6 class="text-style">Cruz.pro</h6> 
+              </blockquote>
             </div>
+            <div class="panel-body"></div>
           </div>
         </div>
-        <img src="img/harper.jpg" class="img-circle">
-      	<div class="col-md-7">
-        	<div class="panel panel-default">
-            <div class="panel-heading"><h5 class="caratteristiche-titolo text-center">Contatti</h5><h6 class="text-style text-center">sala_marcoaurelio@cruzpro.it<br>+393485409834</h5></h6></div>
-            <div class="panel-body"><h5 class="caratteristiche-titolo text-center">Social</h5><h5 class="text-style text-center">Social</h5>
-            </div>
-          </div>
-        </div>
-       </div>
-
-
-  	<div class="row content-img">
-        <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
-          <div class="panel panel-default">
-            <div class="panel-heading col-xs-offset-2 col-md-offset-2"><h5 class="caratteristiche-titolo text-center">Harper Reed</h5></div>
-            <div class="panel-body col-xs-offset-2 col-md-offset-2"><h6 class="caratteristiche-titolo text-center">sede La Masa.</h6> <h6 class="text-style text-center">Milano IT</h6>
-            </div>
-          </div>
-        </div>
-        <img src="img/harper.jpg" class="img-circle">
-      	<div class="col-md-7">
-        	<div class="panel panel-default">
-            <div class="panel-heading"><h5 class="caratteristiche-titolo text-center">Contatti</h5><h6 class="text-style text-center">sala_marcoaurelio@cruzpro.it<br>+393485409834</h5></h6></div>
-            <div class="panel-body"><h5 class="caratteristiche-titolo text-center">Social</h5><h5 class="text-style text-center">Social</h5>
-            </div>
-          </div>
-        </div>
-       </div>
-
-
-         	<div class="row content-img">
-        <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
-          <div class="panel panel-default">
-            <div class="panel-heading col-xs-offset-2 col-md-offset-2"><h5 class="caratteristiche-titolo text-center">Harper Reed</h5></div>
-            <div class="panel-body col-xs-offset-2 col-md-offset-2"><h6 class="caratteristiche-titolo text-center">sede La Masa.</h6> <h6 class="text-style text-center">Milano IT</h6>
-            </div>
-          </div>
-        </div>
-        <img src="img/harper.jpg" class="img-circle">
-      	<div class="col-md-7">
-        	<div class="panel panel-default">
-            <div class="panel-heading"><h5 class="caratteristiche-titolo text-center">Contatti</h5><h6 class="text-style text-center">sala_marcoaurelio@cruzpro.it<br>+393485409834</h5></h6></div>
-            <div class="panel-body"><h5 class="caratteristiche-titolo text-center">Social</h5><h5 class="text-style text-center">Social</h5>
-            </div>
-          </div>
-        </div>
-       </div>
-       
-
-    </div>
-
-
-      <div class="row content-img">
-        <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
-          <div class="panel panel-default">
-            <div class="panel-heading col-xs-offset-2 col-md-offset-2"><h5 class="caratteristiche-titolo text-center">Harper Reed</h5></div>
-            <div class="panel-body col-xs-offset-2 col-md-offset-2"><h6 class="caratteristiche-titolo text-center">sede La Masa.</h6> <h6 class="text-style text-center">Milano IT</h6>
-            </div>
-          </div>
-        </div>
-        <img src="img/harper.jpg" class="img-circle">
+        <img src="img/harper.jpg" alt="profile harper" class="img-circle">
         <div class="col-md-7">
           <div class="panel panel-default">
-            <div class="panel-heading"><h5 class="caratteristiche-titolo text-center">Contatti</h5><h6 class="text-style text-center">sala_marcoaurelio@cruzpro.it<br>+393485409834</h5></h6></div>
-            <div class="panel-body"><h5 class="caratteristiche-titolo text-center">Social</h5><h5 class="text-style text-center">Social</h5>
+            <div class="panel-heading ">
+              <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
+                <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
+                <h6 class="text-style">+393485409834</h6>
+              </blockquote>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-facebook-official"></i>
+                  <h5 class="caratteristiche-titolo-info">Facebook</h5>
+              </a>
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-linkedin-square"></i>
+                  <h5 class="caratteristiche-titolo-info">Linkedin</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+       </div>
+
+
+
+
+
+  	 <div class="row content-img">
+        <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <blockquote class="blockquote-reverse"> 
+                <h5 class="caratteristiche-titolo">Harper Reed</h5>
+                  <h6 class="caratteristiche-titolo">CTO</h6>
+                  <h6 class="text-style">Cruz.pro</h6> 
+              </blockquote>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </div>
+        <img src="img/harper.jpg" alt="profile harper" class="img-circle">
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-heading ">
+              <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
+                <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
+                <h6 class="text-style">+393485409834</h6>
+              </blockquote>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-facebook-official"></i>
+                  <h5 class="caratteristiche-titolo-info">Facebook</h5>
+              </a>
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-linkedin-square"></i>
+                  <h5 class="caratteristiche-titolo-info">Linkedin</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+       </div>
+
+
+  	 <div class="row content-img">
+        <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <blockquote class="blockquote-reverse"> 
+                <h5 class="caratteristiche-titolo">Harper Reed</h5>
+                  <h6 class="caratteristiche-titolo">CTO</h6>
+                  <h6 class="text-style">Cruz.pro</h6> 
+              </blockquote>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </div>
+        <img src="img/harper.jpg" alt="profile harper" class="img-circle">
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-heading ">
+              <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
+                <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
+                <h6 class="text-style">+393485409834</h6>
+              </blockquote>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-facebook-official"></i>
+                  <h5 class="caratteristiche-titolo-info">Facebook</h5>
+              </a>
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-linkedin-square"></i>
+                  <h5 class="caratteristiche-titolo-info">Linkedin</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+       </div>
+
+
+    <div class="row content-img">
+        <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <blockquote class="blockquote-reverse"> 
+                <h5 class="caratteristiche-titolo">Harper Reed</h5>
+                  <h6 class="caratteristiche-titolo">CTO</h6>
+                  <h6 class="text-style">Cruz.pro</h6> 
+              </blockquote>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </div>
+        <img src="img/harper.jpg" alt="profile harper" class="img-circle">
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-heading ">
+              <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
+                <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
+                <h6 class="text-style">+393485409834</h6>
+              </blockquote>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-facebook-official"></i>
+                  <h5 class="caratteristiche-titolo-info">Facebook</h5>
+              </a>
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-linkedin-square"></i>
+                  <h5 class="caratteristiche-titolo-info">Linkedin</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+       </div>
+
+
+  <div class="row content-img">
+        <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <blockquote class="blockquote-reverse"> 
+                <h5 class="caratteristiche-titolo">Harper Reed</h5>
+                  <h6 class="caratteristiche-titolo">CTO</h6>
+                  <h6 class="text-style">Cruz.pro</h6> 
+              </blockquote>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </div>
+        <img src="img/harper.jpg" alt="profile harper" class="img-circle">
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-heading ">
+              <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
+                <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
+                <h6 class="text-style">+393485409834</h6>
+              </blockquote>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-facebook-official"></i>
+                  <h5 class="caratteristiche-titolo-info">Facebook</h5>
+              </a>
+              <a class="btn btn-info" href="#">
+                  <i class="fa-li fa fa-linkedin-square"></i>
+                  <h5 class="caratteristiche-titolo-info">Linkedin</h5>
+              </a>
             </div>
           </div>
         </div>

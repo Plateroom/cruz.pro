@@ -75,6 +75,14 @@
 		include __DIR__ . '/layout/footer.php';
 	}
 
+if ($selectedPage == 'lista_eventi') {
+		include __DIR__ . '/layout/navbar.php';
+		include __DIR__ . '/pages/_lista_eventi.php';
+		include __DIR__ . '/layout/footer.php';
+	}
+
+
+
 
 	if ($selectedPage == 'admin_dashboard') {
 		include __DIR__ . '/layout/navbar.php';

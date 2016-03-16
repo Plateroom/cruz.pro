@@ -100,6 +100,8 @@ if ($selectedPage == 'lista_eventi') {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment-with-locales.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.js" ></script>
+
+	
 	<script src="assets/js/stylecruz.js"></script>
 	
 

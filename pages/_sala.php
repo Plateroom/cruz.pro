@@ -114,24 +114,87 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
   <h5 class="caratteristiche-titolo text-center"><hr>Calendario</h5>
     <div id="calendar"></div>
     <div class="popup-text-custom">
+      
+
       <!-- modal evento-->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+
+
+  
+
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Evento</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+           <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Eventi Chicco</h4>
+        <h5 class="caratteristiche-titolo">Revisione Chicco</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4"><h4 class="modal-title text-center">mar15 Marzo </h4>
+          </div>
+          <div class="col-md-4"><h4 class="modal-title text-center">H. 12:00 - 13:00</h4>
+          </div>
+          <div class="col-md-4"><h4 class="modal-title text-center">Sala marco Aurelio</h4><h6 class="text-style text-center">Milano La Masa</h6>
+          </div>
+        </div><hr>
+        <div class="row">
+          <textarea class="form-control" rows="3" placeholder="Aggiungi note" style="margin-top:10px; margin-bottom:10px;"></textarea>
+        </div><hr>
+
+
+        <div class= "row">
+         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-warning">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  I miei eventi
+                </a>
+              </h4>
             </div>
-            <div class="modal-body">
-              ...
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <h6 class="text-style">Anim pariatur cliche reprehenderit</h6><hr> 
+                <h6 class="text-style">enim eiusmod high life accusamus terry</h6><hr> 
+                <h6 class="text-style">Anim pariatur cliche reprehenderit</h6>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+          
+          <div class="panel panel-warning">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Persone Invitate
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                <h6 class="text-style">Harper Reed</h6><hr> 
+                <h6 class="text-style">Harper Reed</h6><hr> 
+                <h6 class="text-style">Harper Reed</h6>
+              </div>
             </div>
           </div>
         </div>
       </div>
+         
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Chiudi</button>
+        <button type="button" class="btn btn-secondary btn-xs">Salva modifiche</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
     </div>
             	
 

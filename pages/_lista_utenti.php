@@ -55,11 +55,14 @@
             <a href="index.php?page=user"><img src="img/harper.jpg" alt="profile harper" class="img-circle"></a>      
         <div class="col-md-7">
           <div class="panel panel-default">
-            <div class="panel-heading ">
+            <div class="panel-heading" >
               <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
                 <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
                 <h6 class="text-style">+393485409834</h6>
               </blockquote>
+    
+              
+              </a>
             </div>
             <div class="panel-body col-xs-offset-5">
               <a class="btn btn-info" href="#">

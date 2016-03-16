@@ -134,34 +134,57 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-md-4"><h4 class="modal-title text-center">mar15 Marzo </h4></div>
-          <div class="col-md-4"><h4 class="modal-title text-center">H. 12:00 - 13:00</h4></div>
-          <div class="col-md-4"><h4 class="modal-title text-center">Sala marco Aurelio</h4><h6 class="text-style text-center">Milano La Masa</h6></div>
+          <div class="col-md-4"><h4 class="modal-title text-center">mar15 Marzo </h4>
+          </div>
+          <div class="col-md-4"><h4 class="modal-title text-center">H. 12:00 - 13:00</h4>
+          </div>
+          <div class="col-md-4"><h4 class="modal-title text-center">Sala marco Aurelio</h4><h6 class="text-style text-center">Milano La Masa</h6>
+          </div>
         </div><hr>
         <div class="row">
           <textarea class="form-control" rows="3" placeholder="Aggiungi note" style="margin-top:10px; margin-bottom:10px;"></textarea>
+        </div><hr>
 
 
-
-          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-          <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-9">
-            Level 1: .col-sm-9
-            <div class="row">
-              <div class="col-xs-8 col-sm-6">
-                Level 2: .col-xs-8 .col-sm-6
+        <div class= "row">
+         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-warning">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  I miei eventi
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <h6 class="text-style">Anim pariatur cliche reprehenderit</h6><hr> 
+                <h6 class="text-style">enim eiusmod high life accusamus terry</h6><hr> 
+                <h6 class="text-style">Anim pariatur cliche reprehenderit</h6>
               </div>
-              <div class="col-xs-4 col-sm-6">
-                Level 2: .col-xs-4 .col-sm-6
+            </div>
+          </div>
+          
+          <div class="panel panel-warning">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Persone Invitate
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                <h6 class="text-style">Harper Reed</h6><hr> 
+                <h6 class="text-style">Harper Reed</h6><hr> 
+                <h6 class="text-style">Harper Reed</h6>
               </div>
             </div>
           </div>
         </div>
+      </div>
+         
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Chiudi</button>

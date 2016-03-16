@@ -1,7 +1,10 @@
 /*navbar*/
 
 
-
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .navbar-collapse {
 		border-bottom: 1px solid #E6E5E5;

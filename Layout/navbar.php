@@ -204,58 +204,56 @@
 
 
   <div class="col-md-6">
-        <ul class="nav navbar-nav navbar-left">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sale Disponibili<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Sala Marco Aurelio</a></li>
-              <li><a href="#">Sala Cesare</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Sala Cleopatra</a></li>
-            </ul>
-        </ul>
-
+    <ul class="nav navbar-nav navbar-left">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sale Disponibili<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Sala Marco Aurelio</a></li>
+            <li><a href="#">Sala Cesare</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Sala Cleopatra</a></li>
+          </ul>
+    </ul>
   </div>
 </div>
 
 <hr>
           
 <div class="row">
-    <textarea class="form-control" rows="3" placeholder="Aggiungi note"></textarea>
-    <br>
+  <textarea class="form-control" rows="3" placeholder="Aggiungi note"></textarea><br>
 </div>
 
 <hr>
 
 <div class="row">
-<div class="col-xs-5">
-  <div class="panel panel-warning">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Invita i colleghi
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse push left" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Harper reed
-        <hr>
-        Harper Reed
-        <hr>
-        harper Reed
-        <hr>
-        harper Reed
-        <hr>
+  <div class="col-xs-5">
+    <div class="panel panel-warning">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Invita i colleghi
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse push left" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          <h6 class="text-style">Harper reed</h6>
+          <hr>
+          <h6 class="text-style">Harper Reed</h6>
+          <hr>
+          <h6 class="text-style">harper Reed</h6>
+          <hr>
+          <h6 class="text-style">harper Reed</h6>
+          
+        </div>
       </div>
     </div>
-  </div>
 
 
-<div class="col-xs-5 input-group">
-  <span class="input-group-addon" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>
+    <div class="col-xs-5 input-group">
+      <span class="input-group-addon" id="basic-addon1">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+    </div>
 </div>
 
 

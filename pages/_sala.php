@@ -119,9 +119,6 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
       <!-- modal evento-->
 
 
-  
-
-<!-- Large modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Evento</button>
 
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
@@ -151,29 +148,12 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
           <div class="panel panel-warning">
             <div class="panel-heading" role="tab" id="headingOne">
               <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  I miei eventi
-                </a>
-              </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                <h6 class="text-style">Anim pariatur cliche reprehenderit</h6><hr> 
-                <h6 class="text-style">enim eiusmod high life accusamus terry</h6><hr> 
-                <h6 class="text-style">Anim pariatur cliche reprehenderit</h6>
-              </div>
-            </div>
-          </div>
-          
-          <div class="panel panel-warning">
-            <div class="panel-heading" role="tab" id="headingThree">
-              <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNomi" aria-expanded="true" aria-controls="collapseOne">
                   Persone Invitate
                 </a>
               </h4>
             </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div id="collapseNomi" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
                 <h6 class="text-style">Harper Reed</h6><hr> 
                 <h6 class="text-style">Harper Reed</h6><hr> 
@@ -181,6 +161,8 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
               </div>
             </div>
           </div>
+          
+ 
         </div>
       </div>
          

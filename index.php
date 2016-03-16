@@ -57,9 +57,21 @@
 		include __DIR__ . '/layout/footer.php';
 	}
 
+	if ($selectedPage == 'user_admin') {
+		include __DIR__ . '/layout/navbar.php';
+		include __DIR__ . '/pages/_user_admin.php';
+		include __DIR__ . '/layout/footer.php';
+	}
+
 	if ($selectedPage == 'sala') {
 		include __DIR__ . '/layout/navbar.php';
 		include __DIR__ . '/pages/_sala.php';
+		include __DIR__ . '/layout/footer.php';
+	}
+
+	if ($selectedPage == 'sala_admin') {
+		include __DIR__ . '/layout/navbar.php';
+		include __DIR__ . '/pages/_sala_admin.php';
 		include __DIR__ . '/layout/footer.php';
 	}
 
@@ -69,9 +81,21 @@
 		include __DIR__ . '/layout/footer.php';
 	}
 
+		if ($selectedPage == 'lista_sale_admin') {
+		include __DIR__ . '/layout/navbar.php';
+		include __DIR__ . '/pages/_lista_sale_admin.php';
+		include __DIR__ . '/layout/footer.php';
+	}
+
 	if ($selectedPage == 'lista_utenti') {
 		include __DIR__ . '/layout/navbar.php';
 		include __DIR__ . '/pages/_lista_utenti.php';
+		include __DIR__ . '/layout/footer.php';
+	}
+
+	if ($selectedPage == 'lista_utenti_admin') {
+		include __DIR__ . '/layout/navbar.php';
+		include __DIR__ . '/pages/_lista_utenti_admin.php';
 		include __DIR__ . '/layout/footer.php';
 	}
 
@@ -81,14 +105,6 @@ if ($selectedPage == 'lista_eventi') {
 		include __DIR__ . '/layout/footer.php';
 	}
 
-
-
-
-	if ($selectedPage == 'admin_dashboard') {
-		include __DIR__ . '/layout/navbar.php';
-		include __DIR__ . '/pages/_dashboard.php';
-		include __DIR__ . '/layout/footer.php';
-	}
 
 	?>
 

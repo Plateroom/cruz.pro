@@ -9,20 +9,15 @@
                 <li class="active"><a href="#">Filtra per</a></li>
                 <li class="divider-vertical"></li>
                 
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Milano</a></li>
-                      <li><a href="#">Roma</a></li>
-                      <li><a href="#">Napoli</a></li>
-                    </ul>
-                  </li>
 
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per<b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sala<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">più attivi</a></li>
-                      <li><a href="#">meno attivi</a></li>
+                      <li><a href="#">Tutte</a></li>
+                      <li><a href="#">Marco Aurelio</a></li>
+                      <li><a href="#">Cleopatra</a></li>
+                      <li><a href="#">Augusto</a></li>
+                      <li><a href="#">Cesare</a></li>
                     </ul> 
                   </li>
                 

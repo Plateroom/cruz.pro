@@ -12,6 +12,7 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
                     <ul class="dropdown-menu">
+                      <li><a href="#">Tutti</a></li>
                       <li><a href="#">Milano</a></li>
                       <li><a href="#">Roma</a></li>
                       <li><a href="#">Napoli</a></li>
@@ -21,6 +22,7 @@
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per<b class="caret"></b></a>
                     <ul class="dropdown-menu">
+                      <li><a href="#">Indifferente</a></li>
                       <li><a href="#">più attivi</a></li>
                       <li><a href="#">meno attivi</a></li>
                     </ul> 

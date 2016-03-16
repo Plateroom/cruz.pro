@@ -31,7 +31,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profilo<b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#dashboard">Dashboard</a></li>
+            
               <li><a class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-lg" style="
     padding-left: 0px">Modifica profilo</a>
               </li>

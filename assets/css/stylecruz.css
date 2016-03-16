@@ -1151,6 +1151,7 @@ input{
 	text-align: center;
 	padding: 7% 0 0 44.5%;
   bottom: 20px;
+  position: fixed;
 }
 .privacy {
 	float: left;
@@ -1158,6 +1159,9 @@ input{
 }
 
 
+.link-img{
+  position: absolute;
+}
 
 
 

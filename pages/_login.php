@@ -7,7 +7,7 @@
       <div id="circle">
         <span class="glyphicon glyphicon-asterisk" id="asterisco" style="color: #748F80;"> </span>
       </div>  
-		 <form class="login" name="login" action="index_submit" method="get" accept-charset="utf-8">
+		 <form class="login" name="login" action="index.php" method="get" accept-charset="utf-8">
 		 
 		 <div class="cruz">
       <p class="pro" style="font-size: 30px"> CRUZ.pro</p>
@@ -21,10 +21,12 @@
 
    		  	<hr/>
 
-        	<li> <input class="mailbox" id="mailbox" type="email" name="usermail" placeholder="Email Aziendale" required> </li>
-        	<li> <input class="password" id="password" type="password" name="password" placeholder= "Password"required> </li>
+        	<li> <input class="mailbox" id="mailbox" type="email" name="usermail" placeholder="Email Aziendale" require> </li>
+        	<li> <input class="password" id="password" type="password" name="password" placeholder= "Password"require> </li>
         	<li> <input class="bottonelog" type="submit" value="Login"> </li>
   				
+          <input value="user" name="page" type="hidden"> 
+
         		<a href=""id="dimenticata">Password dimenticata?</a>
 
     	  </ul>

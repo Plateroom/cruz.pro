@@ -22,7 +22,7 @@
               <li><button type="button" class=" btn btn-md btn-default" data-toggle="modal" data-target="#myModal">Crea evento</button></li>
               <li><a href="index.php?page=lista_sale">Sale riunioni</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="#elenco-eventi">Eventi</a></li>
+              <li><a href="index.php?page=lista_eventi">Eventi</a></li>
             </ul>
           </div>
    
@@ -36,9 +36,9 @@
     padding-left: 0px">Modifica profilo</a>
               </li>
               <li role="separator" class="divider"></li>
-              <li><a href="#lista_utenti">Colleghi</a></li>
+              <li><a href="?page=lista_utenti">Colleghi</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#log-out">Log out</a></li>
+              <li><a href="index.php">Log out</a></li>
             </ul>
             <li><a href="#">img</a></li>
           </ul>

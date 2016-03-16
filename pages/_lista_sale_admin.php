@@ -60,13 +60,23 @@
             </div>
           </div>
         </div>
-        <img src="img/sala.jpg" alt="sala marco aurelio" class="img-circle">
-        <div class="col-md-7">
+        <a href="index.php?page=sala"><img src="img/sala.jpg" alt="sala marco aurelio" class="img-circle"></a>
+        <div class="col-md-5">
           <div class="panel panel-default">
             <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">20 Posti</h5>
               <hr class="margin-top-bottom">
               <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
-Fotocopiatrice, Frigobar.</h6></blockquote>
+Fotocopiatrice, Frigobar.</h6>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="panel panel-default">
+            <div class="panel-heading "><blockquote> <span class="glyphicon glyphicon-time"><h5 class="caratteristiche-titolo stat">H: 30 </h5></span>
+              <hr class="margin-top-bottom">
+              <span class="glyphicon glyphicon-list-alt"><h5 class="caratteristiche-titolo stat">N°: 15</h5></span></blockquote>
             </div>
             <div class="panel-body col-xs-offset-5">
             </div>
@@ -91,12 +101,22 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
           </div>
         </div>
         <img src="img/sala.jpg" alt="sala marco aurelio" class="img-circle">
-        <div class="col-md-7">
+        <div class="col-md-5">
           <div class="panel panel-default">
             <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">20 Posti</h5>
               <hr class="margin-top-bottom">
               <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
 Fotocopiatrice, Frigobar.</h6></blockquote>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="panel panel-default">
+            <div class="panel-heading "><blockquote> <span class="glyphicon glyphicon-time"><h5 class="caratteristiche-titolo stat">H: 30 </h5></span>
+              <hr class="margin-top-bottom">
+              <span class="glyphicon glyphicon-list-alt"><h5 class="caratteristiche-titolo stat">N°: 15</h5></span></blockquote>
             </div>
             <div class="panel-body col-xs-offset-5">
             </div>
@@ -121,12 +141,22 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
           </div>
         </div>
         <img src="img/sala.jpg" alt="sala marco aurelio" class="img-circle">
-        <div class="col-md-7">
+        <div class="col-md-5">
           <div class="panel panel-default">
             <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">20 Posti</h5>
               <hr class="margin-top-bottom">
               <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
 Fotocopiatrice, Frigobar.</h6></blockquote>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="panel panel-default">
+            <div class="panel-heading "><blockquote> <span class="glyphicon glyphicon-time"><h5 class="caratteristiche-titolo stat">H: 30 </h5></span>
+              <hr class="margin-top-bottom">
+              <span class="glyphicon glyphicon-list-alt"><h5 class="caratteristiche-titolo stat">N°: 15</h5></span></blockquote>
             </div>
             <div class="panel-body col-xs-offset-5">
             </div>
@@ -151,12 +181,22 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
           </div>
         </div>
         <img src="img/sala.jpg" alt="sala marco aurelio" class="img-circle">
-        <div class="col-md-7">
+        <div class="col-md-5">
           <div class="panel panel-default">
             <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">20 Posti</h5>
               <hr class="margin-top-bottom">
               <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
 Fotocopiatrice, Frigobar.</h6></blockquote>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="panel panel-default">
+            <div class="panel-heading "><blockquote> <span class="glyphicon glyphicon-time"><h5 class="caratteristiche-titolo stat">H: 30 </h5></span>
+              <hr class="margin-top-bottom">
+              <span class="glyphicon glyphicon-list-alt"><h5 class="caratteristiche-titolo stat">N°: 15</h5></span></blockquote>
             </div>
             <div class="panel-body col-xs-offset-5">
             </div>
@@ -181,12 +221,22 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
           </div>
         </div>
         <img src="img/sala.jpg" alt="sala marco aurelio" class="img-circle">
-        <div class="col-md-7">
+        <div class="col-md-5">
           <div class="panel panel-default">
             <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">20 Posti</h5>
               <hr class="margin-top-bottom">
               <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
 Fotocopiatrice, Frigobar.</h6></blockquote>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="panel panel-default">
+            <div class="panel-heading "><blockquote> <span class="glyphicon glyphicon-time"><h5 class="caratteristiche-titolo stat">H: 30 </h5></span>
+              <hr class="margin-top-bottom">
+              <span class="glyphicon glyphicon-list-alt"><h5 class="caratteristiche-titolo stat">N°: 15</h5></span></blockquote>
             </div>
             <div class="panel-body col-xs-offset-5">
             </div>

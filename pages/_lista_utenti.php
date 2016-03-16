@@ -52,7 +52,7 @@
             <div class="panel-body"></div>
           </div>
         </div>
-        <img src="img/harper.jpg" alt="profile harper" class="img-circle">
+            <a href="index.php?page=user"><img src="img/harper.jpg" alt="profile harper" class="img-circle"></a>      
         <div class="col-md-7">
           <div class="panel panel-default">
             <div class="panel-heading ">

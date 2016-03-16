@@ -114,24 +114,64 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
   <h5 class="caratteristiche-titolo text-center"><hr>Calendario</h5>
     <div id="calendar"></div>
     <div class="popup-text-custom">
+      
+
       <!-- modal evento-->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+
+
+  
+
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Evento</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+           <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Eventi Chicco</h4>
+        <h5 class="caratteristiche-titolo">Revisione Chicco</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4"><h4 class="modal-title text-center">mar15 Marzo </h4></div>
+          <div class="col-md-4"><h4 class="modal-title text-center">H. 12:00 - 13:00</h4></div>
+          <div class="col-md-4"><h4 class="modal-title text-center">Sala marco Aurelio</h4><h6 class="text-style text-center">Milano La Masa</h6></div>
+        </div><hr>
+        <div class="row">
+          <textarea class="form-control" rows="3" placeholder="Aggiungi note" style="margin-top:10px; margin-bottom:10px;"></textarea>
+
+
+
+          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+          <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-9">
+            Level 1: .col-sm-9
+            <div class="row">
+              <div class="col-xs-8 col-sm-6">
+                Level 2: .col-xs-8 .col-sm-6
+              </div>
+              <div class="col-xs-4 col-sm-6">
+                Level 2: .col-xs-4 .col-sm-6
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Chiudi</button>
+        <button type="button" class="btn btn-secondary btn-xs">Salva modifiche</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
     </div>
             	
 

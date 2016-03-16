@@ -226,7 +226,7 @@
 <hr>
 
 <div class="row">
-  <div class="col-xs-5">
+  <div class="col-xs-12" style= "padding-left: 0px; padding-right: 0px">
     <div class="panel panel-warning">
       <div class="panel-heading" role="tab" id="headingTwo">
         <h4 class="panel-title">
@@ -249,10 +249,10 @@
       </div>
     </div>
 
-
-    <div class="col-xs-5 input-group">
-      <span class="input-group-addon" id="basic-addon1">@</span>
-      <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+      <div class="col-xs-12 input-group">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+      </div>
     </div>
 </div>
 
@@ -262,7 +262,7 @@
 
 
     </div>    
-      </div>
+    
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
         <button type="button" class="btn btn-secondary">Salva evento</button>

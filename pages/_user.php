@@ -115,7 +115,75 @@
 
     <!--fine calendar -->
     <div id="calendar"></div>
-    <div class="popup-text-custom" style="display: none; position: fixed; top: 300px; right: 300px; background-color: red; z-index: 1400">Bla bla bla</div>
+    <div class="popup-text-custom">
+
+
+              <!-- modal evento-->
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Evento</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+           <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Eventi Chicco</h4>
+        <h5 class="caratteristiche-titolo">Revisione Chicco</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4"><h4 class="modal-title text-center">mar15 Marzo </h4>
+          </div>
+          <div class="col-md-4"><h4 class="modal-title text-center">H. 12:00 - 13:00</h4>
+          </div>
+          <div class="col-md-4"><h4 class="modal-title text-center">Sala marco Aurelio</h4><h6 class="text-style text-center">Milano La Masa</h6>
+          </div>
+        </div><hr>
+        <div class="row">
+          <textarea class="form-control" rows="3" placeholder="Aggiungi note" style="margin-top:10px; margin-bottom:10px;"></textarea>
+        </div><hr>
+
+
+        <div class= "row">
+         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-warning">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNomi" aria-expanded="true" aria-controls="collapseOne">
+                  Persone Invitate
+                </a>
+              </h4>
+            </div>
+            <div id="collapseNomi" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <h6 class="text-style">Harper Reed</h6><hr> 
+                <h6 class="text-style">Harper Reed</h6><hr> 
+                <h6 class="text-style">Harper Reed</h6>
+              </div>
+            </div>
+          </div>
+          
+ 
+        </div>
+      </div>
+         
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Chiudi</button>
+        <button type="button" class="btn btn-secondary btn-xs">Salva modifiche</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    </div>
 
 
 

@@ -3,7 +3,7 @@
 <!--second navbar-->
   <nav class="navbar twoRow" role="navigation">
 
-      <div class="col-xs-6 col-xs-offset-4 col-md-4 col-md-offset-4">
+      <div class="col-xs-offset-4 col-md-4 col-md-offset-4">
          <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Filtra per</a></li>
                 <li class="divider-vertical"></li>

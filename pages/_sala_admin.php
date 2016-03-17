@@ -38,9 +38,9 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
         </div>
           <div class="col-md-2">
           <div class="panel panel-default">
-            <div class="panel-heading "><blockquote> <span class="glyphicon glyphicon-time"><h5 class="caratteristiche-titolo stat">H: 30 </h5></span>
+            <div class="panel-heading "><blockquote> <span class="glyphicon glyphicon-time" title="Ore prenotate"><h5 class="caratteristiche-titolo stat">H: 30 </h5></span>
               <hr class="margin-top-bottom">
-              <span class="glyphicon glyphicon-list-alt"><h5 class="caratteristiche-titolo stat">N°: 15</h5></span></blockquote>
+              <span class="glyphicon glyphicon-list-alt" title="Eventi creati"><h5 class="caratteristiche-titolo stat">N°: 15</h5></span></blockquote>
             </div>
             <div class="panel-body col-xs-offset-5">
             </div>

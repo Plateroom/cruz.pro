@@ -135,7 +135,7 @@
 
      <div class="modal-body">
       <div class="row">
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="Nome evento"><br>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="&#9998; Nome evento"><br>
       </div>
 
 <!-- date picker-->
@@ -146,38 +146,13 @@
             <div class='input-group date' id='datetimepicker'>
               <input type="text" class="form-control" />
               <span class="input-group-addon">
-                <span class="glyphicon glyphicon-calendar">
+                <span class="glyphicon glyphicon-calendar" style="color: #748F80;">
                 </span>
               </span>
             </div>
           </div>
         </div>
       </div>
-  <!--  <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker10').datetimepicker({
-                viewMode: 'years',
-                format: 'MM/YYYY'
-            });
-        });
-    </script> -->
-
-<!--<div class="row">
-  <div id="datepicker" class="input-append">
-    <input data-format="MM-dd-yyyy" type="data"></input>
-    <span class="add-on">
-      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
-      </i>
-    </span>
-  </div>
-</div> -->
-<!-- <script type="text/javascript">
-  $(function() {
-    $('#datetimepicker3').datetimepicker({
-      pickDate: false
-    });
-  });
-</script> -->
 
 <div class="row">
   <div class="col-md-6">
@@ -191,15 +166,7 @@
               <li role="separator" class="divider"></li>
               <li><a href="#">20 posti</a></li>
             </ul>
-          
-        <!--   <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Milano</a></li>
-                  <li><a href="#">Roma</a></li>
-                  <li><a href="#">Napoli</a></li>
-                </ul> -->
-        </ul>
+          </ul>
   </div>
 
 
@@ -220,7 +187,7 @@
 <hr>
           
 <div class="row">
-  <textarea class="form-control" rows="3" placeholder="Aggiungi note"></textarea><br>
+  <textarea class="form-control" rows="3" placeholder="&#9998; Aggiungi note"></textarea><br>
 </div>
 
 <hr>
@@ -250,14 +217,11 @@
     </div>
 
       <div class="col-xs-12 input-group">
-        <span class="input-group-addon" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        <span class="input-group-addon" id="basic-addon1" style="color: #748F80;">@</span>
+        <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
       </div>
     </div>
 </div>
-
-
-
 
 
 

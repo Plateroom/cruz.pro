@@ -1073,10 +1073,7 @@ table.fc-border-separate {
   margin: 20% 0 0 0;
   padding-left: 21%;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 424328b8ebbc17c0585052551310595754e722c0
 
 .fb-login {
   text-align: center;
@@ -1174,15 +1171,34 @@ input{
   position: absolute;
 }
 
+
+
+
+
 .stat{
   float: right;
   margin: 0 0 10px 10px;
 }
 
+
+
+
+
+
+
 .img_nav{
   margin: 5px 30px 0 0;
 
 }
+
+.icon_color{
+  
+  color: #748F80;
+}
+
+
+
+
 
 
 

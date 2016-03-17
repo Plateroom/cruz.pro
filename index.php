@@ -99,11 +99,18 @@
 		include __DIR__ . '/layout/footer.php';
 	}
 
-if ($selectedPage == 'lista_eventi') {
+    if ($selectedPage == 'lista_eventi') {
 		include __DIR__ . '/layout/navbar.php';
 		include __DIR__ . '/pages/_lista_eventi.php';
 		include __DIR__ . '/layout/footer.php';
 	}
+
+	if ($selectedPage == 'lista_eventi_admin') {
+		include __DIR__ . '/layout/navbar.php';
+		include __DIR__ . '/pages/_lista_eventi_admin.php';
+		include __DIR__ . '/layout/footer.php';
+	}
+
 
 
 	?>

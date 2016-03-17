@@ -32,8 +32,8 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profilo <b class="caret"></b></a>
             <ul class="dropdown-menu">
             
-              <li><a class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm" style="
-    padding-left: 0px">Modifica profilo</a>
+              <li><a class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm" style="padding-left: 0px">Modifica profilo</a>
+    
               </li>
               <li role="separator" class="divider"></li>
               <li><a href="?page=lista_utenti">Colleghi</a></li>

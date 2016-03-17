@@ -36,39 +36,60 @@
   
     <div class="row content-img">
         <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
-          <div class="panel panel-default">
+          <div class="panel panel-danger">
             <div class="panel-heading">
               <blockquote class="blockquote-reverse"> 
-                <h5 class="caratteristiche-titolo">Harper Reed</h5>
-                  <h6 class="caratteristiche-titolo">CTO</h6>
-                  <h6 class="text-style">Cruz.pro</h6> 
+                <h5 class="caratteristiche-titolo">Revisione Chicco</h5>
+                  <h6 class="caratteristiche-titolo">eventi Chicco</h6>
+                   
               </blockquote>
             </div>
             <div class="panel-body"></div>
           </div>
         </div>
         <div class="col-md-7">
-          <div class="panel panel-default">
+          <div class="panel panel-danger">
             <div class="panel-heading ">
-              <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
-                <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
-                <h6 class="text-style">+393485409834</h6>
+              <blockquote><h5 class="caratteristiche-titolo">Sala Marco Aurelio</h5>
+                <h6 class="caratteristiche-titolo">mar15 Marzo H. 10:00 - 12:00</h6>     
               </blockquote>
-            </div>
+                    </div>
             <div class="panel-body col-xs-offset-5">
-              <a class="btn btn-info" href="#">
-                  <i class="fa-li fa fa-facebook-official"></i>
-                  <h5 class="caratteristiche-titolo-info">Facebook</h5>
-              </a>
-              <a class="btn btn-info" href="#">
-                  <i class="fa-li fa fa-linkedin-square"></i>
-                  <h5 class="caratteristiche-titolo-info">Linkedin</h5>
-              </a>
+
             </div>
           </div>
         </div>
        </div>
     
+
+
+  
+<div class="row content-img">
+        <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <blockquote class="blockquote-reverse"> 
+                <h5 class="caratteristiche-titolo">Revisione Chicco</h5>
+                  <h6 class="caratteristiche-titolo">eventi Chicco</h6>
+                   
+              </blockquote>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="panel panel-danger">
+            <div class="panel-heading ">
+              <blockquote><h5 class="caratteristiche-titolo">Sala Marco Aurelio</h5>
+                <h6 class="caratteristiche-titolo">mar15 Marzo H. 10:00 - 12:00</h6>     
+              </blockquote>
+                    </div>
+            <div class="panel-body col-xs-offset-5">
+
+            </div>
+          </div>
+        </div>
+       </div>
 
 
   

@@ -1174,11 +1174,14 @@ input{
   position: absolute;
 }
 
-
-
 .stat{
   float: right;
   margin: 0 0 10px 10px;
+}
+
+.img_nav{
+  margin: 5px 30px 0 0;
+
 }
 
 

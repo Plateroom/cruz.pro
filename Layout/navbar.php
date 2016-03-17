@@ -40,7 +40,7 @@
               <li role="separator" class="divider"></li>
               <li><a href="index.php">Log out</a></li>
             </ul>
-            <li><a href="#">img</a></li>
+            <li><a href="" class="img_nav"><img src="img/harper_nav.jpg" alt="harper reed" class="img-circle" style="cursor:default"></a></li>
           </ul>
 
               

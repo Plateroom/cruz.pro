@@ -3,31 +3,33 @@
 <!--second navbar-->
   <nav class="navbar twoRow" role="navigation">
 
-      <div class="col-xs-6 col-xs-offset-4 col-md-4 col-md-offset-4">
-         <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Filtra per</a></li>
-                <li class="divider-vertical"></li>
+      <div class="col-xs-offset-3 col-md-6 col-md-offset-3">
+     <ul class="nav navbar-nav">
+                
+                
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">N. posti<b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Numero posti <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="#">Tutte</a></li>
                       <li><a href="#">10 posti</a></li>
                       <li><a href="#">15 posti</a></li>
                       <li><a href="#">20 posti</a></li>
                     </ul>
-
+<li class="divider-vertical"></li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sede<b class="caret"></b></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtra per Sede <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="#">Tutte</a></li>
                       <li><a href="#">Milano</a></li>
                       <li><a href="#">Roma</a></li>
                       <li><a href="#">Napoli</a></li>
-                    <li class="dropdown">
+                
                     </ul>
                   </li>
+
+                  <li class="divider-vertical"></li>
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per<b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per attività <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="#">Indifferente</a></li>
                       <li><a href="#">più usate</a></li>

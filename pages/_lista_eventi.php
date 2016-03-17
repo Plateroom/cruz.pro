@@ -6,18 +6,28 @@
     <div class="content-fluid">
       <div class="col-xs-6 col-xs-offset-4 col-md-4 col-md-offset-4">
          <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Filtra per</a></li>
-                <li class="divider-vertical"></li>
+                
+                
                 
 
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sala<b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtra per Sala<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="#">Tutte</a></li>
                       <li><a href="#">Marco Aurelio</a></li>
                       <li><a href="#">Cleopatra</a></li>
                       <li><a href="#">Augusto</a></li>
                       <li><a href="#">Cesare</a></li>
+                    </ul> 
+                  </li>
+
+                  <li class="divider-vertical"></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per priorità<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Tutti</a></li>
+                      <li><a href="#">Eventi passati</a></li>
+                      <li><a href="#">Eventi futuri</a></li>
                     </ul> 
                   </li>
                 

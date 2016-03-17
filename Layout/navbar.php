@@ -29,7 +29,7 @@
           <ul class="nav navbar-nav navbar-right">
             
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profilo<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profilo <b class="caret"></b></a>
             <ul class="dropdown-menu">
             
               <li><a class="btn btn-link" data-toggle="modal" data-target=".bs-example-modal-sm" style="

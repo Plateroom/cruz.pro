@@ -11,7 +11,7 @@
                 
 
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtra per Sala<b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtra per Sala <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="#">Tutte</a></li>
                       <li><a href="#">Marco Aurelio</a></li>
@@ -23,7 +23,7 @@
 
                   <li class="divider-vertical"></li>
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per priorità<b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per priorità <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="#">Tutti</a></li>
                       <li><a href="#">Eventi passati</a></li>

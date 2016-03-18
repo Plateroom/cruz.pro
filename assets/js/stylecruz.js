@@ -2,15 +2,22 @@
 		$('#datetimepicker input').datetimepicker();
 
 		$('#calendar').fullCalendar({
-			defaultView: 'agendaDay',
+			height: 500,
+			defaultView: 'agendaWeek',
 			selectable: true,
 			slotEventOverlap: false,
+
+				minTime: '09:00:00',
+				maxTime: '20:00:00',
 			select: function(start, end, jsEvent, view, resource) {
-				alert('fai comparire il popup');
+				alert('crea evento');
 			},
 			eventClick: function (event, jsEvent, view) {
 				$('.popup-text-custom').show();
 			},
+
+
+
 			events: [
 				{ id: '1', resourceId: 'a', start: '2016-03-06', end: '2016-01-08', title: 'event 1' },
 				{ id: '2', resourceId: 'a', start: '2016-03-15T09:00:00', end: '2016-03-15T14:00:00', title: 'event 2' },
@@ -20,3 +27,10 @@
 			]
 		});
 	});
+
+	
+
+
+
+
+

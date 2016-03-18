@@ -233,8 +233,8 @@ hr {
 .caratteristiche-titolo {
 	font-family: helvetica neue;
 	color: #748F80;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin: 0;
+  
 
 }
 
@@ -1207,16 +1207,10 @@ input{
 
 
 
-
-
 .stat{
   float: right;
   margin: 0 0 10px 10px;
 }
-
-
-
-
 
 
 
@@ -1225,10 +1219,51 @@ input{
 
 }
 
+.blockquote-2{
+margin: 10px;
+
+}
+
+#Apri{
+  margin: 37px 0 0 455px;
+}
+
+#list-pannel{
+  height: 82px;
+}
 
 
 
 
+#Apri-1{
+  margin: 37px 0 0 455px;
+}
+
+#list-pannel-1{
+  height: 82px;
+}
+
+
+
+
+#Apri-2{
+  margin: 37px 0 0 455px;
+}
+
+#list-pannel-2{
+  height: 82px;
+}
+
+
+
+
+#Apri-3{
+  margin: 37px 0 0 455px;
+}
+
+#list-pannel-3{
+  height: 82px;
+}
 
 
 

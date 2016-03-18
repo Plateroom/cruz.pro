@@ -11,7 +11,7 @@
                 
 
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtra per Sala<b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtra per Sala <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="#">Tutte</a></li>
                       <li><a href="#">Marco Aurelio</a></li>
@@ -23,7 +23,7 @@
 
                   <li class="divider-vertical"></li>
                   <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per priorità<b class="caret"></b></a>
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per priorità <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="#">Tutti</a></li>
                       <li><a href="#">Eventi passati</a></li>
@@ -54,33 +54,32 @@
                    
               </blockquote>
             </div>
-            <div class="panel-body"></div>  
+            <div class="panel-body"></div>
           </div>
         </div>
         <div class="col-md-7">
-          <div class="panel panel-danger">
-            <div class="panel-heading ">
+          <div class="panel panel-danger" id="list-pannel-1">
 
-<div class="row col-md-4">
-
-              <blockquote><h5 class="caratteristiche-titolo">Sala Marco Aurelio</h5>
+            <div class="col-md-4">
+              <blockquote class="blockquote-2"><h5 class="caratteristiche-titolo">Sala Marco Aurelio</h5>
                 <h6 class="caratteristiche-titolo">mar15 Marzo H. 10:00 - 12:00</h6>     
               </blockquote>
-</div>
-<div class="row col-md-4">
+            </div>   
+
+            <div class="col-md-3">   
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" id="Apri-1">Apri</button>
+
+            </div>          
+
+          </div>
+        </div>
+      </div>
 
 
+            <!--modal-->
 
-
-
-
-
-
-
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" style="margin-left: 380px;">Apri</button>
-
-
-              <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
            <div class="modal-header">
@@ -136,25 +135,8 @@
 </div>
 
 
-  </div>
-          </div>
-
-
-
-
-
-            <div class="panel-body col-xs-offset-5">
-
-
-
-
-
-            </div>
-          </div>
-        </div>
-       </div>
-    
-
+  
+        <!--contenuti-->
 
   
 <div class="row content-img">
@@ -171,18 +153,23 @@
           </div>
         </div>
         <div class="col-md-7">
-          <div class="panel panel-danger">
-            <div class="panel-heading ">
-              <blockquote><h5 class="caratteristiche-titolo">Sala Marco Aurelio</h5>
+          <div class="panel panel-danger" id="list-pannel">
+
+            <div class="col-md-4">
+              <blockquote class="blockquote-2"><h5 class="caratteristiche-titolo">Sala Marco Aurelio</h5>
                 <h6 class="caratteristiche-titolo">mar15 Marzo H. 10:00 - 12:00</h6>     
               </blockquote>
-                    </div>
-            <div class="panel-body col-xs-offset-5">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" style="margin-left: 380px;">Apri</button>
-            </div>
+            </div>   
+
+            <div class="col-md-3">   
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" id="Apri">Apri</button>
+
+            </div>          
+
           </div>
         </div>
-       </div>
+      </div>
 
 
   

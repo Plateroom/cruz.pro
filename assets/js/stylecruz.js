@@ -9,13 +9,19 @@
 
 				minTime: '09:00:00',
 				maxTime: '20:00:00',
+
 			select: function(start, end, jsEvent, view, resource) {
 				alert('crea evento');
 			},
 			eventClick: function (event, jsEvent, view) {
-				$('#myModal').modal('show');
-
+				$('.popup-text-custom').show();
 			},
+			header: {
+        left: 'prev,next today myCustomButton',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+        
+    },
 
 
 

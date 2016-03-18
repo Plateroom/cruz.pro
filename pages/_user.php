@@ -60,9 +60,9 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
-                <h6 class="text-style">Anim pariatur cliche reprehenderit</h6><hr> 
-                <h6 class="text-style">enim eiusmod high life accusamus terry</h6><hr> 
-                <h6 class="text-style">Anim pariatur cliche reprehenderit</h6>
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6>
               </div>
             </div>
           </div>
@@ -77,9 +77,9 @@
             </div>
             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="panel-body">
-                <h6 class="text-style">Anim pariatur cliche reprehenderit</h6><hr> 
-                <h6 class="text-style">enim eiusmod high life accusamus terry</h6><hr> 
-                <h6 class="text-style">Anim pariatur cliche reprehenderit</h6>
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6>
               </div>
             </div>
           </div>

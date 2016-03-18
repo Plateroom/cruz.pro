@@ -9,7 +9,8 @@
 				alert('fai comparire il popup');
 			},
 			eventClick: function (event, jsEvent, view) {
-				$('.popup-text-custom').show();
+				$('#myModal').modal('show');
+
 			},
 			events: [
 				{ id: '1', resourceId: 'a', start: '2016-03-06', end: '2016-01-08', title: 'event 1' },

@@ -13,7 +13,8 @@
 				alert('crea evento');
 			},
 			eventClick: function (event, jsEvent, view) {
-				$('.popup-text-custom').show();
+				$('#myModal').modal('show');
+
 			},
 
 

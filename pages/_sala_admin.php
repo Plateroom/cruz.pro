@@ -28,6 +28,7 @@
       	<div class="col-md-5">
         	<div class="panel panel-default">
             <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">20 Posti</h5>
+
               <hr class="margin-top-bottom">
               <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
 Fotocopiatrice, Frigobar.</h6></blockquote>
@@ -87,9 +88,11 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
     </div>
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       <div class="panel-body">
+        
         <h6 class="text-style">Anim pariatur cliche reprehenderit</h6><hr> 
         <h6 class="text-style">enim eiusmod high life accusamus terry</h6><hr> 
         <h6 class="text-style">Anim pariatur cliche reprehenderit</h6>
+        
       </div>
     </div>
   </div>

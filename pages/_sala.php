@@ -113,6 +113,14 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
  <!--fine calendar -->
   <h5 class="caratteristiche-titolo text-center"><hr>Calendario</h5>
     <div id="calendar"></div>
+
+    
+
+
+
+
+
+    
     <div class="popup-text-custom">
       
 

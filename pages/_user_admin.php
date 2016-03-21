@@ -119,7 +119,7 @@
 
   <div class="panel-body">
     <h5 class="caratteristiche-titolo text-center">Calendario</h5>
-    <h6 class="text-style text-center">23 Marzo 2015</h6>
+    
     <!-- calendar -->
 
 

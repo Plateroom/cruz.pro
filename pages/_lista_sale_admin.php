@@ -69,6 +69,9 @@
         <div class="col-md-5">
           <div class="panel panel-default">
             <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">20 Posti</h5>
+              <span class="input-group-btn"> 
+                <button class="btn btn-danger" type="button">Cancella</button>
+              </span>
               <hr class="margin-top-bottom">
               <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
 Fotocopiatrice, Frigobar.</h6>

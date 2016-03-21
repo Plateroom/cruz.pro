@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.css"/>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.print.css" media="print"/>
 	
+
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!-- Custom CSS -->
 	<link href="./assets/css/stylecruz.css" rel="stylesheet">
@@ -123,6 +125,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment-with-locales.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.js" ></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/lang/it.js" ></script>
 
 	
 	<script src="assets/js/stylecruz.js"></script>

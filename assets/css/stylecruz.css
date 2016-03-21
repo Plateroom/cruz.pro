@@ -1251,6 +1251,7 @@ margin: 10px;
 
 #list-pannel-2{
   height: 82px;
+  position: fixed;
 }
 
 
@@ -1262,6 +1263,7 @@ margin: 10px;
 
 #list-pannel-3{
   height: 82px;
+  position: fixed;
 }
 
 

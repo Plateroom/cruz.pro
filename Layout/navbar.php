@@ -50,7 +50,7 @@
       </nav>
   </div>
 
-<!-- modal modif -->
+<!-- modal modifica utente -->
 
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-sm">
@@ -63,6 +63,8 @@
       <h4 class="modal-title" id="gridSystemModalLabel">Modifica profilo</h4>
   </div>
 
+
+
   <div class="modal-body">
 
     
@@ -70,40 +72,49 @@
     <div class="row content-img">
         <div class="col-xs-offset-1 col-md-offset-1 col-md-12">
           <div class="panel panel-default">
-            <div class="panel-heading"> 
-              
-            </div>
+            <div class="panel-heading"></div>
             <div class="panel-body"></div>
           </div>
         </div>
-        <img src="img/harper.jpg" alt="harper reed" class="img-circle">
+      <img src="img/harper.jpg" alt="harper reed" class="img-circle">
+    </div>
 
-        </div>
+    <hr>
 
-
-        <hr>
-
-
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="Harper">
-        <br>
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="Reed">
-        <br>
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="12/04/1975">
-        <br>
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="Harper_reed@cruzpro.com">
-        <br>
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="+393485409834">
-        <br>
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="+ social">
-        <br>
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="CTO Cruz.">
-        <br>
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="Milano la Masa">
-        <hr>
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="Password">
-        <br>
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="Conferma Password">
-        <br>
+    <form>
+      <div class="form-group">
+        <label for="recipient-name" class="control-label">Nome:</label>
+        <input type="text" class="form-control" id="recipient-name" placeholder="Harper">
+      </div>
+      <div class="form-group">
+        <label for="recipient-name" class="control-label">Cognome:</label>
+        <input type="text" class="form-control" id="recipient-name" placeholder="Reed">
+      </div>
+      <div class="form-group">
+        <label for="recipient-name" class="control-label">Nascita:</label>
+        <input type="text" class="form-control" id="recipient-name" placeholder="12/04/1975">
+      </div>
+      <div class="form-group">
+        <label for="recipient-name" class="control-label">e-Mail:</label>
+        <input type="text" class="form-control" id="recipient-name" placeholder="Harper_reed@cruzpro.com">
+      </div>
+      <div class="form-group">
+        <label for="recipient-name" class="control-label">e-Mail:</label>
+        <input type="text" class="form-control" id="recipient-name" placeholder="Harper_reed@cruzpro.com">
+      </div>
+      <div class="form-group">
+        <label for="recipient-name" class="control-label">Telefono:</label>
+        <input type="text" class="form-control" id="recipient-name" placeholder="+393485678987">
+      </div>
+      <div class="form-group">
+        <label for="recipient-name" class="control-label">Password:</label>
+        <input type="text" class="form-control" id="recipient-name" placeholder="..........">
+      </div>
+      <div class="form-group">
+        <label for="recipient-name" class="control-label">Conferma Password:</label>
+        <input type="text" class="form-control" id="recipient-name" placeholder="..........">
+      </div>
+    </form>
 
 
 
@@ -127,26 +138,33 @@
 
 
 
-  <!-- Modal -->
+  <!-- Modal crea evento-->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+
      <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
       </button>
         <h4 class="modal-title" id="gridSystemModalLabel">Crea evento</h4>
      </div>
 
+
      <div class="modal-body">
+
+
+
       <div class="row">
-        <input type="text" class="form-control" id="exampleInputName2" placeholder="&#9998; Nome evento"><br>
+          <label for="nome-evento" class="control-label">Nome Evento:</label>
+          <input type="text" class="form-control" id="exampleInputName2" placeholder="&#9998; Nome evento"><br>
       </div>
 
-<!-- date picker-->
+<!-- data -->
 
       <div class="row">
         <div class="col-sm-12" style="height:60px; height:60px;padding-left: 0px;padding-right: 0px;">
           <div class="form-group">
+            <label for="nome-evento" class="control-label">Data e Ora della prenotazione:</label>
             <div class='input-group date' id='datetimepicker'>
               <input type="text" class="form-control" />
               <span class="input-group-addon">
@@ -158,35 +176,33 @@
         </div>
       </div>
 
-<div class="row">
-  <div class="col-md-6">
-        <ul class="nav navbar-nav navbar-left">
-            
+      <div class="row">
+        <div class="col-md-6">
+              <ul class="nav navbar-nav navbar-left">
+                  
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">N.posti<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">10 posti</a></li>
+                    <li><a href="#">15 posti</a></li>
+                    <li><a href="#">20 posti</a></li>
+                  </ul>
+                </ul>
+        </div>
+
+
+        <div class="col-md-6">
+          <ul class="nav navbar-nav navbar-left">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">N.posti<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">10 posti</a></li>
-              <li><a href="#">15 posti</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">20 posti</a></li>
-            </ul>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sale Disponibili<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Sala Marco Aurelio</a></li>
+                  <li><a href="#">Sala Cesare</a></li>
+                  <li><a href="#">Sala Cleopatra</a></li>
+                </ul>
           </ul>
-  </div>
-
-
-  <div class="col-md-6">
-    <ul class="nav navbar-nav navbar-left">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sale Disponibili<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Sala Marco Aurelio</a></li>
-            <li><a href="#">Sala Cesare</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Sala Cleopatra</a></li>
-          </ul>
-    </ul>
-  </div>
-</div>
+        </div>
+      </div>
 
 <hr>
           

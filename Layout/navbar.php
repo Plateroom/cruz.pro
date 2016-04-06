@@ -65,15 +65,13 @@
 
   <div class="modal-body">
 
+    
+
     <div class="row content-img">
         <div class="col-xs-offset-1 col-md-offset-1 col-md-12">
           <div class="panel panel-default">
             <div class="panel-heading"> 
-              <blockquote class="blockquote-reverse">
-                <h5 class="caratteristiche-titolo">Harper Reed</h5> 
-                <h6 class="caratteristiche-titolo">CTO</h6> 
-                <h6 class="text-style">Cruz.pro</h6>
-              </blockquote>
+              
             </div>
             <div class="panel-body"></div>
           </div>
@@ -107,11 +105,17 @@
         <input type="text" class="form-control" id="exampleInputName2" placeholder="Conferma Password">
         <br>
 
-</div>
+
+
+
+  </div>
+
+
 <div class="modal-footer">
         <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Chiudi</button>
         <button type="button" class="btn btn-secondary btn-xs">Salva modifiche</button>
       </div>
+ 
 
 
 

@@ -1,9 +1,5 @@
 {
-<<<<<<< Updated upstream
     "name": "filippo/cruz.pro",
-=======
-    "name": "stefania/cruz.pro",
->>>>>>> Stashed changes
     "license": "proprietary",
     "type": "project",
     "autoload": {

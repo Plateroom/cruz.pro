@@ -4,6 +4,6 @@ namespace FrontBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class SalaListaController extends Controller
+class UserController extends Controller
 {
 }

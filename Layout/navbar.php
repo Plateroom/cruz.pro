@@ -138,7 +138,7 @@
 
 
 
-  <!-- Modal crea evento-->
+<!-- Modal crea evento-->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -162,7 +162,7 @@
 <!-- data -->
 
       <div class="row">
-        <div class="col-sm-12" style="height:60px; height:60px;padding-left: 0px;padding-right: 0px;">
+        <div class="col-md-12" style="height:60px; padding-left: 0px;padding-right: 0px;">
           <div class="form-group">
             <label for="nome-evento" class="control-label">Data e Ora della prenotazione:</label>
             <div class='input-group date' id='datetimepicker'>
@@ -175,6 +175,8 @@
           </div>
         </div>
       </div>
+
+<!-- sala -->
 
       <div class="row">
         <div class="col-md-6">
@@ -191,6 +193,7 @@
         </div>
 
 
+
         <div class="col-md-6">
           <ul class="nav navbar-nav navbar-left">
             <li class="dropdown">
@@ -205,52 +208,65 @@
       </div>
 
 <hr>
+
+<!-- note -->
           
-<div class="row">
-  <textarea class="form-control" rows="3" placeholder="&#9998; Aggiungi note"></textarea><br>
-</div>
+      <div class="row">
+        <label for="commenti" class="control-label">Aggiungi note:</label>
+        <textarea class="form-control" rows="3" placeholder="&#9998; Note"></textarea><br>
+      </div>
 
 <hr>
 
-<div class="row">
-  <div class="col-xs-12" style= "padding-left: 0px; padding-right: 0px">
-    <div class="panel panel-warning">
-      <div class="panel-heading" role="tab" id="headingTwo">
-        <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Invita i colleghi
-          </a>
-        </h4>
-      </div>
-      <div id="collapseTwo" class="panel-collapse collapse push left" role="tabpanel" aria-labelledby="headingTwo">
-        <div class="panel-body">
-          <h6 class="text-style">Harper reed</h6>
-          <hr>
-          <h6 class="text-style">Harper Reed</h6>
-          <hr>
-          <h6 class="text-style">harper Reed</h6>
-          <hr>
-          <h6 class="text-style">harper Reed</h6>
-          
-        </div>
-      </div>
-    </div>
+ <!--     <div class="row">
+        <div class="col-xs-12" style= "padding-left: 0px; padding-right: 0px">
+          <div class="panel panel-warning">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Invita i colleghi
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse push left" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                <h6 class="text-style">Harper reed</h6>
+                <hr>
+                <h6 class="text-style">Harper Reed</h6>
+                <hr>
+                <h6 class="text-style">harper Reed</h6>
+                <hr>
+                <h6 class="text-style">harper Reed</h6>
+                
+              </div>
+            </div>
+          </div>  -->
 
-      <div class="col-xs-12 input-group">
-        <span class="input-group-addon" id="basic-addon1" style="color: #748F80;">@</span>
-        <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
-      </div>
-    </div>
-</div>
+<!-- aggiungi utenti -->
 
+          <div class="row">
+              <label for="colleghi" class="control-label">Invita i colleghi:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Dipendenti Cruz" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">@cruz.com</span>
+              </div>
+          </div>
 
+          <div class="row">
+              <label for="colleghi" class="control-label">Invita esterni:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">@</span>     
+              </div>
+            </div>
+         
 
     </div>    
     
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
-        <button type="button" class="btn btn-secondary">Salva evento</button>
-      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
+          <button type="button" class="btn btn-secondary">Salva evento</button>
+        </div>
     </div>
   </div>
 </div>

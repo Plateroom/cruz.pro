@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html>
+    <html lang="it">
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Cruz.pro{% endblock %}</title>
+         <!-- stylesheet bootstrap -->
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+
+        <title>Cruz.pro</title>
+
+        <!-- Date picker -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker-standalone.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js" rel="stylesheet">
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.css"/>
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.print.css" media="print"/>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <link href="/css/stylecruz.css" rel="stylesheet">
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+        {% block header%}
+            <div id="header">Navbar</div>
+        {% endblock %}
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        
+        {% block javascripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment-with-locales.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.js" ></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/lang/it.js" ></script>
+
+    
+        <script src="/js/stylecruz.js"></script>{% endblock %}
+        {% block footer%}
+            <div id="footer">My footer</div>
+        {% endblock %}
     </body>
 </html>

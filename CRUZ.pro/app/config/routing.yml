@@ -1,3 +1,12 @@
-front:
-    resource: "@FrontBundle/Resources/config/routing.yml"
-    prefix:   /
+_login:
+    path: /
+    defaults:   { _controller: FrontBundle:User:login }
+
+
+_user:
+    path:   user
+    defaults: { _controller: FrontBundle:User:user }
+
+_sala:
+    path:   sala
+    defaults: { _controller: FrontBundle:Sala:sala }

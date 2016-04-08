@@ -1,3 +1,11 @@
 front_homepage:
     path:     /
     defaults: { _controller: FrontBundle:Default:index }
+
+_sala:
+    path:     /sala
+    defaults: { _controller: FrontBundle:Default:sala }
+
+_sala:
+    path:     /user
+    defaults: { _controller: FrontBundle:Default:user }

@@ -5,3 +5,8 @@ front_homepage:
 front_user:
     path:     /user
     defaults: { _controller: FrontBundle:User:user }
+
+front_sala:
+    path:     /sala
+    defaults: { _controller: FrontBundle:Sala:sala }
+

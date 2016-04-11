@@ -16,13 +16,13 @@ class UserController extends Controller
       return $this->render('FrontBundle:Default:user.html.twig');
    }
 
-    public function listausersAction(Request $request)
+    public function listaUsersAction(Request $request)
    {
       return $this->render('FrontBundle:Default:lista_users.html.twig');
    }
 
 
-    public function useradminAction(Request $request)
+    public function userAdminAction(Request $request)
    {
       return $this->render('FrontBundle:Default:user_admin.html.twig');
    }

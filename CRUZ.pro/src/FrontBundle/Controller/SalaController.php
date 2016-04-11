@@ -13,12 +13,12 @@ class SalaController extends Controller
     */
    public function salaAction(Request $request)
    {
-      return $this->render('FrontBundle:Default:sala.html.twig');
+      return $this->render('FrontBundle:Sala:sala.html.twig');
    }
 
     public function listaSaleAction(Request $request)
    {
-      return $this->render('FrontBundle:Default:lista_sale.html.twig');
+      return $this->render('FrontBundle:Sala:lista_sale.html.twig');
    }
 
 

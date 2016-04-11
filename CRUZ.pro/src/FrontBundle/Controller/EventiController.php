@@ -8,6 +8,6 @@ class EventiController extends Controller
 {
     public function eventiAction()
     {
-        return $this->render('FrontBundle:Default:lista_eventi.html.twig');
+        return $this->render('FrontBundle:Evento:lista_eventi.html.twig');
     }
 }

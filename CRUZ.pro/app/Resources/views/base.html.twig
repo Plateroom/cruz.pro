@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Cruz.pro{% endblock %}</title>
          <!-- stylesheet bootstrap -->
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
 
 
         <!-- Date picker -->
@@ -18,7 +18,7 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-        <link href="/css/stylecruz.css" rel="stylesheet">
+        <link href="{{asset('css/stylecruz.css')}}" rel="stylesheet">
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
@@ -46,9 +46,9 @@
           <div class="col-xs-offset-4 col-md-offset-4">    
             <ul class="nav navbar-nav nav">
               <li><button type="button" class=" btn btn-md btn-default" data-toggle="modal" data-target="#myModal">Crea evento</button></li>
-              <li><a href="{{asset('/lista_sale')}}">Sale riunioni</a></li>
+              <li><a href="{{ url('front_lista_sale')}}">Sale riunioni</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="{{asset('/lista_eventi')}}">Eventi</a></li>
+              <li><a href="{{ url('front_lista_eventi')}}">Eventi</a></li>
             </ul>
           </div>
    
@@ -62,9 +62,9 @@
     
               </li>
               <li role="separator" class="divider"></li>
-              <li><a href="{{asset('/lista_users')}}">Colleghi</a></li>
+              <li><a href="{{ url('front_lista_users')}}">Colleghi</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="{{asset('/')}}">Log out</a></li>
+              <li><a href="{{ url('front_login')}}">Log out</a></li>
             </ul>
             <li><a href="" class="img_nav"><img src="img/harper_nav.jpg" alt="harper reed" class="img-circle" style="cursor:default"></a></li>
           </ul>

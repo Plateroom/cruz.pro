@@ -21,3 +21,8 @@ front_lista_eventi:
 front_lista_users:
     path:     /lista_users
     defaults: { _controller: FrontBundle:User:listausers }
+
+front_user_admin:
+    path:     /user_admin
+    defaults: { _controller: FrontBundle:User:useradmin }
+

@@ -1,6 +1,6 @@
-front_homepage:
+front_login:
     path:     /
-    defaults: { _controller: FrontBundle:Default:index }
+    defaults: { _controller: FrontBundle:Login:login }
 
 front_user:
     path:     /user
@@ -10,3 +10,14 @@ front_sala:
     path:     /sala
     defaults: { _controller: FrontBundle:Sala:sala }
 
+front_lista_sale:
+    path:     /lista_sale
+    defaults: { _controller: FrontBundle:Sala:listasale }
+
+front_lista_eventi:
+    path:     /lista_eventi
+    defaults: { _controller: FrontBundle:Eventi:eventi }
+
+front_lista_users:
+    path:     /lista_users
+    defaults: { _controller: FrontBundle:User:listausers }

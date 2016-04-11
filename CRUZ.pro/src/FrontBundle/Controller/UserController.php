@@ -15,4 +15,9 @@ class UserController extends Controller
    {
       return $this->render('FrontBundle:Default:user.html.twig');
    }
+
+    public function listausersAction(Request $request)
+   {
+      return $this->render('FrontBundle:Default:lista_users.html.twig');
+   }
 }

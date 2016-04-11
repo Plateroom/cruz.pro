@@ -38,7 +38,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php?page=user"> <span class="glyphicon glyphicon-asterisk" style="color: #748F80; margin-right: 15px"></span><strong>Cruz.pro</strong></a>
+            <a class="navbar-brand" href="{{asset('/user')}}"> <span class="glyphicon glyphicon-asterisk" style="color: #748F80; margin-right: 15px"></span><strong>Cruz.pro</strong></a>
           </div>
 
           <!-- navbar links -->
@@ -46,9 +46,9 @@
           <div class="col-xs-offset-4 col-md-offset-4">    
             <ul class="nav navbar-nav nav">
               <li><button type="button" class=" btn btn-md btn-default" data-toggle="modal" data-target="#myModal">Crea evento</button></li>
-              <li><a href="index.php?page=lista_sale">Sale riunioni</a></li>
+              <li><a href="{{asset('/lista_sale')}}">Sale riunioni</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="index.php?page=lista_eventi">Eventi</a></li>
+              <li><a href="{{asset('/lista_eventi')}}">Eventi</a></li>
             </ul>
           </div>
    
@@ -62,9 +62,9 @@
     
               </li>
               <li role="separator" class="divider"></li>
-              <li><a href="?page=lista_utenti">Colleghi</a></li>
+              <li><a href="{{asset('/lista_users')}}">Colleghi</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="index.php">Log out</a></li>
+              <li><a href="{{asset('/')}}">Log out</a></li>
             </ul>
             <li><a href="" class="img_nav"><img src="img/harper_nav.jpg" alt="harper reed" class="img-circle" style="cursor:default"></a></li>
           </ul>

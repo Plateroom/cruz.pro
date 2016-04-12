@@ -1,0 +1,135 @@
+<!-- Modal crea evento-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+      </button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Crea evento</h4>
+     </div>
+
+
+     <div class="modal-body">
+
+
+
+      <div class="row">
+          <label for="nome-evento" class="control-label">Nome Evento:</label>
+          <input type="text" class="form-control" id="exampleInputName2" placeholder="&#9998; Nome evento"><br>
+      </div>
+<!-- data -->
+
+      <div class="row">
+        <div class="col-md-12" style="height:60px; padding-left: 0px;padding-right: 0px;">
+          <div class="form-group">
+            <label for="nome-evento" class="control-label">Data e Ora della prenotazione:</label>
+            <div class='input-group date' id='datetimepicker'>
+              <input type="text" class="form-control" />
+              <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar" style="color: #748F80;">
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- sala -->
+
+      <div class="row">
+        <div class="col-md-6">
+              <ul class="nav navbar-nav navbar-left">
+                  
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">N.posti<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">10 posti</a></li>
+                    <li><a href="#">15 posti</a></li>
+                    <li><a href="#">20 posti</a></li>
+                  </ul>
+                </ul>
+        </div>
+
+
+
+        <div class="col-md-6">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sale Disponibili<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Sala Marco Aurelio</a></li>
+                  <li><a href="#">Sala Cesare</a></li>
+                  <li><a href="#">Sala Cleopatra</a></li>
+                </ul>
+          </ul>
+        </div>
+      </div>
+
+<hr>
+
+<!-- note -->
+          
+      <div class="row">
+        <label for="commenti" class="control-label">Aggiungi note:</label>
+        <textarea class="form-control" rows="3" placeholder="&#9998; Note"></textarea><br>
+      </div>
+
+<hr>
+
+ <!--     <div class="row">
+        <div class="col-xs-12" style= "padding-left: 0px; padding-right: 0px">
+          <div class="panel panel-warning">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Invita i colleghi
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse push left" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                <h6 class="text-style">Harper reed</h6>
+                <hr>
+                <h6 class="text-style">Harper Reed</h6>
+                <hr>
+                <h6 class="text-style">harper Reed</h6>
+                <hr>
+                <h6 class="text-style">harper Reed</h6>
+                
+              </div>
+            </div>
+          </div>  -->
+
+<!-- aggiungi utenti -->
+
+          <div class="row">
+              <label for="colleghi" class="control-label">Invita i colleghi:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Dipendenti Cruz" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">@cruz.com</span>
+              </div>
+          </div>
+
+          <div class="row">
+              <label for="colleghi" class="control-label">Invita esterni:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">@</span>     
+              </div>
+            </div>
+         
+
+    </div>    
+    
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
+          <button type="button" class="btn btn-secondary">Salva evento</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+

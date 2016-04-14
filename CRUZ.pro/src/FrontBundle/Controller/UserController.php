@@ -26,4 +26,9 @@ class UserController extends Controller
    {
       return $this->render('FrontBundle:Utente:user_admin.html.twig');
    }
+
+    public function modificaUserAction(Request $request)
+   {
+      return $this->render('FrontBundle:Utente:modifica_user.html.twig');
+   }
 }

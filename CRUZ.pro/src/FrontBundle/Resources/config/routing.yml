@@ -14,6 +14,26 @@ front_lista_sale:
     path:     /lista_sale
     defaults: { _controller: FrontBundle:Sala:listaSale }
 
+front_sala_modifica:
+    path:     /sala_modifica
+    defaults: { _controller: FrontBundle:User:salaModifica }
+
+front_evento:
+    path:     /evento
+    defaults: { _controller: FrontBundle:Eventi:evento }
+
+front_crea_evento:
+    path:     /crea/evento
+    defaults: { _controller: FrontBundle:Eventi:creaEvento }
+
+front_evento_modal:
+    path:     /evento/modal
+    defaults: { _controller: FrontBundle:Eventi:eventoModal }
+
+front_evento_modifica:
+    path:     /evento/modifica
+    defaults: { _controller: FrontBundle:Eventi:modificaEvento }
+
 front_lista_eventi:
     path:     /lista_eventi
     defaults: { _controller: FrontBundle:Eventi:eventi }
@@ -26,3 +46,6 @@ front_user_admin:
     path:     /user_admin
     defaults: { _controller: FrontBundle:User:userAdmin }
 
+front_user_modifica:
+    path:     /modifica/utente
+    defaults: { _controller: FrontBundle:User:modificaUser }

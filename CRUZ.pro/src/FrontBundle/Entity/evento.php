@@ -8,7 +8,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * evento
  *
  * @ORM\Table(name="evento")
- * @ORM\Entity(repositoryClass="FrontBundle\Repository\eventoRepository")
+ * @ORM\Entity(repositoryClass="FrontBundle\Repository\EventoRepository")
  */
 class Evento
 {
@@ -53,7 +53,7 @@ class Evento
     /**
      * @var User
      *
-     * @ORM\OneToOne(targetEntity="User")
+     * @ORM\OneToOne(targetEntity="User", inversedBy="eventoUser")
      */
     private $user;
 

@@ -49,6 +49,22 @@ class Evento
      */
     private $descrizione;
 
+
+    /**
+     * @var User
+     *
+     * @ORM\OneToOne(targetEntity="User")
+     */
+    private $user;
+
+
+    /**
+     * @var Sala
+     * @ORM\OneToOne(targetEntity="Sala")
+     */
+    private $sala;
+
+
     /**
      * @ORM\ManyToMany(targetEntity="Invitati")
      * @ORM\JoinTable(name="eventi_invitati",
@@ -59,10 +75,12 @@ class Evento
     private $listaInvitati;
 
 
+
     public function __construct()
     {
         $this->listaInvitati = new ArrayCollection();
     }
+
 
     /**
      * Get id
@@ -170,16 +188,51 @@ class Evento
         return $this->descrizione;
     }
 
-    public function getListaInvitati()
+
+/////////////////////
+    public function setUser($user)
     {
-        return $this->listaInvitati;
+        $this->user = $user;
+
+        return $this;
     }
 
+
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+
+///////////////////////
     public function setListaInvitati($listaInvitati)
     {
         $this->listaInvitati = $listaInvitati;
 
         return $this;
     }
+
+
+    public function getListaInvitati()
+    {
+        return $this->listaInvitati;
+    }
+
+/////////////////////////
+
+
+    public function setSala($sala)
+    {
+        $this->sala = $sala;
+
+        return $this;
+    }
+
+
+    public function getSala()
+    {
+        return $this->sala;
+    }
+
 }
 

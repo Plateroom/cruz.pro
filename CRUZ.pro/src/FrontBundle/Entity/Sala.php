@@ -79,6 +79,12 @@ class Sala
 
 
     /**
+     * @ORM\OneToMany(targetEntity="Evento", mappedBy="id")
+     */
+    private $eventoSale;
+
+
+    /**
      * Get id
      *
      * @return int
@@ -278,6 +284,20 @@ class Sala
     public function getDescrizione()
     {
         return $this->descrizione;
+    }
+
+////////////////////////////////
+        public function setEventoSale($eventoSale)
+    {
+        $this->eventoSale = $eventoSale;
+
+        return $this;
+    }
+
+
+    public function getEventoSale()
+    {
+        return $this->eventoSale;
     }
 }
 

@@ -3,14 +3,15 @@
 namespace FrontBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use FOS\UserBundle\Model\User as BaseUser;
 
 /**
  * Utenti
  *
- * @ORM\Table(name="utenti")
- * @ORM\Entity(repositoryClass="FrontBundle\Repository\UtentiRepository")
+ * @ORM\Table(name="user")
+ * @ORM\Entity(repositoryClass="FrontBundle\Repository\UserRepository")
  */
-class Utenti
+class User extends BaseUser
 {
     /**
      * @var int
@@ -19,14 +20,7 @@ class Utenti
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private $id;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="admin", type="string", length=255)
-     */
-    private $admin;
+    protected $id;
 
     /**
      * @var string
@@ -41,20 +35,6 @@ class Utenti
      * @ORM\Column(name="cognome", type="string", length=255)
      */
     private $cognome;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="ruolo", type="string", length=255)
-     */
-    private $ruolo;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="data_registrazione", type="datetime", unique=true)
-     */
-    private $dataRegistrazione;
 
     /**
      * @var string
@@ -80,58 +60,15 @@ class Utenti
     /**
      * @var string
      *
-     * @ORM\Column(name="email", type="string", length=255)
-     */
-    private $email;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="password", type="string", length=255)
-     */
-    private $password;
-
-    /**
-     * @var string
-     *
      * @ORM\Column(name="social", type="string", length=255, nullable=true)
      */
     private $social;
 
 
     /**
-     * Get id
-     *
-     * @return int
+     * @ORM\OneToMany(targetEntity="Evento", mappedBy="id")
      */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set admin
-     *
-     * @param string $admin
-     *
-     * @return Utenti
-     */
-    public function setAdmin($admin)
-    {
-        $this->admin = $admin;
-
-        return $this;
-    }
-
-    /**
-     * Get admin
-     *
-     * @return string
-     */
-    public function getAdmin()
-    {
-        return $this->admin;
-    }
+    private $eventoUser;
 
     /**
      * Set nome
@@ -179,54 +116,6 @@ class Utenti
     public function getCognome()
     {
         return $this->cognome;
-    }
-
-    /**
-     * Set ruolo
-     *
-     * @param string $ruolo
-     *
-     * @return Utenti
-     */
-    public function setRuolo($ruolo)
-    {
-        $this->ruolo = $ruolo;
-
-        return $this;
-    }
-
-    /**
-     * Get ruolo
-     *
-     * @return string
-     */
-    public function getRuolo()
-    {
-        return $this->ruolo;
-    }
-
-    /**
-     * Set dataRegistrazione
-     *
-     * @param \DateTime $dataRegistrazione
-     *
-     * @return Utenti
-     */
-    public function setDataRegistrazione($dataRegistrazione)
-    {
-        $this->dataRegistrazione = $dataRegistrazione;
-
-        return $this;
-    }
-
-    /**
-     * Get dataRegistrazione
-     *
-     * @return \DateTime
-     */
-    public function getDataRegistrazione()
-    {
-        return $this->dataRegistrazione;
     }
 
     /**
@@ -302,54 +191,6 @@ class Utenti
     }
 
     /**
-     * Set email
-     *
-     * @param string $email
-     *
-     * @return Utenti
-     */
-    public function setEmail($email)
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
-    /**
-     * Get email
-     *
-     * @return string
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
-
-    /**
-     * Set password
-     *
-     * @param string $password
-     *
-     * @return Utenti
-     */
-    public function setPassword($password)
-    {
-        $this->password = $password;
-
-        return $this;
-    }
-
-    /**
-     * Get password
-     *
-     * @return string
-     */
-    public function getPassword()
-    {
-        return $this->password;
-    }
-
-    /**
      * Set social
      *
      * @param string $social
@@ -371,6 +212,21 @@ class Utenti
     public function getSocial()
     {
         return $this->social;
+    }
+
+
+//////////////
+    public function setEventoUser($eventoUser)
+    {
+        $this->eventoUser = $eventoUser;
+
+        return $this;
+    }
+
+
+    public function getEventoUser()
+    {
+        return $this->eventoUser;
     }
 }
 

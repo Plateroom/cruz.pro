@@ -287,7 +287,7 @@ class Sala
     }
 
 ////////////////////////////////
-        public function setEventoSale($eventoSale)
+    public function setEventoSale($eventoSale)
     {
         $this->eventoSale = $eventoSale;
 

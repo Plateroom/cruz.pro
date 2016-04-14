@@ -66,7 +66,7 @@ class User extends BaseUser
 
 
     /**
-     * @ORM\OneToMany(targetEntity="Evento", mappedBy="id")
+     * @ORM\OneToMany(targetEntity="Evento", mappedBy="user")
      */
     private $eventoUser;
 

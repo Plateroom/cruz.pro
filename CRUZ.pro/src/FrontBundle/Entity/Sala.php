@@ -79,7 +79,7 @@ class Sala
 
 
     /**
-     * @ORM\OneToMany(targetEntity="Evento", mappedBy="id")
+     * @ORM\OneToMany(targetEntity="Evento", mappedBy="sala")
      */
     private $eventoSale;
 

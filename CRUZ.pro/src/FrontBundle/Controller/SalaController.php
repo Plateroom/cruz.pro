@@ -21,7 +21,7 @@ class SalaController extends Controller
       return $this->render('FrontBundle:Sala:lista_sale.html.twig');
    }
 
-       public function modificaSalaAction(Request $request)
+       public function salaModificaAction(Request $request)
    {
       return $this->render('FrontBundle:Sala:modifica_sala.html.twig');
    }

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "symfony/security-acl": "^3.0"
+    }
+}

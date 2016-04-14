@@ -3,96 +3,84 @@
 {% block body %}
 
 <div class= "container-esterno">
-<div class="container-fluid">
-  
+  <div class="container-fluid">
     <hr>
-  
-    <div class="row content-img">
-      
+      <div class="row content-img">
         <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
           <div class="panel panel-default">
             <div class="panel-heading">
               <blockquote class="blockquote-reverse"> 
-              <h5 class="caratteristiche-titolo">Sala Marco Aurelio</h5>
+                <h5 class="caratteristiche-titolo">Sala Marco Aurelio</h5>
                 <h6 class="caratteristiche-titolo">sede La Masa.
-                <h6 class="text-style">Milano IT <br>
-                +393485409834</h6> </blockquote>
+                <h6 class="text-style">Milano IT<br>+393485409834</h6> 
+              </blockquote>
+            </div>
+             <div class="panel-body"></div>
+            </div>
+            </div>
+            <img src="img/sala.jpg" alt="sala marco aurelio" class="img-circle">
+              <div class="col-md-7">
+                <div class="panel panel-default">
+                  <div class="panel-heading ">
+                    <blockquote><h5 class="caratteristiche-titolo">20 Posti</h5><hr class="margin-top-bottom">
+                    <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria, Fotocopiatrice, Frigobar.</h6></blockquote>
+                  </div>
+                  <div class="panel-body col-xs-offset-5"></div>
+                </div>
               </div>
-            <div class="panel-body">
-            </div>
-          </div>
-        </div>
-        <img src="img/sala.jpg" alt="sala marco aurelio" class="img-circle">
-        <div class="col-md-7">
-          <div class="panel panel-default">
-            <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">20 Posti</h5>
-              <hr class="margin-top-bottom">
-              <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
-Fotocopiatrice, Frigobar.</h6></blockquote>
-            </div>
-            <div class="panel-body col-xs-offset-5">
-            </div>
-          </div>
-        </div>
-       </div>
+            </div>       
+<!--eventi in ordine -->
+            <div class="row content">
+              <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
+                <div class="panel panel-success">
+                  <div class="panel-heading secondo-contenuto">
+                    <div class="col-md-12 text-center">
 
-       
- <!--eventi in ordine -->
+                      <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#myModal2" href="/sala/modifica">Modifica Sala</button>
 
-    <div class="row content">
-      
-        <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
-          <div class="panel panel-success">
-            <div class="panel-heading secondo-contenuto"><h5 class="caratteristiche-titolo text-center">Eventi della sala</h5></div>
-            <div class="panel-body">
-
-
-              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-warning">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          I miei eventi
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
-        <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
-        <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-warning">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          I miei eventi passati
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
-        <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
-        <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="panel panel-success">
-            <div class="panel-heading">
-
-               <div id="custom-search-input">
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <h5 class="caratteristiche-titolo text-center">Eventi della sala</h5>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-warning">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">I miei eventi</a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                            <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                            <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-warning">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">I miei eventi passati</a>
+                          </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                            <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                            <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="panel panel-success">
+                  <div class="panel-heading">
+                    <div id="custom-search-input">
                  <div class="input-group">
                     <input type="text" class="  search-query form-control" placeholder="cerca eventi" />
                        <span class="input-group-btn">
@@ -121,24 +109,15 @@ Fotocopiatrice, Frigobar.</h6></blockquote>
 
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
+                  <div class="modal-content"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-   </div>
-
-
-
-  </div>
-
-</div>
-</div>
-</div>
-
-
-
-</div>
 </div>
       
 

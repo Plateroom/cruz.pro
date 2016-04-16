@@ -1,5 +1,5 @@
 front_user:
-    path:     /user
+    path:     /
     defaults: { _controller: FrontBundle:User:user }
 
 front_sala:

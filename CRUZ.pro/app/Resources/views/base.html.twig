@@ -1,131 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <html lang="it">
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Cruz.pro{% endblock %}</title>
-         <!-- stylesheet bootstrap -->
-        <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>{% block title %}Cruz.pro{% endblock %}</title>
+  <!-- stylesheet bootstrap -->
+  <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
 
 
-        <!-- Date picker -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker-standalone.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js" rel="stylesheet">
+  <!-- Date picker -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker-standalone.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js" rel="stylesheet">
 
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.css"/>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.css"/>
 
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.print.css" media="print"/>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.print.css" media="print"/>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-        <link href="{{asset('css/stylecruz.css')}}" rel="stylesheet">
+  <link href="{{asset('css/stylecruz.css')}}" rel="stylesheet">
 
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
+  <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
 
-    <body>
+<body>
 
-        {% block header%}
-                <!-- Navigation -->
+  {% block header%}
+  <!-- Navigation -->
 
-      <nav class="navbar navbar-fixed-top" role="navigation">
-
-
-          <!-- header -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{asset('/user')}}"> <span class="glyphicon glyphicon-asterisk" style="color: #748F80; margin-right: 15px"></span><strong>Cruz.pro</strong></a>
-          </div>
-
-          <!-- navbar links -->
-          <div class="collapse navbar-collapse">
-          <div class="col-xs-offset-4 col-md-offset-4">
-            <ul class="nav navbar-nav nav">
-
-              <li><button type="button" class=" btn btn-md btn-default" data-toggle="modal" data-target="#myModal1" href="/crea/evento">Crea evento</button></li>
+  <nav class="navbar navbar-fixed-top" role="navigation">
 
 
-              <li><a href="{{ url('front_lista_sale')}}">Sale riunioni</a></li>
-              <li class="divider-vertical"></li>
-              <li><a href="{{ url('front_lista_eventi')}}">Eventi</a></li>
-            </ul>
-          </div>
+    <!-- header -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{asset('/user')}}"> <span class="glyphicon glyphicon-asterisk" style="color: #748F80; margin-right: 15px"></span><strong>Cruz.pro</strong></a>
+    </div>
 
-          <ul class="nav navbar-nav navbar-right">
+    <!-- navbar links -->
+    <div class="collapse navbar-collapse">
+      <div class="col-xs-offset-4 col-md-offset-4">
+        <ul class="nav navbar-nav nav">
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profilo <b class="caret"></b></a>
-            <ul class="dropdown-menu">
+          <li><button type="button" class=" btn btn-md btn-default" data-toggle="modal" data-target="#myModal1" href="/crea/evento">Crea evento</button></li>
 
-              <li><a class="btn btn-link" data-toggle="modal" data-target="#myModal2" href="/modifica/utente" style="padding-left: 0px">Modifica profilo</a>
 
-              </li>
-              <li role="separator" class="divider"></li>
-              <li><a href="{{ url('front_lista_users')}}">Colleghi</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="{{ url('fos_user_security_logout')}}">Log out</a></li>
-            </ul>
-            <li><a href="" class="img_nav"><img src="img/harper_nav.jpg" alt="harper reed" class="img-circle" style="cursor:default"></a></li>
+          <li><a href="{{ url('front_lista_sale')}}">Sale riunioni</a></li>
+          <li class="divider-vertical"></li>
+          <li><a href="{{ url('front_lista_eventi')}}">Eventi</a></li>
+        </ul>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ app.user.username }} <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+
+            <li><a class="btn btn-link" data-toggle="modal" data-target="#myModal2" href="{{url('fos_user_profile_edit')}}" style="padding-left: 0px">Modifica profilo</a>
+
+            </li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{{ url('front_lista_users')}}">Colleghi</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="{{ url('fos_user_security_logout')}}">Log out</a></li>
           </ul>
+          {% else %}
+          <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+          {% endif %}
+
+          <li><a href="" class="img_nav"><img src="img/harper_nav.jpg" alt="harper reed" class="img-circle" style="cursor:default"></a></li>
+        </ul>
 
 
 
-          </div>
+      </div>
 
-      </nav>
+    </nav>
   </div>
 
 
 
 
 
-<!-- Modal crea evento-->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+  <!-- Modal crea evento-->
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      </div>
     </div>
   </div>
-</div>
 
-        {% endblock %}
-        {% block body %}{% endblock %}
-
+  {% endblock %}
+  {% block body %}{% endblock %}
 
 
 
-        {% block footer%}
-            <div class="row footer">
-                <div class="col-xs-12 col-md-12 text-center">
-                    <address>
-                        <strong>&copy; Cruz.pro</strong><br>
-                        <a class="text-footer" href="#Info-contatti">Privacy e termini</a><br>
-                    </address>
-                </div>
-            </div>
-        {% endblock %}
 
-        {% block javascripts %}
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
+  {% block footer%}
+  <div class="row footer">
+    <div class="col-xs-12 col-md-12 text-center">
+      <address>
+        <strong>&copy; Cruz.pro</strong><br>
+        <a class="text-footer" href="#Info-contatti">Privacy e termini</a><br>
+      </address>
+    </div>
+  </div>
+  {% endblock %}
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment-with-locales.min.js" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.js" ></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/lang/it.js" ></script>
+  {% block javascripts %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment-with-locales.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/fullcalendar.min.js" ></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.1/lang/it.js" ></script>
 
 
-        <script src="/js/stylecruz.js"></script>
-        {% endblock %}
-    </body>
+  <script src="/js/stylecruz.js"></script>
+  {% endblock %}
+</body>
 </html>

@@ -11,8 +11,8 @@ front_lista_sale:
     defaults: { _controller: FrontBundle:Sala:listaSale }
 
 front_sala_modifica:
-    path:     /sala_modifica
-    defaults: { _controller: FrontBundle:User:salaModifica }
+    path:     /sala/modifica
+    defaults: { _controller: FrontBundle:Sala:salaModifica }
 
 front_evento:
     path:     /evento

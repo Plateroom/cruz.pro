@@ -5,8 +5,9 @@ namespace FrontBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use FOS\UserBundle\Model\User as BaseUser;
 
+
 /**
- * Utenti
+ * User
  *
  * @ORM\Table(name="user")
  * @ORM\Entity(repositoryClass="FrontBundle\Repository\UserRepository")

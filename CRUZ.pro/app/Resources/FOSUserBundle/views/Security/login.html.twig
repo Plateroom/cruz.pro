@@ -38,7 +38,7 @@
                                 <input class="mailbox" placeholder="Email Aziendale"  type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
                             </li>
                             <li>
-                                <input class="password" id="password" type="password" name="password" placeholder= "Password"required="required" />
+                                <input class="password" id="password" type="password" name="_password" placeholder= "Password"required="required" />
                             </li>
                             <li>
                                 <input type="submit" class="bottonelog" id="_submit" name="_submit"  value="{{ 'Login'|trans }}" />
@@ -47,7 +47,7 @@
                                 <input type="checkbox" id="remember_me" name="_remember_me" value="on" /> Remember Me
                             </li>
 
-                            <a href="#" id="dimenticata">Password dimenticata?</a>
+                            <a href="{{ url('fos_user_resetting_request') }}" id="dimenticata">Password dimenticata?</a>
 
                         </ul>
                         <div class="termini">

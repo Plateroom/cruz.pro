@@ -3,6 +3,7 @@
 namespace FrontBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Sala
@@ -83,6 +84,10 @@ class Sala
      */
     private $eventoSale;
 
+    public function __construct()
+    {
+        $this->eventoSale = new ArrayCollection();
+    }
 
     /**
      * Get id

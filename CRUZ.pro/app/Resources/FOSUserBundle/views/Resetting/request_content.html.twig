@@ -1,5 +1,8 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
+<!--stylesheet bootstrap-->
+<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
+
 
 <div class="container">
     <div class="row">
@@ -10,9 +13,8 @@
                         <div class="text-center">
                           <h3><i class="fa fa-lock fa-4x"></i></h3>
                           <h2 class="text-center">Password Dimenticata?</h2>
-                          <p>Puoi reimpostare la tua password qui.</p>
+                          <p>Modifica qui la tua Password.</p>
                             <div class="panel-body">
-
                                 <form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
                                     <div>
                                         {% if invalid_username is defined %}
@@ -25,12 +27,12 @@
                                         <input type="submit" value="{{ 'resetting.request.submit'|trans }}" />
                                     </div>
                                 </form>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    </div>
+</div>
 

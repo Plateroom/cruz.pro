@@ -3,6 +3,7 @@
 namespace FrontBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 use FOS\UserBundle\Model\User as BaseUser;
 
 
@@ -70,6 +71,13 @@ class User extends BaseUser
      * @ORM\OneToMany(targetEntity="Evento", mappedBy="user")
      */
     private $eventoUser;
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->eventoUser = new ArrayCollection();
+    }
 
     /**
      * Set nome

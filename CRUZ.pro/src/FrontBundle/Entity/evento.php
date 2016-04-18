@@ -51,16 +51,15 @@ class Evento
 
 
     /**
-     * @var User
-     *
-     * @ORM\OneToOne(targetEntity="User", inversedBy="eventoUser")
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="eventoUser")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $user;
 
 
     /**
-     * @var Sala
-     * @ORM\OneToOne(targetEntity="Sala")
+     * @ORM\ManyToOne(targetEntity="Sala", inversedBy="eventoSale")
+     * @ORM\JoinColumn(name="sala_id", referencedColumnName="id")
      */
     private $sala;
 

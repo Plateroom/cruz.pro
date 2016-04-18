@@ -5,14 +5,13 @@
   <div class="container-fluid">
 
     <hr>
-
     <div class="row content-img">
       <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
         <div class="panel panel-default">
-          <div class="panel-heading"> 
+          <div class="panel-heading">
             <blockquote class="blockquote-reverse">
-              <h5 class="caratteristiche-titolo">Harper Reed</h5> 
-              <h6 class="caratteristiche-titolo">CTO</h6> 
+              <h5 class="caratteristiche-titolo">Harper Reed</h5>
+              <h6 class="caratteristiche-titolo">CTO</h6>
               <h6 class="text-style">Cruz.pro</h6>
             </blockquote>
           </div>
@@ -20,13 +19,16 @@
         </div>
       </div>
       <img src="img/harper.jpg" alt="harper reed" class="img-circle">
-      <div class="col-md-7">
+
+        {% if is_granted("ROLE_ADMIN") %}
+
+      <div class="col-md-5">
        <div class="panel panel-default">
         <div class="panel-heading">
           <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
-            <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6> 
+            <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
             <h6 class="text-style">+393485409834</h6>
-          </blockquote>    
+          </blockquote>
         </div>
         <div class="panel-body col-xs-offset-5">
           <a class="btn btn-info" href="#">
@@ -40,7 +42,43 @@
         </div>
       </div>
     </div>
-  </div>
+    <div class="col-md-2">
+      <div class="panel panel-default">
+        <div class="panel-heading "><blockquote> <span class="glyphicon glyphicon-time" title="Ore prenotate"><h5 class="caratteristiche-titolo stat">H: 30 </h5></span>
+          <hr class="margin-top-bottom">
+          <span class="glyphicon glyphicon-list-alt" title="Eventi creati"><h5 class="caratteristiche-titolo stat">N°: 15</h5></span></blockquote>
+        </div>
+        <div class="panel-body col-xs-offset-5">
+        </div>
+      </div>
+    </div>
+
+    {% else %}
+
+      <div class="col-md-7">
+       <div class="panel panel-default">
+        <div class="panel-heading">
+          <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
+            <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
+            <h6 class="text-style">+393485409834</h6>
+          </blockquote>
+        </div>
+        <div class="panel-body col-xs-offset-5">
+          <a class="btn btn-info" href="#">
+            <i class="fa-li fa fa-facebook-official"></i>
+            <h5 class="caratteristiche-titolo-info">Facebook</h5>
+          </a>
+          <a class="btn btn-info" href="#">
+            <i class="fa-li fa fa-linkedin-square"></i>
+            <h5 class="caratteristiche-titolo-info">Linkedin</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+  {% endif %}
+</div>
   <!--eventi in ordine -->
 
   <div class="row content">
@@ -62,13 +100,13 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
-                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
-                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr>
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr>
                 <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6>
               </div>
             </div>
           </div>
-          
+
           <div class="panel panel-warning">
             <div class="panel-heading" role="tab" id="headingThree">
               <h4 class="panel-title">
@@ -79,8 +117,8 @@
             </div>
             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="panel-body">
-                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
-                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr>
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr>
                 <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6>
               </div>
             </div>
@@ -111,7 +149,7 @@
 
   <div class="panel-body">
     <h5 class="caratteristiche-titolo text-center">Calendario</h5>
-    
+
     <!-- calendar -->
 
 
@@ -120,17 +158,17 @@
     <div class="popup-text-custom">
 
 
-    <!-- modal evento-->
+      <!-- modal evento-->
 
 
-<a type="button" class="btn btn-primary open-modal" data-toggle="modal" data-target="#myModal" href="/evento/modal">Evento</a>
+      <a type="button" class="btn btn-primary open-modal" data-toggle="modal" data-target="#myModal" href="/evento/modal">Evento</a>
 
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-    </div>
-  </div>
-</div>
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+          </div>
+        </div>
+      </div>
 
 
 

@@ -13,22 +13,22 @@ class UserController extends Controller
     */
    public function userAction(Request $request)
    {
-      return $this->render('FrontBundle:Utente:user.html.twig');
+      return $this->render('FrontBundle:User:user.html.twig');
    }
 
     public function listaUsersAction(Request $request)
    {
-      return $this->render('FrontBundle:Utente:lista_users.html.twig');
+      return $this->render('FrontBundle:User:lista_users.html.twig');
    }
 
 
     public function userAdminAction(Request $request)
    {
-      return $this->render('FrontBundle:Utente:user_admin.html.twig');
+      return $this->render('FrontBundle:User:user_admin.html.twig');
    }
 
     public function modificaUserAction(Request $request)
    {
-      return $this->render('FrontBundle:Utente:modifica_user.html.twig');
+      return $this->render('FrontBundle:User:modifica_user.html.twig');
    }
 }

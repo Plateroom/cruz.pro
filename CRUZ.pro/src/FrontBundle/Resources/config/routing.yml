@@ -45,3 +45,4 @@ front_user_admin:
 front_user_modifica:
     path:     /modifica/utente
     defaults: { _controller: FrontBundle:User:modificaUser }
+

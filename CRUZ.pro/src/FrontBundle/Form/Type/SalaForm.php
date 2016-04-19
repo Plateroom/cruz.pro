@@ -16,14 +16,14 @@ class SalaForm extends AbstractType
     {
         $builder
             ->add('nome', TextType::class, array('label' => false))
-            ->add('sede', TextType::class)
-            ->add('citta', TextType::class)
-            ->add('datacreazione', DateTimeType::class)
-            ->add('posti', IntegerType::class)
-            ->add('telefono', TextType::class)
+            ->add('sede', TextType::class, array('label' => false))
+            ->add('citta', TextType::class, array('label' => false))
+            ->add('datacreazione', DateTimeType::class, array('label' => false))
+            ->add('posti', IntegerType::class, array('label' => false))
+            ->add('telefono', TextType::class, array('label' => false))
             #->add('immagine', UrlType::class)
-            ->add('descrizione', TextType::class)
-            ->add('save', SubmitType::class)
+            ->add('descrizione', TextType::class, array('label' => false))
+            ->add('save', SubmitType::class, array('label' => false))
         ;
     }
 }

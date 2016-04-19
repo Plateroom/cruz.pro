@@ -32,9 +32,3 @@ monolog:
 
 #swiftmailer:
 #    delivery_address: me@example.com
-
-
-swiftmailer:
-    transport: gmail
-    username: sannafilippo.fs@gmail.com
-    password: kannushu12

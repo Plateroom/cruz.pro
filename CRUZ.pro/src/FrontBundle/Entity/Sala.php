@@ -64,12 +64,12 @@ class Sala
      */
     private $telefono;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="immagine_url", type="text")
-     */
-    private $immagineUrl;
+    #/**
+    # * @var string
+    # *
+    # * @ORM\Column(name="immagine_url", type="text")
+    # */
+    #private $immagineUrl;
 
     /**
      * @var string
@@ -243,29 +243,29 @@ class Sala
         return $this->telefono;
     }
 
-    /**
-     * Set immagineUrl
-     *
-     * @param string $immagineUrl
-     *
-     * @return Sala
-     */
-    public function setImmagineUrl($immagineUrl)
-    {
-        $this->immagineUrl = $immagineUrl;
-
-        return $this;
-    }
-
-    /**
-     * Get immagineUrl
-     *
-     * @return string
-     */
-    public function getImmagineUrl()
-    {
-        return $this->immagineUrl;
-    }
+  #  /**
+  #   * Set immagineUrl
+  #   *
+  #   * @param string $immagineUrl
+  #   *
+  #   * @return Sala
+  #   */
+  #  public function setImmagineUrl($immagineUrl)
+  #  {
+  #      $this->immagineUrl = $immagineUrl;
+#
+  #      return $this;
+  #  }
+#
+  #  /**
+  #   * Get immagineUrl
+  #   *
+  #   * @return string
+  #   */
+  #  public function getImmagineUrl()
+  #  {
+  #      return $this->immagineUrl;
+  #  }
 
     /**
      * Set descrizione

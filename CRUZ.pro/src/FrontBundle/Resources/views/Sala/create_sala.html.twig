@@ -1,12 +1,14 @@
-<!-- modal modifica sala -->
+{% extends "::base.html.twig" %}
 
+{% block body %}
 
+<h1>Create</h1>
 
 <div class="container-modal ">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
     </button>
-      <h4 class="modal-title" id="gridSystemModalLabel">Modifica Sala</h4>
+      <h4 class="modal-title" id="gridSystemModalLabel">Crea Sala</h4>
   </div>
   <div class="modal-body">
     <div class="row content-img">
@@ -16,51 +18,53 @@
             <div class="panel-body"></div>
           </div>
         </div>
-      <img src="img/harper.jpg" alt="harper reed" class="img-circle">
+      <img src="../img/harper.jpg" alt="harper reed" class="img-circle">
     </div>
 
     <hr>
-
+{{ form_start(form) }}
     <form>
+
       <div class="form-group">
-        <label for="recipient-name" class="control-label">Nome:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="Marco Aurelio">
+        <span for="recipient-name" class="control-label">Nome:</span>
+        {{ form_row(form.nome, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
+
       <div class="form-group">
         <label for="recipient-name" class="control-label">Sede:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="La Masa">
+        {{ form_row(form.sede, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
+
       <div class="form-group">
-        <label for="recipient-name" class="control-label">Indirizzo:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="Milano IT">
+        <label for="recipient-name" class="control-label">Città:</label>
+        {{ form_row(form.citta, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
+
       <div class="form-group">
-        <label for="recipient-name" class="control-label">e-Mail:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="Marco_Aurelio@cruzpro.com">
+        <label for="recipient-name" class="control-label">Telefono:</label>
+        {{ form_row(form.nome, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
+
       <div class="form-group">
         <label for="recipient-name" class="control-label">Numero Posti:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="20">
+        {{ form_row(form.posti, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
+
       <div class="form-group">
         <label for="recipient-name" class="control-label">Descrizione:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="..........">
+        {{ form_row(form.descrizione, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
-    </form>
 
-
-
-
-  </div>
-
-
-<div class="modal-footer">
+       <div class="modal-footer">
         <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Chiudi</button>
         <button type="button" class="btn btn-secondary btn-xs">Salva modifiche</button>
       </div>
+{{ form_end(form) }}
+    </form>
+  </div>
+
+ </div>
+
+{% endblock %}
 
 
-
-
-
-    </div>

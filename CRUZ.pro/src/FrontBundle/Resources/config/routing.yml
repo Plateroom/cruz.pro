@@ -44,5 +44,10 @@ front_user_admin:
 
 front_user_modifica:
     path:     /modifica/utente
-    defaults: { _controller: FrontBundle:User:modificaUser }
+    defaults: { _controller: FrontBundle:User:modificaUser}
+
+front_sala_crea:
+    path:     /sala/new
+    defaults: { _controller: FrontBundle:Sala:create }
+
 

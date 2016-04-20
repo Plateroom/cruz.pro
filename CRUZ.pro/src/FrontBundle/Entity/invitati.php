@@ -5,10 +5,10 @@ namespace FrontBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * invitati
+ * Invitati
  *
- * @ORM\Table(name="invitati")
- * @ORM\Entity(repositoryClass="FrontBundle\Repository\invitatiRepository")
+ * @ORM\Table(name="Invitati")
+ * @ORM\Entity(repositoryClass="FrontBundle\Repository\InvitatiRepository")
  */
 class Invitati
 {

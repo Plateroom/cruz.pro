@@ -44,6 +44,10 @@
             </div>
           </div>
 
+
+<button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#myModal2" href="{{ url('front_sala_modifica', {id: sala.id}) }}">Modifica Sala</button>
+
+
           {% else %}
 
           <div class="col-md-7">
@@ -65,8 +69,6 @@
                   <div class="col-md-12 text-center">
 
                     {% if is_granted("ROLE_ADMIN") %}
-
-                    <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#myModal2" href="/sala/modifica">Modifica Sala</button>
 
                     {% endif %}
 

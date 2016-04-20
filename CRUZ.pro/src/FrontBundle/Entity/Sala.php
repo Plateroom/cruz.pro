@@ -23,9 +23,9 @@ class Sala
     private $id;
 
     /**
-     * @var int
+     * @var string
      *
-     * @ORM\Column(name="nome", type="integer")
+     * @ORM\Column(name="nome", type="string")
      */
     private $nome;
 

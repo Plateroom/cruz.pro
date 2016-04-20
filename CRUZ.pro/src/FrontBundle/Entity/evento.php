@@ -5,9 +5,9 @@ namespace FrontBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 /**
- * evento
+ * Evento
  *
- * @ORM\Table(name="evento")
+ * @ORM\Table(name="Evento")
  * @ORM\Entity(repositoryClass="FrontBundle\Repository\EventoRepository")
  */
 class Evento

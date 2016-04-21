@@ -62,10 +62,6 @@ class SalaController extends Controller
     {
         $sala = new Sala();
 
-        if (!$sala) {
-            throw new NotFoundHttpException();
-        }
-
         $form = $this->createForm(SalaForm::class, $sala);
 
         $form->handleRequest($request);
@@ -90,79 +86,55 @@ class SalaController extends Controller
             'form' => $form->createView(),
         ));
     }
- #
- #   /**
- #    * @Route("/sala/{id}", name="sala_view")
- #    */
- #   public function viewAction($id)
- #   {
- #       $sala = $this->getDoctrine()->getRepository('FrontBundle:Sala')->find($id);
- #
- #       if (!$sala) {
- #           throw new NotFoundHttpException();
- #       }
- #
- #       return $this->render('FrontBundle:Sala:sala.html.twig', array(
- #           'sala' => $sala,
- #       ));
- #   }
- #
 
-    public function editAction(Request $request)
-    {
-        $sala = $this->getDoctrine()->getRepository('FrontBundle:Sala')->find($request->get('id'));
 
-        if (!$sala) {
-            throw new NotFoundHttpException();
-        }
+  public function editAction(Request $request)
+  {
+      $sala = $this->getDoctrine()->getRepository('FrontBundle:Sala')->find($request->get('id'));
+      if (!$sala) {
+          throw new NotFoundHttpException();
+      }
+      $form = $this->createForm(SalaForm::class, $sala);
+      $form->handleRequest($request);
+      if ($form->isSubmitted() && $form->isValid()) {
+          // Salvo cose.
+          $sala = $form->getData();
+          $em = $this->getDoctrine()->getManager();
+          $em->persist($sala);
+          $em->flush();
+          $this->addFlash(
+              'notice',
+              'Sala modificata con successo'
+          );
+          return $this->redirectToRoute('front_sala', ['id' => $sala->getId()]);
+      }
+      return $this->render('FrontBundle:Sala:modifica_sala.html.twig', array(
+          'form' => $form->createView(),
+          'sala' => $sala
+      ));
+  }
 
-        $form = $this->createForm(SalaForm::class, $sala);
 
-        $form->handleRequest($request);
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            // Salvo cose.
-            $sala = $form->getData();
 
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($sala);
-            $em->flush();
+  public function deleteAction($id)
+  {
+      $sala = $this->getDoctrine()->getRepository('FrontBundle:Sala')->find($id);
 
-            $this->addFlash(
-                'notice',
-                'Sala modificata con successo'
-            );
+      if (!$sala) {
+          throw new NotFoundHttpException();
+      }
 
-            return $this->redirectToRoute('front_lista_sale');
-        }
+      $em = $this->getDoctrine()->getManager();
+      $em->remove($sala);
+      $em->flush();
 
-        return $this->render('FrontBundle:Sala:modifica_sala.html.twig', array(
-            'form' => $form->createView(),
-            'sala' => $sala
-        ));
-    }
- #
- #   /**
- #    * @Route("/sala/{id}/delete", name="sala_delete")
- #    */
- #   public function deleteAction($id)
- #   {
- #       $sala = $this->getDoctrine()->getRepository('FrontBundle:Sala')->find($id);
- #
- #       if (!$sala) {
- #           throw new NotFoundHttpException();
- #       }
- #
- #       $em = $this->getDoctrine()->getManager();
- #       $em->remove($sala);
- #       $em->flush();
- #
- #       $this->addFlash(
- #           'notice',
- #           'Aula eliminata con successo'
- #       );
- #
- #       return $this->redirectToRoute('sala_list');
- #   }
+      $this->addFlash(
+          'notice',
+          'Sala eliminata con successo'
+      );
+
+      return $this->redirectToRoute('front_lista_sale');
+  }
 
 }

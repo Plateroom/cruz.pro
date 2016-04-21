@@ -12,10 +12,10 @@
           Scegli numero posti
         {% endif %}<b class="caret"></b></a>
       <ul class="dropdown-menu">
-        <li><a href="{{ path('asdasdasd', { 'numero_posti': 15 }) }}">Tutte</a></li>
-        <li><a href="/lista_sale?numero_posti=10">10 posti</a></li>
-        <li><a href="/lista_sale?numero_posti=15">15 posti</a></li>
-        <li><a href="/lista_sale?numero_posti=20">20 posti</a></li>
+        <li><a href="{{ url('front_lista_sale') }}">Tutte</a></li>
+        <li><a href="{{ url('front_lista_sale', { 'numero_posti': 10 }) }}">10 posti</a></li>
+        <li><a href="{{ url('front_lista_sale', { 'numero_posti': 15 }) }}">15 posti</a></li>
+        <li><a href="{{ url('front_lista_sale', { 'numero_posti': 20 }) }}">20 posti</a></li>
       </ul>
       <li class="divider-vertical"></li>
       <li class="dropdown">

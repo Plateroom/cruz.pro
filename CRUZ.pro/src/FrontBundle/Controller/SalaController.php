@@ -18,7 +18,13 @@ class SalaController extends Controller
    */
   public function salaAction(Request $request)
   {
-     return $this->render('FrontBundle:Sala:sala.html.twig');
+
+     $sala = $this->getDoctrine()->getRepository('FrontBundle:Sala')->find($request->get('id'));
+
+     return $this->render('FrontBundle:Sala:sala.html.twig', [
+
+     'sala' =>$sala
+      ]);
   }
 
  #  public function listaSaleAction(Request $request)
@@ -35,12 +41,19 @@ class SalaController extends Controller
 /////////////////////////////////////////////////////
 
 
-  public function listAction()
+  public function listAction(Request $request)
   {
-      $sale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findAll();
+      $numPosti = (int) $request->get('numero_posti');
+
+      if ($numPosti) {
+          $sale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findByMinPosti($numPosti);
+      } else {
+          $sale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findAll();
+      }
 
       return $this->render('FrontBundle:Sala:lista_sale.html.twig', array(
           'sale' => $sale,
+          'numero_posti' => $numPosti,
       ));
   }
 
@@ -120,11 +133,12 @@ class SalaController extends Controller
                 'Sala modificata con successo'
             );
 
-            #return $this->redirectToRoute('front_lista_sale');
+            return $this->redirectToRoute('front_lista_sale');
         }
 
         return $this->render('FrontBundle:Sala:modifica_sala.html.twig', array(
             'form' => $form->createView(),
+            'sala' => $sala
         ));
     }
  #

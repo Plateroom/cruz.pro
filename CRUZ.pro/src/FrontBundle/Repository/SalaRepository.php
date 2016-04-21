@@ -10,4 +10,13 @@ namespace FrontBundle\Repository;
  */
 class SalaRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findByMinPosti($numeroPosti)
+    {
+        return $this->getEntityManager()
+            ->createQuery(
+                'SELECT s FROM FrontBundle:Sala s WHERE s.posti >= :posti'
+            )
+            ->setParameter('posti', $numeroPosti)
+            ->getResult();
+    }
 }

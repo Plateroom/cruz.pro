@@ -3,7 +3,7 @@ front_user:
     defaults: { _controller: FrontBundle:User:user }
 
 front_sala:
-    path:     /sala
+    path:     /sala/{id}
     defaults: { _controller: FrontBundle:Sala:sala }
 
 front_lista_sale:

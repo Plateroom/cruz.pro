@@ -16,7 +16,7 @@
     </div>
 
     <hr>
-{{ form_start(form )}}
+{{ form_start(form, {'action': path('front_sala_modifica', {id: sala.id} )} )}}
     <form>
 
       <div class="form-group">
@@ -51,6 +51,7 @@
 
        <div class="modal-footer">
         {{ form_row(form.save, {'attr': {'class': 'btn btn-secondary btn-xs', 'id': 'recipient-name', 'type': 'button' }}) }}
+        <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Chiudi</button>
       </div>
 {{ form_end(form) }}
     </form>

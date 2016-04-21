@@ -10,24 +10,23 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <blockquote class="blockquote-reverse">
-              <h5 class="caratteristiche-titolo">Sala Marco Aurelio</h5>
-              <h6 class="caratteristiche-titolo">sede La Masa.
-                <h6 class="text-style">Milano IT<br>+393485409834</h6>
+              <h5 class="caratteristiche-titolo">{{sala.nome}}</h5>
+              <h6 class="caratteristiche-titolo">{{sala.sede}}
+                <h6 class="text-style">{{sala.citta}} IT<br>{{sala.telefono}}</h6>
               </blockquote>
             </div>
             <div class="panel-body"></div>
           </div>
         </div>
-        <img src="img/sala.jpg" alt="sala marco aurelio" class="img-circle">
+        <img src="../img/sala.jpg" alt="sala marco aurelio" class="img-circle">
 
         {% if is_granted("ROLE_ADMIN") %}
 
         <div class="col-md-5">
           <div class="panel panel-default">
-            <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">20 Posti &nbsp; &#128465;</h5>
+            <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">{{sala.posti}} Posti &nbsp; &#128465;</h5>
               <hr class="margin-top-bottom">
-              <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria,
-                Fotocopiatrice, Frigobar.</h6></blockquote>
+              <h6 class="text-style">{{sala.descrizione}}.</h6></blockquote>
               </div>
               <div class="panel-body col-xs-offset-5">
               </div>
@@ -45,7 +44,7 @@
           </div>
 
 
-<button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#myModal2" href="{{ url('front_sala_modifica', {id: sala.id}) }}">Modifica Sala</button>
+<button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#myModal4" href="{{ url('front_sala_modifica', {id: sala.id}) }}">Modifica Sala</button>
 
 
           {% else %}
@@ -53,8 +52,8 @@
           <div class="col-md-7">
             <div class="panel panel-default">
               <div class="panel-heading ">
-                <blockquote><h5 class="caratteristiche-titolo">20 Posti</h5><hr class="margin-top-bottom">
-                  <h6 class="text-style">Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria, Fotocopiatrice, Frigobar.</h6></blockquote>
+                <blockquote><h5 class="caratteristiche-titolo">{{sala.posti}} Posti</h5><hr class="margin-top-bottom">
+                  <h6 class="text-style">{{sala.descrizione}}.</h6></blockquote>
                 </div>
                 <div class="panel-body col-xs-offset-5"></div>
               </div>
@@ -154,6 +153,12 @@
     </div>
   </div>
 
+  <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
 
 
 

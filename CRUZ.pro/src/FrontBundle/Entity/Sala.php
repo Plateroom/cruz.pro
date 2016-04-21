@@ -2,14 +2,20 @@
 
 namespace FrontBundle\Entity;
 
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 /**
  * Sala
  *
  * @ORM\Table(name="sala")
  * @ORM\Entity(repositoryClass="FrontBundle\Repository\SalaRepository")
+ * @Vich\Uploadable
  */
 class Sala
 {
@@ -46,7 +52,7 @@ class Sala
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="data_creazione", type="datetime")
+     * @ORM\Column(name="data_creazione", type="datetime", nullable=true)
      */
     private $dataCreazione;
 
@@ -54,6 +60,7 @@ class Sala
      * @var int
      *
      * @ORM\Column(name="posti", type="integer")
+     * @Assert\GreaterThan(value=0)
      */
     private $posti;
 
@@ -64,12 +71,21 @@ class Sala
      */
     private $telefono;
 
-    #/**
-    # * @var string
-    # *
-    # * @ORM\Column(name="immagine_url", type="text")
-    # */
-    #private $immagineUrl;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="immagine_url", type="text")
+     */
+    private $immagineUrl;
+
+    /**
+     * NOTE: This is not a mapped field of entity metadata, just a simple property.
+     *
+     * @Vich\UploadableField(mapping="sala_image", fileNameProperty="immagineUrl")
+     *
+     * @var File
+     */
+    private $imageFile;
 
     /**
      * @var string
@@ -87,6 +103,32 @@ class Sala
     public function __construct()
     {
         $this->eventoSale = new ArrayCollection();
+    }
+
+    /**
+     * If manually uploading a file (i.e. not using Symfony Form) ensure an instance
+     * of 'UploadedFile' is injected into this setter to trigger the  update. If this
+     * bundle's configuration parameter 'inject_on_load' is set to 'true' this setter
+     * must be able to accept an instance of 'File' as the bundle will inject one here
+     * during Doctrine hydration.
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
+     *
+     * @return Sala
+     */
+    public function setImageFile(File $image = null)
+    {
+        $this->imageFile = $image;
+
+        return $this;
+    }
+
+    /**
+     * @return File
+     */
+    public function getImageFile()
+    {
+        return $this->imageFile;
     }
 
     /**
@@ -196,6 +238,14 @@ class Sala
     }
 
     /**
+     * @ORM\PrePersist
+     */
+    public function setDataCreazioneValue()
+    {
+        $this->dataCreazione = new DateTime();
+    }
+
+    /**
      * Set posti
      *
      * @param integer $posti
@@ -243,29 +293,28 @@ class Sala
         return $this->telefono;
     }
 
-  #  /**
-  #   * Set immagineUrl
-  #   *
-  #   * @param string $immagineUrl
-  #   *
-  #   * @return Sala
-  #   */
-  #  public function setImmagineUrl($immagineUrl)
-  #  {
-  #      $this->immagineUrl = $immagineUrl;
-#
-  #      return $this;
-  #  }
-#
-  #  /**
-  #   * Get immagineUrl
-  #   *
-  #   * @return string
-  #   */
-  #  public function getImmagineUrl()
-  #  {
-  #      return $this->immagineUrl;
-  #  }
+    /**
+     * Set immagineUrl
+     *
+     * @param string $immagineUrl
+     *
+     * @return Sala
+     */
+    public function setImmagineUrl($immagineUrl)
+    {
+        $this->immagineUrl = $immagineUrl;
+       return $this;
+    }
+
+   /**
+     * Get immagineUrl
+     *
+     * @return string
+     */
+    public function getImmagineUrl()
+    {
+        return $this->immagineUrl;
+    }
 
     /**
      * Set descrizione

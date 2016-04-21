@@ -48,7 +48,7 @@ class User extends BaseUser
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="data_di_nascita", type="datetime", unique=true)
+     * @ORM\Column(name="data_di_nascita", type="datetime", unique=false)
      */
     private $dataDiNascita;
 

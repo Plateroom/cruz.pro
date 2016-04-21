@@ -44,7 +44,7 @@
           </div>
 
 
-<button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#myModal4" href="{{ url('front_sala_modifica', {id: sala.id}) }}">Modifica Sala</button>
+<button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#myModal" href="{{ url('front_sala_modifica', {id: sala.id}) }}">Modifica Sala</button>
 
 <a href="{{ url('front_sala_delete', {id: sala.id}) }}"><button type="button" class="btn btn-primary center-block" >Cancella Sala</button>
 
@@ -153,14 +153,4 @@
       </div>
     </div>
   </div>
-
-  <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-      </div>
-    </div>
-  </div>
-
-
-
-  {% endblock %}
+{% endblock %}

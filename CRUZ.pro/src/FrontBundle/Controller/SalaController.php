@@ -5,6 +5,7 @@ namespace FrontBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use FrontBundle\Entity\Sala;
+use FrontBundle\Entity\User;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use FrontBundle\Form\Type\SalaForm;
@@ -26,16 +27,6 @@ class SalaController extends Controller
      'sala' =>$sala
       ]);
   }
-
- #  public function listaSaleAction(Request $request)
- # {
- #    return $this->render('FrontBundle:Sala:lista_sale.html.twig');
- # }
-#
-#      public function salaModificaAction(Request $request)
-#  {
-#     return $this->render('FrontBundle:Sala:modifica_sala.html.twig');
-#  }
 
 
 /////////////////////////////////////////////////////

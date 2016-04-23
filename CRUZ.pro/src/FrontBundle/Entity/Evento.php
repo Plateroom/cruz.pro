@@ -21,6 +21,15 @@ class Evento
      */
     private $id;
 
+
+    /**
+     * @var \String
+     *
+     * @ORM\Column(name="nome", type="string")
+     */
+    private $nome;
+
+
     /**
      * @var \DateTime
      *
@@ -29,18 +38,25 @@ class Evento
     private $dataCreazione;
 
     /**
-     * @var \DateTime
+     * @var \Date
      *
-     * @ORM\Column(name="data_evento", type="datetime")
+     * @ORM\Column(name="data_evento", type="date")
      */
-    private $dataEvento;
+    private $data;
 
     /**
-     * @var \DateTime
+     * @var \Date
      *
-     * @ORM\Column(name="data_evento_fine", type="datetime")
+     * @ORM\Column(name="ore_inizio", type="time")
      */
-    private $dataEventoFine;
+    private $oraInizio;
+
+    /**
+     * @var \Time
+     *
+     * @ORM\Column(name="ore_fine", type="time")
+     */
+    private $oraFine;
 
     /**
      * @var string
@@ -49,13 +65,11 @@ class Evento
      */
     private $descrizione;
 
-
     /**
      * @ORM\ManyToOne(targetEntity="User", inversedBy="eventoUser")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $user;
-
 
     /**
      * @ORM\ManyToOne(targetEntity="Sala", inversedBy="eventoSale")
@@ -63,10 +77,9 @@ class Evento
      */
     private $sala;
 
-
     /**
      * @ORM\ManyToMany(targetEntity="Invitati")
-     * @ORM\JoinTable(name="eventi_invitati",
+     * @ORM\JoinTable(name="Eventi_Invitati",
      *      joinColumns={@ORM\JoinColumn(name="evento_id", referencedColumnName="id")},
      *      inverseJoinColumns={@ORM\JoinColumn(name="invitato_id", referencedColumnName="id", unique=true)}
      * )
@@ -78,6 +91,32 @@ class Evento
     public function __construct()
     {
         $this->listaInvitati = new ArrayCollection();
+    }
+
+
+
+    /**
+     * Set nome
+     *
+     * @param string $nome
+     *
+     * @return Evento
+     */
+    public function setNome($nome)
+    {
+        $this->nome = $nome;
+
+        return $this;
+    }
+
+    /**
+     * Get nome
+     *
+     * @return string
+     */
+    public function getNome()
+    {
+        return $this->nome;
     }
 
 
@@ -116,51 +155,76 @@ class Evento
     }
 
     /**
-     * Set dataEvento
+     * Set data
      *
      * @param \DateTime $dataEvento
      *
      * @return evento
      */
-    public function setDataEvento($dataEvento)
+    public function setData($data)
     {
-        $this->dataEvento = $dataEvento;
+        $this->data = $data;
 
         return $this;
     }
 
     /**
-     * Get dataEvento
+     * Get data
      *
      * @return \DateTime
      */
-    public function getDataEvento()
+    public function getData()
     {
-        return $this->dataEvento;
+        return $this->data;
     }
 
+
     /**
-     * Set dataEventoFine
+     * Set oraInizio
      *
-     * @param \DateTime $dataEventoFine
+     * @param \Time $oraInizio
      *
      * @return evento
      */
-    public function setDataEventoFine($dataEventoFine)
+    public function setOraInizio($oraInizio)
     {
-        $this->dataEventoFine = $dataEventoFine;
+        $this->oraInizio = $oraInizio;
 
         return $this;
     }
 
     /**
-     * Get dataEventoFine
+     * Get oraInizio
      *
-     * @return \DateTime
+     * @return \Time
      */
-    public function getDataEventoFine()
+    public function getOraInizio()
     {
-        return $this->dataEventoFine;
+        return $this->oraInizio;
+    }
+
+    /**
+     * Set oraFine
+     *
+     * @param \Time $oraFine
+     *
+     * @return evento
+     */
+    public function setOraFine($oraFine)
+    {
+        $this->oraFine = $oraFine;
+
+        return $this;
+    }
+
+    /**
+     * Get oraFine
+     *
+     * @return \Time
+     */
+    public function getOraFine()
+    {
+        return $this->oraFine;
     }
 
     /**

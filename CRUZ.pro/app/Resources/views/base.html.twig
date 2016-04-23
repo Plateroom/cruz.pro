@@ -58,8 +58,10 @@
       <ul class="nav navbar-nav navbar-right">
 
         <li class="dropdown">
+
           {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ app.user.username }} <b class="caret"></b></a>
+
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ app.user.nome }} <b class="caret"></b></a>
           <ul class="dropdown-menu">
 
             <li><a class="btn btn-link" data-toggle="modal" data-target="#myModal2" href="{{url('fos_user_profile_edit')}}" style="padding-left: 0px">Modifica profilo</a>

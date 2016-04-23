@@ -13,7 +13,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Sala
  *
- * @ORM\Table(name="sala")
+ * @ORM\Table(name="Sala")
  * @ORM\Entity(repositoryClass="FrontBundle\Repository\SalaRepository")
  * @Vich\Uploadable
  */

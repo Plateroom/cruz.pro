@@ -16,11 +16,22 @@ class UserController extends Controller
       return $this->render('FrontBundle:User:user.html.twig');
    }
 
-    public function listaUsersAction(Request $request)
-   {
-      return $this->render('FrontBundle:User:lista_users.html.twig');
-   }
+  public function listAction(Request $request)
+  {
+#     $numPosti = (int) $request->get('numero_posti');
+#
+#      if ($numPosti) {
+#          $users = $this->getDoctrine()->getRepository('FrontBundle:User')->findByMinPosti($numPosti);
+#      } else {
+#
+#      }
+    $users = $this->getDoctrine()->getRepository('FrontBundle:User')->findAll();
 
+      return $this->render('FrontBundle:User:lista_users.html.twig', array(
+          'users' => $users,
+          #'numero_posti' => $numPosti,
+      ));
+  }
 
     public function userAdminAction(Request $request)
    {

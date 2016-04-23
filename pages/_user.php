@@ -7,10 +7,10 @@
   	<div class="row content-img">
       <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
         <div class="panel panel-default">
-          <div class="panel-heading"> 
+          <div class="panel-heading">
             <blockquote class="blockquote-reverse">
-              <h5 class="caratteristiche-titolo">Harper Reed</h5> 
-              <h6 class="caratteristiche-titolo">CTO</h6> 
+              <h5 class="caratteristiche-titolo">Harper Reed</h5>
+              <h6 class="caratteristiche-titolo">CTO</h6>
               <h6 class="text-style">Cruz.pro</h6>
             </blockquote>
           </div>
@@ -22,9 +22,9 @@
        <div class="panel panel-default">
         <div class="panel-heading">
           <blockquote><h5 class="caratteristiche-titolo">Contatti</h5>
-            <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6> 
+            <h6 class="caratteristiche-titolo">harper_reed@cruzpro.it</h6>
             <h6 class="text-style">+393485409834</h6>
-          </blockquote>    
+          </blockquote>
         </div>
         <div class="panel-body col-xs-offset-5">
           <a class="btn btn-info" href="#">
@@ -60,13 +60,13 @@
             </div>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
-                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
-                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr>
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr>
                 <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6>
               </div>
             </div>
           </div>
-          
+
           <div class="panel panel-warning">
             <div class="panel-heading" role="tab" id="headingThree">
               <h4 class="panel-title">
@@ -77,8 +77,8 @@
             </div>
             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
               <div class="panel-body">
-                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
-                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr> 
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr>
+                <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6><hr>
                 <h6 class="text-style">mar15 Marzo H. 10:00 - 12:00 - Revisione Chicco: Sala Marco Aurelio</h6>
               </div>
             </div>
@@ -109,7 +109,7 @@
 
   <div class="panel-body">
     <h5 class="caratteristiche-titolo text-center">Calendario</h5>
-    
+
     <!-- calendar -->
 
 
@@ -157,17 +157,17 @@
             </div>
             <div id="collapseNomi" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
-                <h6 class="text-style">Harper Reed</h6><hr> 
-                <h6 class="text-style">Harper Reed</h6><hr> 
+                <h6 class="text-style">Harper Reed</h6><hr>
+                <h6 class="text-style">Harper Reed</h6><hr>
                 <h6 class="text-style">Harper Reed</h6>
               </div>
             </div>
           </div>
-          
- 
+
+
         </div>
       </div>
-         
+
 
       </div>
       <div class="modal-footer">

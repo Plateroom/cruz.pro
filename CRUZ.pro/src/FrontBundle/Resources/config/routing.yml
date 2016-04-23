@@ -1,3 +1,7 @@
+front_lista_users:
+    path:     /lista_users
+    defaults: { _controller: FrontBundle:User:list }
+
 front_user:
     path:     /
     defaults: { _controller: FrontBundle:User:user }
@@ -47,10 +51,6 @@ front_evento_modifica:
 front_lista_eventi:
     path:     /lista_eventi
     defaults: { _controller: FrontBundle:Eventi:eventi }
-
-front_lista_users:
-    path:     /lista_users
-    defaults: { _controller: FrontBundle:User:listaUsers }
 
 front_user_admin:
     path:     /user_admin

@@ -19,9 +19,9 @@ class EventoForm extends AbstractType
     {
         $builder
             ->add('nome', TextType::class, array('label' => false))
-            ->add('dataCreazione', HiddenType::class)
+            ->add('dataCreazione', HiddenType::class, array('data' =>date('d-F-Y')))
             ->add('data', DateType::class, array('label' => false))
-            ->add('oraFine', TimeType::class, array('label' => false))
+            ->add('oraInizio', TimeType::class, array('label' => false))
             ->add('oraFine', TimeType::class, array('label' => false))
             ->add('descrizione', TextType::class, array('label' => false))
             ->add('save', SubmitType::class, array('label' => false))

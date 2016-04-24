@@ -9,6 +9,7 @@ use FrontBundle\Entity\User;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use FrontBundle\Form\Type\SalaForm;
+use FrontBundle\Form\Type\SalaFormEdit;
 
 
 class SalaController extends Controller
@@ -24,7 +25,7 @@ class SalaController extends Controller
 
      return $this->render('FrontBundle:Sala:sala.html.twig', [
 
-     'sala' =>$sala
+     'sala' => $sala
       ]);
   }
 
@@ -85,7 +86,7 @@ class SalaController extends Controller
       if (!$sala) {
           throw new NotFoundHttpException();
       }
-      $form = $this->createForm(SalaForm::class, $sala);
+      $form = $this->createForm(SalaFormEdit::class, $sala);
       $form->handleRequest($request);
       if ($form->isSubmitted() && $form->isValid()) {
           // Salvo cose.

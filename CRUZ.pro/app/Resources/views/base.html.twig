@@ -24,7 +24,7 @@
 </head>
 
 <body>
-
+{% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
   {% block header%}
   <!-- Navigation -->
 
@@ -46,7 +46,7 @@
       <div class="col-xs-offset-4 col-md-offset-4">
         <ul class="nav navbar-nav nav">
 
-          <li><button type="button" class=" btn btn-md btn-default" data-toggle="modal" data-target="#myModal1" href="/crea/evento">Crea evento</button></li>
+          <li><button type="button" class=" btn btn-md btn-default" data-toggle="modal" data-target="#myModal1" href="{{ url('front_crea_evento')}}">Crea evento</button></li>
 
 
           <li><a href="{{ url('front_lista_sale')}}">Sale riunioni</a></li>
@@ -136,5 +136,8 @@
 
   <script src="/js/stylecruz.js"></script>
   {% endblock %}
+  {% else %}
+  <h1>ERRORE</h1>
+  {% endif %}
 </body>
 </html>

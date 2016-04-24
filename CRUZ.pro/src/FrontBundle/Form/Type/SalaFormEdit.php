@@ -11,7 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 
-class SalaForm extends AbstractType
+class SalaFormEdit extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -19,7 +19,6 @@ class SalaForm extends AbstractType
             ->add('nome', TextType::class, array('label' => false))
             ->add('sede', TextType::class, array('label' => false))
             ->add('citta', TextType::class, array('label' => false))
-            ->add('dataCreazione', HiddenType::class, array('data' =>date('d-F-Y')))
             ->add('posti', IntegerType::class, array('label' => false))
             ->add('telefono', TextType::class, array('label' => false))
             ->add('imageFile', VichImageType::class)

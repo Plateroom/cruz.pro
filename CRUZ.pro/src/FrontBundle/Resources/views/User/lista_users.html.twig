@@ -62,7 +62,7 @@
             <div class="panel-body"></div>
           </div>
         </div>
-        <a href="{{ url('front_user', {id: user.id} )}}"><img src="{{app.user.immagineUrl}}" class="img-circle"></a>
+        <a href="{{ url('front_user', {id: user.id} )}}"><img src="{{user.immagineUrl}}" class="img-circle"></a>
 
     {% if is_granted("ROLE_ADMIN") %}
 

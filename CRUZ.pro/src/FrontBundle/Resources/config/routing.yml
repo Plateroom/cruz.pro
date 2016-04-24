@@ -31,26 +31,17 @@ front_sala_delete:
         id: \d+
     defaults: { _controller: FrontBundle:Sala:delete}
 ####################
-
-front_evento:
-    path:     /evento
-    defaults: { _controller: FrontBundle:Eventi:evento }
-
-front_crea_evento:
-    path:     /crea/evento
-    defaults: { _controller: FrontBundle:Eventi:creaEvento }
-
-front_evento_modal:
-    path:     /evento/modal
-    defaults: { _controller: FrontBundle:Eventi:eventoModal }
-
-front_evento_modifica:
-    path:     /evento/modifica
-    defaults: { _controller: FrontBundle:Eventi:modificaEvento }
-
 front_lista_eventi:
     path:     /lista_eventi
-    defaults: { _controller: FrontBundle:Eventi:eventi }
+    defaults: { _controller: FrontBundle:Eventi:list }
+
+front_crea_evento:
+    path:     /evento/create
+    defaults: { _controller: FrontBundle:Eventi:create }
+
+####################
+
+
 
 front_user_admin:
     path:     /user_admin

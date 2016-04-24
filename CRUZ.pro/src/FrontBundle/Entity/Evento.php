@@ -4,6 +4,7 @@ namespace FrontBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use DateTime;
 /**
  * Evento
  *
@@ -139,7 +140,7 @@ class Evento
      */
     public function setDataCreazione($dataCreazione)
     {
-        $this->dataCreazione = $dataCreazione;
+        $this->dataCreazione = new DateTime();
 
         return $this;
     }
@@ -155,9 +156,17 @@ class Evento
     }
 
     /**
+     * @ORM\PrePersist
+     */
+    public function setDataCreazioneValue()
+    {
+        $this->dataCreazione = new DateTime();
+    }
+
+    /**
      * Set data
      *
-     * @param \DateTime $dataEvento
+     * @param \Date $data
      *
      * @return evento
      */
@@ -171,7 +180,7 @@ class Evento
     /**
      * Get data
      *
-     * @return \DateTime
+     * @return \Date
      */
     public function getData()
     {

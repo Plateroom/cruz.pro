@@ -1296,10 +1296,19 @@ margin: 10px;
   position: fixed;
 }
 
-/*
-#addsala{
-  padding-left: 89%;
+/*//////////////Crea Evento////////////////////*/
+
+.dataevento{
+  float: left;
 }
-*/
+
+
+.orario{
+  float: right;
+  list-style: none;
+}
+
+
+
 
 

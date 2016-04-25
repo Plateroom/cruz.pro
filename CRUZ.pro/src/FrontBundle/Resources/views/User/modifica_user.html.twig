@@ -3,7 +3,7 @@
 <!-- modal modifica utente -->
 
 
-    
+
 <div class="container-modal ">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
@@ -15,7 +15,7 @@
 
   <div class="modal-body">
 
-    
+
 
     <div class="row content-img">
         <div class="col-xs-offset-1 col-md-offset-1 col-md-12">
@@ -28,39 +28,37 @@
     </div>
 
     <hr>
+{{ form_start(form, {'action': path('front_user_modifica', {id: user.id} )} )}}
 
-    <form>
       <div class="form-group">
         <label for="recipient-name" class="control-label">Nome:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="Harper">
+        {{ form_row(form.nome, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
       <div class="form-group">
         <label for="recipient-name" class="control-label">Cognome:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="Reed">
+        {{ form_row(form.cognome, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
       <div class="form-group">
-        <label for="recipient-name" class="control-label">Nascita:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="12/04/1975">
+        <label for="recipient-name" class="control-label">Data di Nascita:</label>
+        {{ form_row(form.dataDiNascita, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
       <div class="form-group">
         <label for="recipient-name" class="control-label">e-Mail:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="Harper_reed@cruzpro.com">
+        {{ form_row(form.email, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
       <div class="form-group">
         <label for="recipient-name" class="control-label">Telefono:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="+393485678987">
+        {{ form_row(form.telefono, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
       <div class="form-group">
         <label for="recipient-name" class="control-label">Password:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="Internet fibra ottica, WiFi, Proiettore + telo, Lavagna di carta + cancelleria, Fotocopiatrice, Frigobar.">
+        {{ form_row(form.password, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
       <div class="form-group">
         <label for="recipient-name" class="control-label">Conferma Password:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="..........">
+        {{ form_row(form.save, {'attr': {'class': 'btn btn-secondary btn-xs', 'id': 'recipient-name', 'type': 'button' }}) }}
       </div>
-    </form>
-
-
+{{ form_end(form) }}
 
 
   </div>
@@ -70,7 +68,7 @@
         <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Chiudi</button>
         <button type="button" class="btn btn-secondary btn-xs">Salva modifiche</button>
 </div>
- 
+
 
 
 

@@ -222,7 +222,7 @@ class Sala
      */
     public function setDataCreazione($dataCreazione)
     {
-        $this->dataCreazione = $dataCreazione;
+         $this->dataCreazione = new DateTime();
 
         return $this;
     }

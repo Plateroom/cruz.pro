@@ -6,6 +6,11 @@ front_user:
     path:     /
     defaults: { _controller: FrontBundle:User:user }
 
+front_user_modifica:
+    path:     /utente/{id}/edit
+    defaults: { _controller: FrontBundle:User:edit}
+
+
 ####################
 front_lista_sale:
     path:     /lista_sale
@@ -31,6 +36,8 @@ front_sala_delete:
         id: \d+
     defaults: { _controller: FrontBundle:Sala:delete}
 ####################
+
+
 front_lista_eventi:
     path:     /lista_eventi
     defaults: { _controller: FrontBundle:Eventi:list }
@@ -38,15 +45,3 @@ front_lista_eventi:
 front_crea_evento:
     path:     /evento/create
     defaults: { _controller: FrontBundle:Eventi:create }
-
-####################
-
-
-
-front_user_admin:
-    path:     /user_admin
-    defaults: { _controller: FrontBundle:User:userAdmin }
-
-front_user_modifica:
-    path:     /modifica/utente
-    defaults: { _controller: FrontBundle:User:modificaUser}

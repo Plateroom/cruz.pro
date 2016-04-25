@@ -11,19 +11,16 @@ use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 
-class SalaFormEdit extends AbstractType
+class ModificaUserForm extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('nome', TextType::class, array('label' => false))
-            ->add('sede', TextType::class, array('label' => false))
-            ->add('citta', TextType::class, array('label' => false))
-            ->add('posti', IntegerType::class, array('label' => false))
+            ->add('username', TextType::class, array('label' => false))
+            ->add('password', TextType::class, array('label' => false))
+            ->add('dataDiNascita', HiddenType::class, array('data' =>date('d-F-Y')))
             ->add('telefono', TextType::class, array('label' => false))
             ->add('imageFile', VichImageType::class)
-            ->add('descrizione', TextType::class, array('label' => false))
-            ->add('dataCreazione', HiddenType::class, array('data' =>date('d-F-Y')))
             ->add('save', SubmitType::class, array('label' => false))
         ;
     }

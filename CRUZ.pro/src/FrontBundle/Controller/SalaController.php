@@ -35,16 +35,17 @@ class SalaController extends Controller
 
   public function listAction(Request $request)
   {
-      $numPosti = (int) $request->get('numero_posti');
+  $numPosti = (int) $request->get('numero_posti');
 
-      if ($numPosti) {
-          $sale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findByMinPosti($numPosti);
-      } else {
-          $sale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findAll();
-      }
+   if ($numPosti) {
+       $sala = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findByMinPosti($numPosti);
+   } else {
+
+   }
+    $sala = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findAll();
 
       return $this->render('FrontBundle:Sala:lista_sale.html.twig', array(
-          'sale' => $sale,
+          'sale' => $sala,
           'numero_posti' => $numPosti,
       ));
   }

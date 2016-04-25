@@ -12,7 +12,7 @@
 &nbsp;
 &nbsp;
 
-<a href="{{ url('front_sala_delete', {id: sala.id}) }}" >&#128465; Cancella Sala</a>
+<a href="{{ url('front_sala_delete', {id: sala.id}) }}" onclick="return confirm('Conferma Cancellazione')">&#128465; Cancella Sala</a>
 </div>
 </nav>
 {% endif %}

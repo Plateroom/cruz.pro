@@ -10,4 +10,52 @@ namespace FrontBundle\Repository;
  */
 class InvitatiRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getInviti()
+    {
+        return $elencomail = $this->getEntityManager()
+            ->createQuery(
+               'SELECT s.nome, s.citta, s.sede, s.posti, Eventi.id, Evento.nome, Evento.data,
+               Evento.descrizione, Evento.oraInizio, Evento.oraFine, Invitati.email
+                FROM FrontBundle:Sala s
+                INNER JOIN s.eventoSale Evento
+                INNER JOIN Evento.user User
+                INNER JOIN Evento.listaInvitati Invitati'
+
+            )
+
+            ->getResult();
+    }
+
+
+
+    public function getInvitiFatti()
+    {
+        return $elenco = $this->getEntityManager()
+            ->createQuery(
+               'SELECT s.nome, s.citta, Evento.nome, Evento.data, Eventi.id,
+               Evento.descrizione, Evento.oraInizio, Evento.oraFine, User.id u, s.immagine, s.sede, s.posti
+                FROM UserBundle:Sale s
+                INNER JOIN s.eventoSale Evento
+                INNER JOIN Evento.user User'
+
+            )
+
+            ->getResult();
+    }
+
+
+    public function getInvitati()
+    {
+        return $elencomail = $this->getEntityManager()
+            ->createQuery(
+               'SELECT s.nome, s.citta, s.sede, s.posti, User.id d, User.nome n, User.cognome co, User.email mail, Invitati.email m,
+               Invitati.nome i, Invitati.cognome c
+                FROM FrontBundle:Sala s
+                INNER JOIN s.eventoSale Evento
+                INNER JOIN Evento.user User
+                INNER JOIN Evento.listaInvitati Invitati'
+
+            )
+
+            ->getResult();
 }

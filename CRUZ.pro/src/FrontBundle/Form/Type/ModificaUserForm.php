@@ -8,7 +8,9 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class ModificaUserForm extends AbstractType
@@ -17,8 +19,9 @@ class ModificaUserForm extends AbstractType
     {
         $builder
             ->add('username', TextType::class, array('label' => false))
-            ->add('password', TextType::class, array('label' => false))
-            ->add('dataDiNascita', HiddenType::class, array('data' =>date('d-F-Y')))
+            ->add('email', TextType::class, array('label' => false))
+            ->add('password', PasswordType::class, array('label' => false))
+            ->add('dataDiNascita', DateType::class)
             ->add('telefono', TextType::class, array('label' => false))
             ->add('imageFile', VichImageType::class)
             ->add('save', SubmitType::class, array('label' => false))

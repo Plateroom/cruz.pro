@@ -4,12 +4,12 @@ namespace FrontBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use FrontBundle\Entity\Sala;
-use FrontBundle\Entity\User;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use FrontBundle\Form\Type\SalaForm;
 use FrontBundle\Form\Type\SalaFormEdit;
+use FrontBundle\Entity\Sala;
+use FrontBundle\Entity\User;
 
 
 class SalaController extends Controller
@@ -48,21 +48,6 @@ class SalaController extends Controller
           'sale' => $sala,
           'numero_posti' => $numPosti,
       ));
-
-    $em    = $this->get('doctrine.orm.entity_manager');
-    $dql   = "SELECT a FROM AcmeMainBundle:Article a";
-    $query = $em->createQuery($dql);
-
-    $paginator  = $this->get('knp_paginator');
-    $pagination = $paginator->paginate(
-        $query, /* query NOT result */
-        $request->query->getInt('page', 1)/*page number*/,
-        10/*limit per page*/
-    );
-
-    // parameters to template
-    return $this->render('AcmeMainBundle:Article:list.html.twig', array('pagination' => $pagination));
-}
   }
 
 

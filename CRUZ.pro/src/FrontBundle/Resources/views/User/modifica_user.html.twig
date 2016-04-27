@@ -12,6 +12,8 @@
   </div>
 
 
+{{ form_start(form, {'action': path('front_user_modifica', {id: user.id} )} )}}
+
 
   <div class="modal-body">
 
@@ -28,15 +30,9 @@
     </div>
 
     <hr>
-{{ form_start(form, {'action': path('front_user_modifica', {id: user.id} )} )}}
-
       <div class="form-group">
         <label for="recipient-name" class="control-label">Nome:</label>
-        {{ form_row(form.nome, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
-      </div>
-      <div class="form-group">
-        <label for="recipient-name" class="control-label">Cognome:</label>
-        {{ form_row(form.cognome, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
+        {{ form_row(form.username, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
       <div class="form-group">
         <label for="recipient-name" class="control-label">Data di Nascita:</label>
@@ -54,22 +50,16 @@
         <label for="recipient-name" class="control-label">Password:</label>
         {{ form_row(form.password, {'attr': {'class': 'form-control','id': 'recipient-name' }}) }}
       </div>
-      <div class="form-group">
-        <label for="recipient-name" class="control-label">Conferma Password:</label>
-        {{ form_row(form.save, {'attr': {'class': 'btn btn-secondary btn-xs', 'id': 'recipient-name', 'type': 'button' }}) }}
-      </div>
-{{ form_end(form) }}
-
 
   </div>
 
 
-<div class="modal-footer">
+  <div class="modal-footer">
         <button type="button" class="btn btn-primary btn-xs" data-dismiss="modal">Chiudi</button>
-        <button type="button" class="btn btn-secondary btn-xs">Salva modifiche</button>
-</div>
+        {{ form_row(form.save, {'attr': {'class': 'btn btn-secondary btn-xs', 'id': 'recipient-name', 'type': 'button' }}) }}
+  </div>
 
-
+{{ form_end(form) }}
 
 
 

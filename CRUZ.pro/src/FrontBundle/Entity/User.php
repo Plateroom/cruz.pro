@@ -6,6 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 use FOS\UserBundle\Model\User as BaseUser;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\HttpFoundation\File\File;
 
 
 /**
@@ -57,9 +58,9 @@ class User extends BaseUser
     private $imageFile;
 
     /**
-     * @var \DateTime
+     * @var \Date
      *
-     * @ORM\Column(name="data_di_nascita", type="datetime", unique=false)
+     * @ORM\Column(name="data_di_nascita", type="date", unique=false)
      */
     private $dataDiNascita;
 
@@ -131,7 +132,7 @@ class User extends BaseUser
      *
      * @param string $nome
      *
-     * @return Utenti
+     * @return User
      */
     public function setNome($nome)
     {
@@ -201,7 +202,7 @@ class User extends BaseUser
     /**
      * Set dataDiNascita
      *
-     * @param \DateTime $dataDiNascita
+     * @param \Date $dataDiNascita
      *
      * @return Utenti
      */
@@ -215,7 +216,7 @@ class User extends BaseUser
     /**
      * Get dataDiNascita
      *
-     * @return \DateTime
+     * @return \Date
      */
     public function getDataDiNascita()
     {

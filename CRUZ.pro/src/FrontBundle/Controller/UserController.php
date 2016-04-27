@@ -4,10 +4,10 @@ namespace FrontBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use FrontBundle\Form\Type\ModificaUserForm;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use FrontBundle\Entity\User;
+use FrontBundle\Form\Type\ModificaUserForm;
 
 
 class UserController extends Controller
@@ -18,21 +18,28 @@ class UserController extends Controller
     */
    public function userAction(Request $request)
    {
-      return $this->render('FrontBundle:User:user.html.twig');
+      $user = $this->getDoctrine()->getRepository('FrontBundle:User');
+
+      if (!$user) {
+          throw new NotFoundHttpException();
+      }
+
+        return $this->render('FrontBundle:User:user.html.twig', [
+
+          'user' => $user
+      ]);
    }
 
 
 
     public function listAction(Request $request)
     {
-    $users = $this->getDoctrine()->getRepository('FrontBundle:User')->findAll();
+        $users = $this->getDoctrine()->getRepository('FrontBundle:User')->findAll();
 
-      return $this->render('FrontBundle:User:lista_users.html.twig', array(
-          'users' => $users
-      ));
+        return $this->render('FrontBundle:User:lista_users.html.twig', array(
+            'users' => $users
+        ));
     }
-
-
 
     public function editAction(Request $request)
     {
@@ -53,10 +60,10 @@ class UserController extends Controller
               'Utente modificato con successo'
           );
           return $this->redirectToRoute('front_user', ['id' => $user->getId()]);
-        }
+      }
       return $this->render('FrontBundle:User:modifica_user.html.twig', array(
           'form' => $form->createView(),
           'user' => $user
-        ));
+      ));
     }
 }

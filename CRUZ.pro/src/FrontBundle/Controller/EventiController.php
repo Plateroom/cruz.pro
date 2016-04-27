@@ -7,12 +7,13 @@ use Symfony\Component\HttpFoundation\Request;
 use FrontBundle\Entity\Evento;
 use FrontBundle\Entity\User;
 use FrontBundle\Form\Type\EventoForm;
+use FOS\UserBundle\Doctrine\UserManager;
 
 class EventiController extends Controller
 {
   public function listAction(Request $request)
   {
-    $user = $this->getDoctrine()->getRepository('FrontBundle:User')->findAll($request->get('id'));
+    $user = $this->getDoctrine()->getRepository('FrontBundle:Evento');
     #  if ($numPosti) {
     #      $sale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findByMinPosti($numPosti);
     #  } else {
@@ -21,7 +22,7 @@ class EventiController extends Controller
       $evento = $this->getDoctrine()->getRepository('FrontBundle:Evento')->findAll();
       return $this->render('FrontBundle:Evento:lista_eventi.html.twig', array(
           'eventi' => $evento,
-          'user' => $user
+          'user' => $user,
           #'numero_posti' => $numPosti,
       ));
   }
@@ -35,10 +36,11 @@ class EventiController extends Controller
     {
         $evento = new Evento();
 
+        $evento->setUser($this->getUser());
+
         $form = $this->createForm(EventoForm::class, $evento);
 
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             // Salvo cose.
             $evento = $form->getData();
@@ -57,8 +59,7 @@ class EventiController extends Controller
 
         return $this->render('FrontBundle:Evento:crea_evento.html.twig', array(
             'form' => $form->createView(),
-            'evento'=> $evento
+            'evento'=> $evento,
         ));
     }
-
 }

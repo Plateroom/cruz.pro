@@ -10,4 +10,17 @@ namespace FrontBundle\Repository;
  */
 class EventoRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getElencoCitta()
+    {
+        $results = $elencoSale = $this->getEntityManager()
+        ->createQuery(
+            'SELECT DISTINCT s.citta FROM FrontBundle:Sala s'
+            )
+        ->getResult();
+        $data = [];
+        foreach ($results as $result) {
+            $data[$result['citta']] = $result['citta'];
+        }
+        return $data;
+    }
 }

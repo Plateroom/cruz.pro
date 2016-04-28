@@ -1,50 +1,36 @@
 {% extends "::base.html.twig" %}
 {% block body %}
 <!--second navbar-->
+{{ form_start(form )}}
+
 <nav class="navbar twoRow" role="navigation">
   <div class="col-xs-offset-3 col-md-9 col-md-offset-3">
    <ul class="nav navbar-nav">
     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        {% if numero_posti > 0 %}
-          {{ numero_posti }} posti
-        {% else %}
-          Tutte
-        {% endif %}
-        <b class="caret"></b></a>
-      <ul class="dropdown-menu">
-        <li><a href="{{ url('front_lista_sale') }}">Tutte</a></li>
-        <li><a href="{{ url('front_lista_sale', { 'numero_posti': 10 }) }}">10 posti</a></li>
-        <li><a href="{{ url('front_lista_sale', { 'numero_posti': 15 }) }}">15 posti</a></li>
-        <li><a href="{{ url('front_lista_sale', { 'numero_posti': 20 }) }}">20 posti</a></li>
-      </ul>
-      <li class="divider-vertical"></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Filtra per Sede <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Tutte</a></li>
-          <li><a href="#">Milano</a></li>
-          <li><a href="#">Roma</a></li>
-          <li><a href="#">Napoli</a></li>
-        </ul>
-      </li>
-      <li class="divider-vertical"></li>
-      <li class="dropdown">
-       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ordina per attività <b class="caret"></b></a>
-       <ul class="dropdown-menu">
-        <li><a href="#">Indifferente</a></li>
-        <li><a href="#">più usate</a></li>
-        <li><a href="#">meno usate</a></li>
-      </ul>
+
+
+      {{ form_row(form.posti) }}
     </li>
-<li>
+    <li class="divider-vertical"></li>
+    <li class="dropdown"></a>
 
-    {% if is_granted("ROLE_ADMIN") %}
-<a type="text" id ="addsala" data-toggle="modal" data-target="#myModal3" href="{{ url('front_sala_crea')}}"> + Sala
-</a>
-{% endif %}
+      {{ form_row(form.citta) }}
+    </li>
 
-</li>
+    <li class="divider-vertical"></li>
+
+    <li>
+      {{ form_row(form.save) }}
+    </li>
+    <li class="divider-vertical"></li>
+    <li>
+      {% if is_granted("ROLE_ADMIN") %}
+      <a type="text" id ="addsala" data-toggle="modal" data-target="#myModal3" href="{{ url('front_sala_crea')}}"> + Sala
+      </a>
+    </li>
+    {% endif %}
+
+
   </ul>
 </div>
 </nav>
@@ -52,10 +38,10 @@
 
 <!-- contenuto -->
 <div class="container-fluid">
-<hr>
+  <hr>
 
 
-{% for sala in sale %}
+  {% for sala in elenco_sale %}
 
   <div class="row content-img">
     <div class="col-xs-offset-1 col-md-offset-1 col-md-3">
@@ -76,52 +62,52 @@
           {% if is_granted("ROLE_ADMIN") %}
 
           <div class="col-md-5">
-          <div class="panel panel-default">
-            <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">{{sala.posti}} Posti</h5>
-              <hr class="margin-top-bottom">
-              <h6 class="text-style">{{sala.descrizione}}.</h6>
-
-
-            </div>
-            <div class="panel-body col-xs-offset-5">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="panel panel-default">
-            <div class="panel-heading "><blockquote> <span class="glyphicon glyphicon-time" title="Ore prenotate"><h5 class="caratteristiche-titolo stat">H: 30 </h5></span>
-              <hr class="margin-top-bottom">
-              <span class="glyphicon glyphicon-list-alt" title="Eventi creati"><h5 class="caratteristiche-titolo stat">N°: 15</h5></span></blockquote>
-            </div>
-            <div class="panel-body col-xs-offset-5">
-            </div>
-          </div>
-        </div>
-       </div>
-
-       {% else %}
-
-
-          <div class="col-md-7">
             <div class="panel panel-default">
               <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">{{sala.posti}} Posti</h5>
                 <hr class="margin-top-bottom">
                 <h6 class="text-style">{{sala.descrizione}}.</h6>
-                </div>
-                <div class="panel-body col-xs-offset-5">
-                </div>
+
+
+              </div>
+              <div class="panel-body col-xs-offset-5">
               </div>
             </div>
           </div>
-    {% endif %}
-  {% endfor %}
+          <div class="col-md-2">
+            <div class="panel panel-default">
+              <div class="panel-heading "><blockquote> <span class="glyphicon glyphicon-time" title="Ore prenotate"><h5 class="caratteristiche-titolo stat">H: 30 </h5></span>
+                <hr class="margin-top-bottom">
+                <span class="glyphicon glyphicon-list-alt" title="Eventi creati"><h5 class="caratteristiche-titolo stat">N°: 15</h5></span></blockquote>
+              </div>
+              <div class="panel-body col-xs-offset-5">
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
+        {% else %}
+
+
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-heading "><blockquote><h5 class="caratteristiche-titolo">{{sala.posti}} Posti</h5>
+              <hr class="margin-top-bottom">
+              <h6 class="text-style">{{sala.descrizione}}.</h6>
+            </div>
+            <div class="panel-body col-xs-offset-5">
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+      {% endif %}
+      {% endfor %}
 
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          </div>
+        </div>
+      </div>
+      {{ form_end(form) }}
 
-{% endblock %}
+      {% endblock %}

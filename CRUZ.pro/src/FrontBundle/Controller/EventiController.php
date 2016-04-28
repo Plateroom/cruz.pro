@@ -26,7 +26,7 @@ class EventiController extends Controller
           #'numero_posti' => $numPosti,
       ));
   }
-    public function eventoModalAction()
+    public function eventoAction()
     {
         return $this->render('FrontBundle:Evento:evento.html.twig');
     }

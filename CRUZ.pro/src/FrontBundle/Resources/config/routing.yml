@@ -45,3 +45,8 @@ front_lista_eventi:
 front_crea_evento:
     path:     /evento/create
     defaults: { _controller: FrontBundle:Eventi:create }
+
+front_evento:
+    path:     /evento/{id}
+    defaults: { _controller: FrontBundle:Eventi:evento }
+

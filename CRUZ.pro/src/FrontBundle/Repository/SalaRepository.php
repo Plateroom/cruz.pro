@@ -1,6 +1,6 @@
 <?php
-
 namespace FrontBundle\Repository;
+
 
 /**
  * SalaRepository
@@ -10,13 +10,32 @@ namespace FrontBundle\Repository;
  */
 class SalaRepository extends \Doctrine\ORM\EntityRepository
 {
-    public function findByMinPosti($numeroPosti)
+    public function findByMinPosti($numeroPosti, $citta)
     {
         return $this->getEntityManager()
-            ->createQuery(
-                'SELECT s FROM FrontBundle:Sala s WHERE s.posti >= :posti'
+        ->createQuery(
+            'SELECT
+            s
+            FROM FrontBundle:Sala s
+            WHERE  s.posti >= :posti AND s.citta = :citta'
             )
-            ->setParameter('posti', $numeroPosti)
-            ->getResult();
+        ->setParameter('posti', $numeroPosti)
+        ->setParameter('citta', $citta)
+
+        ->getResult();
+    }
+
+    public function getElencoCitta()
+    {
+        $results = $elencoSale = $this->getEntityManager()
+        ->createQuery(
+            'SELECT DISTINCT s.citta FROM FrontBundle:Sala s'
+            )
+        ->getResult();
+        $data = [];
+        foreach ($results as $result) {
+            $data[$result['citta']] = $result['citta'];
+        }
+        return $data;
     }
 }

@@ -1,6 +1,6 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-
+{% block fos_user_content %}
 <div class="container-modal ">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
@@ -9,7 +9,7 @@
   </div>
 
 
-  {{ form_start(form, {'action': path('front_user_modifica', {id: user.id} )} )}}
+  {{ form_start(form, {'action': path('fos_user_profile_edit', {id: user.id} )} )}}
 
 
   <div class="modal-body">
@@ -57,3 +57,4 @@
   </div>
 
   {{ form_end(form) }}
+{% endblock fos_user_content %}

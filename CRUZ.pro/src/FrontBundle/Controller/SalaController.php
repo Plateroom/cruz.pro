@@ -10,6 +10,8 @@ use FrontBundle\Form\Type\SalaForm;
 use FrontBundle\Form\Type\SalaFormEdit;
 use FrontBundle\Entity\Sala;
 use FrontBundle\Entity\User;
+use FrontBundle\Form\Type\SalaSearchForm;
+
 
 
 class SalaController extends Controller
@@ -35,18 +37,30 @@ class SalaController extends Controller
 
   public function listAction(Request $request)
   {
-  $numPosti = (int) $request->get('numero_posti');
 
-   if ($numPosti) {
-       $sala = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findByMinPosti($numPosti);
-   } else {
+    $elencoCitta = $this->getDoctrine()->getRepository('FrontBundle:Sala')->getElencoCitta();
 
-   }
-    $sala = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findAll();
+    $form = $this->createForm(SalaSearchForm::class, ['elenco_citta' => $elencoCitta]);
 
-      return $this->render('FrontBundle:Sala:lista_sale.html.twig', array(
-          'sale' => $sala,
-          'numero_posti' => $numPosti,
+    $form->handleRequest($request);
+    $elencoSale = [];
+
+
+    if ($form->isSubmitted() && $form->isValid()) {
+
+      $posti = $form->get('posti')->getData();
+      $citta = $form->get('citta')->getData();
+      $elencoSale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findByMinPosti($posti, $citta);
+
+    } else
+    {
+      $elencoSale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findAll();
+    }
+
+
+    return $this->render('FrontBundle:Sala:lista_sale.html.twig', array(
+        'form' => $form->createView(),
+        'elenco_sale' => $elencoSale,
       ));
   }
 

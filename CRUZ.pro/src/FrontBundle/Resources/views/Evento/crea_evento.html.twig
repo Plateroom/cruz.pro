@@ -8,7 +8,7 @@
   <h4 class="modal-title" id="gridSystemModalLabel">Crea evento</h4>
 </div>
 <div class="modal-body">
-    {{ form_start(form, {'action': path('front_crea_evento')} )}}
+    {{ form_start(form, {'action': path('front_user')} )}}
   <div class="row">
      <label for="recipient-name" class="control-label">Nome:</label>
     {{ form_row(form.nome, {'attr': {'class': 'form-control','id': 'exampleInputName2', 'type': 'text', 'placeholder': 'Nome evento' }}) }}<br>
@@ -111,7 +111,7 @@
 
 
         <div class="modal-footer">
-          {{ form_row(form.save, {'attr': {'class': 'btn btn-secondary', 'type': 'button', 'id': 'recipient-name' }}) }}
+          {{ form_row(form.save, {'attr': {'class': 'btn btn-secondary', 'type': 'button', 'id': 'recipient-name', 'onclick': 'alert("mi hai cliccato")' }}) }}
           <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
 
         </div>

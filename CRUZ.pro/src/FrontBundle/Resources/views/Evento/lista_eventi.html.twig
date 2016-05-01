@@ -60,7 +60,7 @@
       <div class="panel panel-danger" id="list-pannel">
 
         <div class="col-md-4">
-          <blockquote class="blockquote-2"><h5 class="caratteristiche-titolo">Sala Marco Aurelio</h5>
+          <blockquote class="blockquote-2"><h5 class="caratteristiche-titolo">{{ evento.sala.nome }}</h5>
             <h6 class="caratteristiche-titolo">{{ evento.data|date('d-F-Y') }}
 
               <br>
@@ -72,7 +72,7 @@
 
         <div class="col-md-3">
 
-          <button href="{{ url('front_evento', {id: evento.id})}}" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Apri</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" id="Apri">Apri</button>
 
         </div>
 

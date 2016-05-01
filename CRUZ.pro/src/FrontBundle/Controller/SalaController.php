@@ -91,6 +91,7 @@ class SalaController extends Controller
 
         return $this->render('FrontBundle:Sala:create_sala.html.twig', array(
             'form' => $form->createView(),
+            'sala' => $sala,
         ));
     }
 

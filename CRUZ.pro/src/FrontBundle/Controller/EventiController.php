@@ -13,28 +13,36 @@ class EventiController extends Controller
 {
   public function listAction(Request $request)
   {
-    $user = $this->getDoctrine()->getRepository('FrontBundle:Evento');
-    #  if ($numPosti) {
-    #      $sale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findByMinPosti($numPosti);
-    #  } else {
-    #
-    #  }
-      $evento = $this->getDoctrine()->getRepository('FrontBundle:Evento')->findAll();
+
+    $evento = $this->getDoctrine()->getRepository('FrontBundle:Evento')->findAll();
+
       return $this->render('FrontBundle:Evento:lista_eventi.html.twig', array(
           'eventi' => $evento,
-          'user' => $user,
-          #'numero_posti' => $numPosti,
       ));
   }
-    public function eventoAction()
+
+  public function eventoAction(Request $request)
     {
-        return $this->render('FrontBundle:Evento:evento.html.twig');
+      $elencoSale = $this->getDoctrine()->getRepository('FrontBundle:Evento')->getElencoSale();
+
+      $user = $this->getDoctrine()->getRepository('FrontBundle:Evento');
+
+      $evento = $this->getDoctrine()->getRepository('FrontBundle:Evento')->find($request->get('id'));
+
+      return $this->render('FrontBundle:Evento:evento.html.twig', array(
+          'evento' => $evento,
+          'user' => $user,
+      ));
+
     }
 
 
     public function createAction(Request $request)
     {
         $evento = new Evento();
+
+        #$elencoSale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findAll();
+
 
         $evento->setUser($this->getUser());
 
@@ -60,6 +68,7 @@ class EventiController extends Controller
         return $this->render('FrontBundle:Evento:crea_evento.html.twig', array(
             'form' => $form->createView(),
             'evento'=> $evento,
+            #'elencoSale' => $elencoSale,
         ));
     }
 }

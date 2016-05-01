@@ -57,8 +57,7 @@
               </div>
             </div>
           </div>
-          <a href="{{ url('front_sala', {id: sala.id} )}}"><img src="{{sala.immagineUrl}}" class="img-circle"></a>
-
+         <a href="{{ url('front_sala', {id: sala.id} )}}"><img class="img-circle" src="{{ vich_uploader_asset(sala, 'imageFile') }}" alt="{{ sala.imageFile }}" />
           {% if is_granted("ROLE_ADMIN") %}
 
           <div class="col-md-5">

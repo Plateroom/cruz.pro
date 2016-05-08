@@ -63,21 +63,23 @@
                   </ul>
                 </ul>
         </div>
-
+</div>
 
 
         <div class="col-md-6">
           <ul class="nav navbar-nav navbar-left">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sale Disponibili<b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sale Disponibili</a>
+              {{ form_row(form.sala, {'attr': {'class': 'dropdown-toggle', 'data-toggle': 'dropdown' }}) }}
                 <ul class="dropdown-menu">
                   <li><a href="#">Sala Marco Aurelio</a></li>
                   <li><a href="#">Sala Cesare</a></li>
                   <li><a href="#">Sala Cleopatra</a></li>
                 </ul>
+             </li>
           </ul>
         </div>
-      </div>
+
 
 <hr>
 
@@ -111,12 +113,9 @@
 
 
         <div class="modal-footer">
-          {{ form_row(form.save, {'attr': {'class': 'btn btn-secondary', 'type': 'button', 'id': 'recipient-name', 'onclick': 'alert("mi hai cliccato")' }}) }}
+          {{ form_row(form.save, {'attr': {'class': 'btn btn-secondary', 'type': 'button', 'id': 'recipient-name' }}) }}
           <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
 
         </div>
-        {{ form_end(form) }}
-    </div>
+{{ form_end(form) }}
 </div>
-
-

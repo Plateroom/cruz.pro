@@ -58,4 +58,6 @@ class InvitatiRepository extends \Doctrine\ORM\EntityRepository
             )
 
             ->getResult();
+    }
+
 }

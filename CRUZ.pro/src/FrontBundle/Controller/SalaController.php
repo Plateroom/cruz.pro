@@ -45,22 +45,22 @@ class SalaController extends Controller
     $form->handleRequest($request);
     $elencoSale = [];
 
+    $elencoSale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findAll();
 
     if ($form->isSubmitted() && $form->isValid()) {
-
       $posti = $form->get('posti')->getData();
-      $citta = $form->get('citta')->getData();
-      $elencoSale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findByMinPosti($posti, $citta);
 
-    } else
-    {
-      $elencoSale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findAll();
-    }
-
+      $cittascelta=$request->request->get('citta'); //controlla cosa viene dalla select delle città
+      if($cittascelta==='Tutte'){
+      //qui funzionee repository solo con i posti (senza città)
+    } else {
+      $elencoSale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findByMinPosti($posti, $cittascelta);
+    }};
 
     return $this->render('FrontBundle:Sala:lista_sale.html.twig', array(
         'form' => $form->createView(),
         'elenco_sale' => $elencoSale,
+        'elencocitta' => $elencoCitta,
       ));
   }
 
@@ -91,6 +91,7 @@ class SalaController extends Controller
 
         return $this->render('FrontBundle:Sala:create_sala.html.twig', array(
             'form' => $form->createView(),
+            'sala' => $sala,
         ));
     }
 

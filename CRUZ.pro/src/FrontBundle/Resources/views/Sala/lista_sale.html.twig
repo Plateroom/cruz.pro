@@ -9,12 +9,18 @@
     <li class="dropdown">
 
 
-      {{ form_row(form.posti) }}
+      {{ form_row(form.posti, {'attr': {'class': 'dropdown-toggle'}}) }}
     </li>
     <li class="divider-vertical"></li>
     <li class="dropdown"></a>
 
-      {{ form_row(form.citta) }}
+      <select name="citta">
+          <option>Tutte</option>
+          {% for citta in elencocitta %}
+            <option>{{citta}}</option>
+          {% endfor %}
+      </select>
+
     </li>
 
     <li class="divider-vertical"></li>
@@ -57,7 +63,7 @@
               </div>
             </div>
           </div>
-          <a href="{{ url('front_sala', {id: sala.id} )}}"><img src="{{sala.immagineUrl}}" class="img-circle"></a>
+         <a href="{{ url('front_sala', {id: sala.id} )}}"><img class="img-circle" src="{{ vich_uploader_asset(sala, 'imageFile') }}" alt="{{ sala.imageFile }}" ></a>
 
           {% if is_granted("ROLE_ADMIN") %}
 

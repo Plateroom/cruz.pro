@@ -20,7 +20,7 @@ class EventoForm extends AbstractType
     {
         $builder
             ->add('nome', TextType::class, array('label' => false))
-            ->add('dataCreazione', HiddenType::class, array('data' =>date('d-F-Y')))
+            ->add('dataCreazione', HiddenType::class, array('data' =>date('d-F-Y')),date_default_timezone_set('Europe/Rome'))
             ->add('data', DateType::class, array('label' => false))
             ->add('sala', EntityType::class, array('label' => false,
               'class'=>'FrontBundle:Sala',
@@ -28,11 +28,6 @@ class EventoForm extends AbstractType
             ->add('oraInizio', TimeType::class, array('label' => false))
             ->add('oraFine', TimeType::class, array('label' => false))
             ->add('descrizione', TextType::class, array('label' => false))
-           #->add('listaInvitati', EntityType::class, array(
-           #  'class'=>'FrontEndBundle:Invitati',
-           #  'choice_label'=>'email',
-           #  'multiple'=>true,
-           #  'expanded'=>true))
             ->add('save', SubmitType::class, array('label' => false))
         ;
     }

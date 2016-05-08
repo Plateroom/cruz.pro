@@ -41,9 +41,6 @@ class EventiController extends Controller
     {
         $evento = new Evento();
 
-        #$elencoSale = $this->getDoctrine()->getRepository('FrontBundle:Sala')->findAll();
-
-
         $evento->setUser($this->getUser());
 
         $form = $this->createForm(EventoForm::class, $evento);

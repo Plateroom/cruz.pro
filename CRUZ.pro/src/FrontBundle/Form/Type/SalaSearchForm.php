@@ -21,7 +21,6 @@ class SalaSearchForm extends AbstractType
     {
         $elencoCitta = $options['data']['elenco_citta'];
         $builder
-            ->add('citta', ChoiceType::class, array('label' => false, 'choices' => $elencoCitta))
             ->add('posti', ChoiceType::class, array('label' => false, 'choices' => [
                'Tutte' => 0,
                 10 => 10,

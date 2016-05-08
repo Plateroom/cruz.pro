@@ -2,6 +2,7 @@
 namespace FrontBundle\Form\Type;
 
 use FrontBundle\Entity\Sala;
+use FrontBundle\Entity\Evento;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -15,20 +16,13 @@ use Vich\UploaderBundle\Form\Type\VichImageType;
 use Doctrine\ORM\EntityRepository;
 
 
-class SalaSearchForm extends AbstractType
+class EventoSearchForm extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $elencoCitta = $options['data']['elenco_citta'];
+        $elencoSala = $options['data']['elenco_sala'];
         $builder
-            ->add('citta', ChoiceType::class, array('label' => false, 'choices' => $elencoCitta))
-            ->add('posti', ChoiceType::class, array('label' => false, 'choices' => [
-               'Tutte' => 0,
-                10 => 10,
-                15 => 15,
-                20 => 20,
-                25 => 25,
-            ]))
+            ->add('sala', ChoiceType::class, array('label' => false, 'choices' => $elencoSala))
             ->add('save', SubmitType::class);
     }
 }

@@ -1,6 +1,7 @@
 <?php
-
 namespace FrontBundle\Repository;
+
+use FrontBundle\Entity\Evento;
 
 /**
  * EventoRepository
@@ -10,16 +11,30 @@ namespace FrontBundle\Repository;
  */
 class EventoRepository extends \Doctrine\ORM\EntityRepository
 {
-    public function getElencoCitta()
+
+    public function findBySala($sala)
     {
-        $results = $elencoSale = $this->getEntityManager()
+        return $this->getEntityManager()
         ->createQuery(
-            'SELECT DISTINCT s.citta FROM FrontBundle:Sala s'
+            'SELECT
+            s
+            FROM FrontBundle:Sala s'
+            )
+        ->setParameter('sala', $sala)
+ 
+        ->getResult();
+    }
+
+    public function getElencoSala()
+    {
+        $results = $elencoEventi = $this->getEntityManager()
+        ->createQuery(
+            'SELECT DISTINCT s.nome FROM FrontBundle:Sala s'
             )
         ->getResult();
         $data = [];
         foreach ($results as $result) {
-            $data[$result['citta']] = $result['citta'];
+            $data[$result['nome']] = $result['nome'];
         }
         return $data;
     }
